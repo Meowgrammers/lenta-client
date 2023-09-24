@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": ["@typescript-eslint", "prettier", "import", "react"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:import/recommended",
+        "prettier"
+      ],
+      "parserOptions": {
+        "sourceType": "module",
+        "project": "tsconfig.json",
+        "parser": "@typescript-eslint/parser"
+      }
+    }
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [0],
+    "no-underscore-dangle": "off",
+    "no-param-reassign": [2, { "props": false }],
+    "class-methods-use-this": "off",
+    "no-useless-escape": "off",
+    "max-len": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-restricted-syntax": "off",
+    "max-classes-per-file": "off",
+    "no-continue": "off",
+    "func-names": "off",
+    "no-alert": "off",
+    "no-nested-ternary": "off"
+  }
+}
