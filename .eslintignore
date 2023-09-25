@@ -3,6 +3,3 @@ public
 .eslintrc.js
 build
 dist
-webpack.config.js
-webpack.dev.config.js
-webpack.prod.config.js
