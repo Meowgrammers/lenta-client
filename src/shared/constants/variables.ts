@@ -11,5 +11,4 @@ export const enum HTTP_METHOD {
 export const enum PAGES {
   ALL = '*',
   MAIN = '/',
-  POST = ':id',
 }
