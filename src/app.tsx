@@ -1,13 +1,11 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
-const container = document.getElementById('root') as HTMLElement;
+import './styles/global-styles.css'
+import { SwitchComponent } from '@/components'
 
-const initialChildren = (
+createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
-    <div>Hello!</div>
+    <SwitchComponent />
   </StrictMode>
-);
-
-const root = createRoot(container);
-root.render(initialChildren);
+)
