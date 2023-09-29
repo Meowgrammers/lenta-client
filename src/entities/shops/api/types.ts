@@ -1,6 +1,6 @@
 type ShopResponse = {
   id: number
-  store: string
+  store?: string
   city: string
   divizion: string
   format: string
