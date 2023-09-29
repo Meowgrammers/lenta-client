@@ -8,8 +8,8 @@ export const salesApi = baseApi
   .injectEndpoints({
     endpoints: (builder) => ({
       fetchSales: builder.query<SalesResponse, SalesRequest>({
-        query: () => ({
-          url: PATHS.SALES,
+        query: ({ sku, store, page, limit }) => ({
+          url: `${PATHS.SALES}?sku=${sku}&store=${store}&page=${page}&limit=${limit}`,
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'SALES_DATA', id: 'INFO' }],
         }),

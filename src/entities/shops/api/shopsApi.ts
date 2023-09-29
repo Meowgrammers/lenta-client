@@ -8,8 +8,8 @@ export const shopsApi = baseApi
   .injectEndpoints({
     endpoints: (builder) => ({
       fetchShops: builder.query<ShopResponse, ShopRequest>({
-        query: () => ({
-          url: PATHS.SHOPS,
+        query: ({ page, limit }) => ({
+          url: `${PATHS.SHOPS}?page=${page}&limit=${limit}`,
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'SHOPS_DATA', id: 'INFO' }],
         }),

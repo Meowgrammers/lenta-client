@@ -13,8 +13,8 @@ export const forecastApi = baseApi
   .injectEndpoints({
     endpoints: (builder) => ({
       fetchForecast: builder.query<ForecastResponse, ForecastRequest>({
-        query: () => ({
-          url: PATHS.FORECAST,
+        query: ({ page, limit }) => ({
+          url: `${PATHS.FORECAST}?page=${page}&limit=${limit}`,
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'FORECAST_DATA', id: 'INFO' }],
         }),

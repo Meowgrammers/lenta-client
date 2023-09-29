@@ -8,8 +8,8 @@ export const categoriesApi = baseApi
   .injectEndpoints({
     endpoints: (builder) => ({
       fetchCategories: builder.query<CategoriesResponse, CategoriesRequest>({
-        query: () => ({
-          url: PATHS.CATEGORIES,
+        query: ({ sku, group, category, subcategory, page, limit }) => ({
+          url: `${PATHS.CATEGORIES}?sku=${sku}&group=${group}&category=${category}&subcategory=${subcategory}&page=${page}&limit=${limit}`,
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'CATEGORIES_DATA', id: 'INFO' }],
         }),
