@@ -1,5 +1,3 @@
-import { SwitchComponent } from '@/components'
-
 export const MainPage = () => {
-  return <SwitchComponent/>
+  return <div>Hello</div>
 }
