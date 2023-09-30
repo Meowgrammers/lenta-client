@@ -7,6 +7,9 @@ import {
   Text,
   TableHead,
   TableBody,
+  useAppSelector,
+  sortByField,
+  Checkbox,
 } from '@/shared'
 
 import { FC } from 'react'
@@ -25,11 +28,17 @@ export const CategoryTable: FC<CategoryTableProps> = ({
   items,
   totalHeight,
 }) => {
+  const check = useAppSelector((state) => state.app.check)
+  const sort = useAppSelector((state) => state.categories.sort)
+  const sortingMock = CategoryMock.sort(sortByField(sort))
+
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
         <TableRow className="z-10 h-[44px] bg-[#efefef]">
-          <TableHeaderCell className="w-[50px]">[]</TableHeaderCell>
+          <TableHeaderCell className="w-[50px]">
+            <Checkbox />
+          </TableHeaderCell>
           <TableHeaderCell>ТК</TableHeaderCell>
           <TableHeaderCell>Группа</TableHeaderCell>
           <TableHeaderCell>Категория</TableHeaderCell>
@@ -40,7 +49,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
       </TableHead>
       <TableBody>
         {items.map((virtualItem) => {
-          const item = CategoryMock[virtualItem.index]!
+          const item = sortingMock[virtualItem.index]!
           return (
             <TableRow
               key={item.id}
@@ -48,7 +57,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
               <TableCell className="w-[50px]">
-                <Text>[]</Text>
+                <Checkbox />
               </TableCell>
               <TableCell>
                 <Text>{item.id}</Text>
@@ -65,11 +74,9 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               <TableCell>
                 <Text>{item.sku}</Text>
               </TableCell>
-              {item.uom && (
-                <TableCell className="w-[100px]">
-                  <Text>{item.uom}</Text>
-                </TableCell>
-              )}
+              <TableCell className="w-[100px]">
+                <Text>{check ? '-' : item.uom}</Text>
+              </TableCell>
             </TableRow>
           )
         })}

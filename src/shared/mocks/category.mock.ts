@@ -9,18 +9,18 @@ export const CategoryMock = [
   },
   {
     id: 2,
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '71c9661741caf40a92a32d1cc8206c04',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
-    category: '1bc0249a6412ef49b07fe6f62e6dc8de',
-    subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
+    category: 'c559da2ba967eb820766939a658022c8',
+    subcategory: 'e06f5ed77191826c212c30722f2cc5a2',
     uom: '17',
   },
   {
     id: 3,
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '00b72c2f01a1512cbb1d3f33319bac93',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
-    subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
+    subcategory: 'd407a3ebb4ab9b0d68b224486f8b8dad',
     uom: '17',
   },
   {

@@ -28,7 +28,7 @@ export const SalesTable: FC<SalesTableProps> = ({ items, totalHeight }) => {
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="absolute z-10 h-[44.5px] bg-[#efefef] w-full overflow-hidden">
+        <TableRow className="absolute h-[44.5px] bg-[#efefef] w-full overflow-hidden">
           <TableHeaderCell className="w-[92px]">19.07.23</TableHeaderCell>
           <TableHeaderCell className="w-[92px]">21.07.23</TableHeaderCell>
           <TableHeaderCell className="w-[92px]">22.07.23</TableHeaderCell>

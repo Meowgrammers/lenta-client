@@ -1,6 +1,13 @@
-import { ToggleUnit } from '@/features'
+import { TableSearch, TableSort, ToggleUnit } from '@/features'
 import { ForecastChart, ForecastTable } from '@/widgets'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@tremor/react'
+import {
+  Flex,
+  Tab,
+  TabGroup,
+  TabList,
+  TabPanel,
+  TabPanels,
+} from '@tremor/react'
 
 export const MainPage = () => {
   return (
@@ -17,14 +24,19 @@ export const MainPage = () => {
       <TabPanels>
         <TabPanel>
           <TabGroup>
-            <TabList variant="solid" className="bg-[#EAEBED] p-1 rounded-lg">
-              <Tab className="aria-selected:bg-white rounded-md border-solid text-base not-italic font-medium leading-5 text-gray-500 aria-selected:text-blue-500">
-                Таблица
-              </Tab>
-              <Tab className="aria-selected:bg-white rounded-md border-solid text-base not-italic font-medium leading-5 text-gray-500 aria-selected:text-blue-500">
-                График
-              </Tab>
-            </TabList>
+            <Flex alignItems="center" justifyContent="start">
+              <TabList variant="solid" className="bg-[#EAEBED] p-1 rounded-lg ">
+                <Tab className="aria-selected:bg-white rounded-md border-solid text-base not-italic font-medium leading-5 text-gray-500 aria-selected:text-blue-500">
+                  Таблица
+                </Tab>
+                <Tab className="aria-selected:bg-white rounded-md border-solid text-base not-italic font-medium leading-5 text-gray-500 aria-selected:text-blue-500">
+                  График
+                </Tab>
+              </TabList>
+              <TableSort />
+              <TableSearch/>
+            </Flex>
+
             <TabPanels>
               <TabPanel>
                 <ForecastTable />

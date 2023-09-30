@@ -12,7 +12,7 @@ const ToggleUnit = () => {
     <Switcher
       handleCheck={changeCheckbox}
       checked={check}
-      text="выручка, руб"
+      text={check ? 'выручка, руб' : 'количество, шт/кг'}
     />
   )
 }
