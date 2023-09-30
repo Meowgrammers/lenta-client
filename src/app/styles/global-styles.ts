@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     min-width: 20rem;
     min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -67,5 +67,9 @@ export const GlobalStyle = createGlobalStyle`
   a {
     cursor: pointer;
     text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse;
   }
 }`

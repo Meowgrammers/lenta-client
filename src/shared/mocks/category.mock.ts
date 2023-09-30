@@ -39,4 +39,5 @@ export const CategoryMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
   },
+
 ]
