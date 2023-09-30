@@ -8,7 +8,7 @@ const Table = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <Components.Table
     ref={ref}
-    className={cn('overflow-hidden w-[850px]', className)}
+    className={cn('overflow-hidden w-full', className)}
     {...props}
   >
     {children}

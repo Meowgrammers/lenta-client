@@ -1,23 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 type AppState = {
-  scroll: number
+  check: boolean
 }
 
 const initialState: AppState = {
-  scroll: 0,
+  check: false,
 }
 
 const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    setScroll(state, { payload }) {
-      state.scroll = payload
+    setCheck(state, { payload }) {
+      state.check = payload
     },
   },
 })
 
 const appReducer = appSlice.reducer
+
+export const { setCheck } = appSlice.actions
 
 export { type AppState, appSlice, appReducer }

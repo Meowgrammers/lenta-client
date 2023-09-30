@@ -11,7 +11,7 @@ type Sale = {
   id: number
   store: string
   sku: string
-  fact: SimpleSale
+  fact: SimpleSale[]
 }
 
 type SalesResponse = {

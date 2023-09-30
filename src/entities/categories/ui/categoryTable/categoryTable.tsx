@@ -28,7 +28,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="w-[850px] fixed z-10 h-11 bg-[#efefef]">
+        <TableRow className="z-10 h-[44px] bg-[#efefef]">
           <TableHeaderCell className="w-[50px]">[]</TableHeaderCell>
           <TableHeaderCell>ТК</TableHeaderCell>
           <TableHeaderCell>Группа</TableHeaderCell>
@@ -44,7 +44,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
           return (
             <TableRow
               key={item.id}
-              className="absolute top-[44px] w-[850px]"
+              className="absolute top-[44px] "
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
               <TableCell className="w-[50px]">
