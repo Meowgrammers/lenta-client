@@ -3,6 +3,8 @@ import { MAIN_ROUTES } from './routes/routes';
 import { Route, Routes } from 'react-router-dom';
 import { withProviders } from './providers';
 
+import './styles/style.css'
+
 const App = () => {
   return (
     <Routes>

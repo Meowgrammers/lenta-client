@@ -1,60 +1,59 @@
 import {
-  TableText,
-  HeadRow,
-  BodyRow,
-  HeadCell,
-  BodyCell,
-  Head,
-  BaseTable,
-  Body,
   CategoryMock,
+  Table,
+  TableHeaderCell,
+  TableRow,
+  TableCell,
+  Text,
+  TableHead,
+  TableBody,
 } from '@/shared'
 
 import { FC } from 'react'
 
 export const CategoryTable: FC = () => {
   return (
-    <BaseTable>
-      <Head>
-        <HeadRow>
-          <HeadCell>[]</HeadCell>
-          <HeadCell>ТК</HeadCell>
-          <HeadCell>Группа</HeadCell>
-          <HeadCell>Категория</HeadCell>
-          <HeadCell>Подкатегория</HeadCell>
-          <HeadCell>ID и название</HeadCell>
-          <HeadCell>Единица</HeadCell>
-        </HeadRow>
-      </Head>
-      <Body>
+    <Table>
+      <TableHead>
+        <TableRow className="h-[60px] bg-[#efefef]">
+          <TableHeaderCell>[]</TableHeaderCell>
+          <TableHeaderCell>ТК</TableHeaderCell>
+          <TableHeaderCell>Группа</TableHeaderCell>
+          <TableHeaderCell>Категория</TableHeaderCell>
+          <TableHeaderCell>Подкатегория</TableHeaderCell>
+          <TableHeaderCell>ID и название</TableHeaderCell>
+          <TableHeaderCell>Единица</TableHeaderCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
         {CategoryMock.map((item) => {
           return (
-            <BodyRow key={item.id}>
-              <BodyCell>[]</BodyCell>
-              <BodyCell>
-                <TableText>{item.id}</TableText>
-              </BodyCell>
-              <BodyCell>
-                <TableText>{item.group}</TableText>
-              </BodyCell>
-              <BodyCell>
-                <TableText> {item.category}</TableText>
-              </BodyCell>
-              <BodyCell>
-                <TableText>{item.subcategory}</TableText>
-              </BodyCell>
-              <BodyCell>
-                <TableText>{item.sku}</TableText>
-              </BodyCell>
+            <TableRow key={item.id}>
+              <TableCell>[]</TableCell>
+              <TableCell>
+                <Text>{item.id}</Text>
+              </TableCell>
+              <TableCell>
+                <Text>{item.group}</Text>
+              </TableCell>
+              <TableCell>
+                <Text>{item.category}</Text>
+              </TableCell>
+              <TableCell>
+                <Text>{item.subcategory}</Text>
+              </TableCell>
+              <TableCell>
+                <Text>{item.sku}</Text>
+              </TableCell>
               {item.uom && (
-                <BodyCell>
-                  <TableText> {item.uom}</TableText>
-                </BodyCell>
+                <TableCell>
+                  <Text>{item.uom}</Text>
+                </TableCell>
               )}
-            </BodyRow>
+            </TableRow>
           )
         })}
-      </Body>
-    </BaseTable>
+      </TableBody>
+    </Table>
   )
 }
