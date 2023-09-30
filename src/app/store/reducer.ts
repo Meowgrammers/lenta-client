@@ -7,7 +7,7 @@ import {
   salesApi,
   shopsApi,
 } from '@/entities'
-import { baseApi } from '@/shared'
+import { AppState, appReducer, baseApi } from '@/shared'
 
 export interface IReducer {
   baseApi: CombinedState<Record<never, never>, 'USER_INFO', 'baseApi'>
@@ -24,6 +24,7 @@ export interface IReducer {
     'forecastApi'
   >
   shopsApi: CombinedState<Record<never, never>, 'SHOPS_DATA', 'shopsApi'>
+  app: AppState
 }
 
 export const rootReducer = combineReducers({
@@ -33,4 +34,5 @@ export const rootReducer = combineReducers({
   salesApi: salesApi.reducer,
   forecastApi: forecastApi.reducer,
   shopsApi: shopsApi.reducer,
+  app: appReducer,
 })

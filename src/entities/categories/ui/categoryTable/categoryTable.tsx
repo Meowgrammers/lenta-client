@@ -11,25 +11,45 @@ import {
 
 import { FC } from 'react'
 
-export const CategoryTable: FC = () => {
+type VirtualItem = {
+  index: number
+  offsetTop: number
+}
+
+type CategoryTableProps = {
+  items: VirtualItem[]
+  totalHeight: number
+}
+
+export const CategoryTable: FC<CategoryTableProps> = ({
+  items,
+  totalHeight,
+}) => {
   return (
-    <Table>
+    <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="h-[60px] bg-[#efefef]">
-          <TableHeaderCell>[]</TableHeaderCell>
+        <TableRow className="w-[850px] fixed z-10 h-11 bg-[#efefef]">
+          <TableHeaderCell className="w-[50px]">[]</TableHeaderCell>
           <TableHeaderCell>ТК</TableHeaderCell>
           <TableHeaderCell>Группа</TableHeaderCell>
           <TableHeaderCell>Категория</TableHeaderCell>
           <TableHeaderCell>Подкатегория</TableHeaderCell>
-          <TableHeaderCell>ID и название</TableHeaderCell>
-          <TableHeaderCell>Единица</TableHeaderCell>
+          <TableHeaderCell className="w-[100px]">ID и название</TableHeaderCell>
+          <TableHeaderCell className="w-[100px]">Единица</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
-        {CategoryMock.map((item) => {
+        {items.map((virtualItem) => {
+          const item = CategoryMock[virtualItem.index]!
           return (
-            <TableRow key={item.id}>
-              <TableCell>[]</TableCell>
+            <TableRow
+              key={item.id}
+              className="absolute top-[44px] w-[850px]"
+              style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
+            >
+              <TableCell className="w-[50px]">
+                <Text>[]</Text>
+              </TableCell>
               <TableCell>
                 <Text>{item.id}</Text>
               </TableCell>
@@ -46,7 +66,7 @@ export const CategoryTable: FC = () => {
                 <Text>{item.sku}</Text>
               </TableCell>
               {item.uom && (
-                <TableCell>
+                <TableCell className="w-[100px]">
                   <Text>{item.uom}</Text>
                 </TableCell>
               )}

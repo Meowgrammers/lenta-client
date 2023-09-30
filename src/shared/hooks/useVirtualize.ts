@@ -33,7 +33,7 @@ export const useVirtualize = (props: UseVirtualizeProps) => {
 
     const handleScroll = () => {
       const scrollTop = scrollElement.scrollTop;
-
+      
       setScrollTop(scrollTop);
     };
 
