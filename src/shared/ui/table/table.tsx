@@ -27,7 +27,7 @@ const TableRow = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <Components.TableRow
     ref={ref}
-    className={cn('h-20 border-b border-solid', className)}
+    className={cn('h-20 border-b border-solid ', className)}
     {...props}
   >
     {children}

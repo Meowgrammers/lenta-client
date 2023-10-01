@@ -1,3 +1,4 @@
+import { SalesChart } from '@/entities'
 import { TableSearch, TableSort, ToggleUnit } from '@/features'
 import { ForecastChart, ForecastTable } from '@/widgets'
 import {
@@ -34,15 +35,17 @@ export const MainPage = () => {
                 </Tab>
               </TabList>
               <TableSort />
-              <TableSearch/>
+              <TableSearch />
             </Flex>
-
             <TabPanels>
               <TabPanel>
                 <ForecastTable />
               </TabPanel>
               <TabPanel>
-                <ForecastChart />
+                <Flex className='w-full gap-2'>
+                  <ForecastChart />
+                  <SalesChart />
+                </Flex>
               </TabPanel>
             </TabPanels>
           </TabGroup>
