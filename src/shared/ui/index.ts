@@ -1,3 +1,5 @@
 export * from './table'
 export * from './logo'
 export * from './input'
+export * from './button'
+export * from './icons'

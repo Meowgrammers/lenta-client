@@ -1,9 +1,10 @@
-import styled from 'styled-components'
-
 import logo from '@/assets/icons/logo.svg'
 
-export const Logo = styled.div`
-  width: 14.9375rem;
-  height: 13rem;
-  background-image: url(${logo});
-`
+export const Logo = () => {
+  return (
+    <div
+      className="w-60 h-52 bg-cover"
+      style={{ backgroundImage: `url(${logo})` }}
+    />
+  )
+}
