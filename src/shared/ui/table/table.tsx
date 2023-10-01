@@ -6,11 +6,7 @@ const Table = React.forwardRef<
   React.ElementRef<typeof Components.Table>,
   React.ComponentPropsWithoutRef<typeof Components.Table>
 >(({ className, children, ...props }, ref) => (
-  <Components.Table
-    ref={ref}
-    className={cn('overflow-hidden w-full', className)}
-    {...props}
-  >
+  <Components.Table ref={ref} className={cn(className, 'mt-5')} {...props}>
     {children}
   </Components.Table>
 ))
@@ -43,7 +39,7 @@ const TableHeaderCell = React.forwardRef<
   <Components.TableHeaderCell
     ref={ref}
     className={cn(
-      'text-gray-700 text-base not-italic font-semibold leading-5 text-start p-3 w-[140px]',
+      'text-gray-700 text-base not-italic font-semibold leading-5 text-start p-3',
       className
     )}
     {...props}
@@ -61,7 +57,7 @@ const TableCell = React.forwardRef<
   <Components.TableCell
     ref={ref}
     className={cn(
-      'text-start align-top p-0 px-3 py-[1.1875rem] max-w-[140px] w-[140px]',
+      'min-w-[3.125rem] max-w-[8.75rem] text-start align-top px-3 py-[1.1875rem]',
       className
     )}
     {...props}
