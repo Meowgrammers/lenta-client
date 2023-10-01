@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /** @see https://github.com/reduxjs/redux/blob/master/src/compose.ts */
 
-type Func<T extends any[], R> = (...a: T) => R;
+type Func<T extends any[], R> = (...a: T) => R
 
 /**
  * Composes single-argument functions from right to left. The rightmost
@@ -13,22 +13,22 @@ type Func<T extends any[], R> = (...a: T) => R;
  *   to left. For example, `compose(f, g, h)` is identical to doing
  *   `(...args) => f(g(h(...args)))`.
  */
-function compose(): <R>(a: R) => R;
+function compose(): <R>(a: R) => R
 
-function compose<F extends (...args: any[]) => void>(f: F): F;
+function compose<F extends (...args: any[]) => void>(f: F): F
 
 /* two functions */
 function compose<A, T extends any[], R>(
   f1: (a: A) => R,
   f2: Func<T, A>
-): Func<T, R>;
+): Func<T, R>
 
 /* three functions */
 function compose<A, B, T extends any[], R>(
   f1: (b: B) => R,
   f2: (a: A) => B,
   f3: Func<T, A>
-): Func<T, R>;
+): Func<T, R>
 
 /* four functions */
 function compose<A, B, C, T extends any[], R>(
@@ -36,33 +36,33 @@ function compose<A, B, C, T extends any[], R>(
   f2: (b: B) => C,
   f3: (a: A) => B,
   f4: Func<T, A>
-): Func<T, R>;
+): Func<T, R>
 
 /* rest */
 function compose<R>(
   f1: (a: any) => R,
   ...funcs: ((...args: any[]) => void)[]
-): (...args: any[]) => R;
+): (...args: any[]) => R
 
 function compose<R>(
   ...funcs: ((...args: any[]) => void)[]
-): (...args: any[]) => R;
+): (...args: any[]) => R
 
 function compose(...funcs: ((...args: any[]) => void)[]) {
   if (funcs.length === 0) {
     // infer the argument type so it is usable in inference down the line
-    return <T>(arg: T) => arg;
+    return <T>(arg: T) => arg
   }
 
   if (funcs.length === 1) {
-    return funcs[0];
+    return funcs[0]
   }
 
   return funcs.reduce(
     (a, b) =>
       (...args: any) =>
         a(b(...args))
-  );
+  )
 }
 
-export default compose;
+export default compose
