@@ -7,29 +7,51 @@ import {
   Text,
   TableHead,
   TableBody,
+  useAppSelector,
+  sortByField,
 } from '@/shared'
 
 import { FC } from 'react'
 
-export const CategoryTable: FC = () => {
+type VirtualItem = {
+  index: number
+  offsetTop: number
+}
+
+type CategoryTableProps = {
+  items: VirtualItem[]
+  totalHeight: number
+}
+
+export const CategoryTable: FC<CategoryTableProps> = ({
+  items,
+  totalHeight,
+}) => {
+  const check = useAppSelector((state) => state.app.check)
+  const sort = useAppSelector((state) => state.categories.sort)
+  const sortingMock = CategoryMock.sort(sortByField(sort))
+
   return (
-    <Table>
+    <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="h-[60px] bg-[#efefef]">
-          <TableHeaderCell>[]</TableHeaderCell>
+        <TableRow className="z-10 h-[44px] bg-[#efefef]">
           <TableHeaderCell>ТК</TableHeaderCell>
           <TableHeaderCell>Группа</TableHeaderCell>
           <TableHeaderCell>Категория</TableHeaderCell>
           <TableHeaderCell>Подкатегория</TableHeaderCell>
           <TableHeaderCell>ID и название</TableHeaderCell>
-          <TableHeaderCell>Единица</TableHeaderCell>
+          <TableHeaderCell className="w-[56px]">Ед.</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
-        {CategoryMock.map((item) => {
+        {items.map((virtualItem) => {
+          const item = sortingMock[virtualItem.index]!
           return (
-            <TableRow key={item.id}>
-              <TableCell>[]</TableCell>
+            <TableRow
+              key={item.id}
+              className="absolute top-[44px] "
+              style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
+            >
               <TableCell>
                 <Text>{item.id}</Text>
               </TableCell>
@@ -45,11 +67,9 @@ export const CategoryTable: FC = () => {
               <TableCell>
                 <Text>{item.sku}</Text>
               </TableCell>
-              {item.uom && (
-                <TableCell>
-                  <Text>{item.uom}</Text>
-                </TableCell>
-              )}
+              <TableCell className="w-[56px]">
+                <Text>{check ? '-' : item.uom}</Text>
+              </TableCell>
             </TableRow>
           )
         })}
