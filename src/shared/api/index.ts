@@ -1,1 +1,1 @@
-export { baseApi, baseQuery } from './baseApi';
+export { baseApi, baseQuery } from './baseApi'

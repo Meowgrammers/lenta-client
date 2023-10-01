@@ -1,7 +1,9 @@
-import { MAIN_ROUTES } from './routes/routes';
+import { MAIN_ROUTES } from './routes/routes'
+import '@tremor/react'
+import { Route, Routes } from 'react-router-dom'
+import { withProviders } from './providers'
 
-import { Route, Routes } from 'react-router-dom';
-import { withProviders } from './providers';
+import './styles/global-styles.css'
 
 const App = () => {
   return (
@@ -10,7 +12,7 @@ const App = () => {
         <Route path={path} element={main()} key={path} />
       ))}
     </Routes>
-  );
-};
+  )
+}
 
-export default withProviders(App);
+export default withProviders(App)

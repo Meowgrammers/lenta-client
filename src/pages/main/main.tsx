@@ -1,3 +1,5 @@
+import { CategoryTable } from '@/entities'
+
 export const MainPage = () => {
-  return <div>Hello</div>
+  return <CategoryTable />
 }
