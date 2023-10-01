@@ -15,7 +15,7 @@ export const ForecastTable = () => {
 
   return (
     <Card
-      className="mt-20 flex w-[1700px] p-0 ring-0 shadow-none max-h-[800px] overflow-auto"
+      className="mt-20 flex w-[1520px] p-0 ring-0 shadow-none max-h-[800px] overflow-auto"
       ref={scrollElementRef}
     >
       <CategoryTable items={virtualItems} totalHeight={totalHeight} />

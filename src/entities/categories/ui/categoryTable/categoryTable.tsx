@@ -9,7 +9,6 @@ import {
   TableBody,
   useAppSelector,
   sortByField,
-  Checkbox,
 } from '@/shared'
 
 import { FC } from 'react'
@@ -36,15 +35,12 @@ export const CategoryTable: FC<CategoryTableProps> = ({
     <Table style={{ height: totalHeight }}>
       <TableHead>
         <TableRow className="z-10 h-[44px] bg-[#efefef]">
-          <TableHeaderCell className="w-[50px]">
-            <Checkbox />
-          </TableHeaderCell>
           <TableHeaderCell>ТК</TableHeaderCell>
           <TableHeaderCell>Группа</TableHeaderCell>
           <TableHeaderCell>Категория</TableHeaderCell>
           <TableHeaderCell>Подкатегория</TableHeaderCell>
-          <TableHeaderCell className="w-[100px]">ID и название</TableHeaderCell>
-          <TableHeaderCell className="w-[100px]">Единица</TableHeaderCell>
+          <TableHeaderCell>ID и название</TableHeaderCell>
+          <TableHeaderCell className="w-[56px]">Ед.</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -56,9 +52,6 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               className="absolute top-[44px] "
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
-              <TableCell className="w-[50px]">
-                <Checkbox />
-              </TableCell>
               <TableCell>
                 <Text>{item.id}</Text>
               </TableCell>
@@ -74,7 +67,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               <TableCell>
                 <Text>{item.sku}</Text>
               </TableCell>
-              <TableCell className="w-[100px]">
+              <TableCell className="w-[56px]">
                 <Text>{check ? '-' : item.uom}</Text>
               </TableCell>
             </TableRow>
