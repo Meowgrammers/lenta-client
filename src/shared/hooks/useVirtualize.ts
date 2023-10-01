@@ -1,16 +1,17 @@
 /* eslint-disable  @typescript-eslint/no-shadow */
-import { useEffect, useLayoutEffect, useMemo, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 
 interface UseVirtualizeProps {
-  itemsCount: number
-  itemHeight: number
-  listHeight: number
-  overscan?: number
-  scrollingDelay?: number
-  getScrollElement: () => HTMLElement | null
+  itemsCount: number;
+  itemHeight: number;
+  listHeight: number;
+  overscan?: number;
+  scrollingDelay?: number;
+  getScrollElement: () => HTMLElement | null;
 }
 
 export const useVirtualize = (props: UseVirtualizeProps) => {
+
   const {
     itemHeight,
     itemsCount,
@@ -18,84 +19,84 @@ export const useVirtualize = (props: UseVirtualizeProps) => {
     overscan = 3,
     listHeight,
     getScrollElement,
-  } = props
+  } = props;
 
-  const [scrollTop, setScrollTop] = useState(0)
-  const [isScrolling, setIsScrolling] = useState(false)
+  const [scrollTop, setScrollTop] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   useLayoutEffect(() => {
-    const scrollElement = getScrollElement()
+    const scrollElement = getScrollElement();
 
     if (!scrollElement) {
-      return
+      return;
     }
 
     const handleScroll = () => {
-      const scrollTop = scrollElement.scrollTop
+      const scrollTop = scrollElement.scrollTop;
+      
+      setScrollTop(scrollTop);
+    };
 
-      setScrollTop(scrollTop)
-    }
+    handleScroll();
 
-    handleScroll()
+    scrollElement.addEventListener('scroll', handleScroll);
 
-    scrollElement.addEventListener('scroll', handleScroll)
-
-    return () => scrollElement.removeEventListener('scroll', handleScroll)
-  }, [getScrollElement])
+    return () => scrollElement.removeEventListener('scroll', handleScroll);
+  }, [getScrollElement]);
 
   useEffect(() => {
-    const scrollElement = getScrollElement()
+    const scrollElement = getScrollElement();
 
     if (!scrollElement) {
-      return
+      return;
     }
 
-    let timeoutId: number | null = null
+    let timeoutId: number | null = null;
 
     const handleScroll = () => {
-      setIsScrolling(true)
+      setIsScrolling(true);
 
       if (typeof timeoutId === 'number') {
-        clearTimeout(timeoutId)
+        clearTimeout(timeoutId);
       }
 
       timeoutId = window.setTimeout(() => {
-        setIsScrolling(false)
-      }, scrollingDelay)
-    }
+        setIsScrolling(false);
+      }, scrollingDelay);
+    };
 
-    scrollElement.addEventListener('scroll', handleScroll)
+    scrollElement.addEventListener('scroll', handleScroll);
 
     return () => {
       if (typeof timeoutId === 'number') {
-        clearTimeout(timeoutId)
+        clearTimeout(timeoutId);
       }
-      scrollElement.removeEventListener('scroll', handleScroll)
-    }
-  }, [getScrollElement])
+      scrollElement.removeEventListener('scroll', handleScroll);
+    };
+  }, [getScrollElement]);
 
   const { virtualItems, startIndex, endIndex } = useMemo(() => {
-    const rangeStart = scrollTop
-    const rangeEnd = scrollTop + listHeight
+    const rangeStart = scrollTop;
+    const rangeEnd = scrollTop + listHeight;
 
-    let startIndex = Math.floor(rangeStart / itemHeight)
-    let endIndex = Math.ceil(rangeEnd / itemHeight)
+    let startIndex = Math.floor(rangeStart / itemHeight);
+    let endIndex = Math.ceil(rangeEnd / itemHeight);
 
-    startIndex = Math.max(0, startIndex - overscan)
-    endIndex = Math.min(itemsCount - 1, endIndex + overscan)
+    startIndex = Math.max(0, startIndex - overscan);
+    endIndex = Math.min(itemsCount - 1, endIndex + overscan);
 
-    const virtualItems = []
+    const virtualItems = [];
 
     for (let index = startIndex; index <= endIndex; index++) {
       virtualItems.push({
         index,
         offsetTop: index * itemHeight,
-      })
+      });
     }
-    return { virtualItems, startIndex, endIndex }
-  }, [scrollTop, listHeight, itemsCount])
+    return { virtualItems, startIndex, endIndex };
+  }, [scrollTop, listHeight, itemsCount]);
 
-  const totalHeight = itemHeight * itemsCount
+  const totalHeight = itemHeight * itemsCount;
 
   return {
     virtualItems,
@@ -103,5 +104,5 @@ export const useVirtualize = (props: UseVirtualizeProps) => {
     startIndex,
     endIndex,
     isScrolling,
-  }
-}
+  };
+};
