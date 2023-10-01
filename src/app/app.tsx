@@ -5,10 +5,6 @@ import { withProviders } from './providers'
 
 import './styles/global-styles.css'
 
-import './styles/style.css'
-
-import './styles/style.css'
-
 const App = () => {
   return (
     <Routes>
