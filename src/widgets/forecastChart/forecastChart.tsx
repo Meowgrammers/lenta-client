@@ -1,14 +1,13 @@
-import { CategoryTable } from '@/entities'
-
+import { CategoryTable, SalesChart } from '@/entities'
 import { CategoryMock, useVirtualize } from '@/shared'
-import { Card } from '@tremor/react'
+import { Card, Flex } from '@tremor/react'
 import { useCallback, useRef } from 'react'
 
 export const ForecastChart = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
 
   const { virtualItems, totalHeight } = useVirtualize({
-    itemHeight: 80,
+    itemHeight: 34,
     itemsCount: CategoryMock.length,
     overscan: 2,
     listHeight: 800,
@@ -16,11 +15,14 @@ export const ForecastChart = () => {
   })
 
   return (
-    <Card
-      className="mt-20 flex w-[756px] p-0 ring-0 shadow-none max-h-[800px] overflow-auto"
-      ref={scrollElementRef}
-    >
-      <CategoryTable items={virtualItems} totalHeight={totalHeight} />
-    </Card>
+    <Flex className="w-full items-start gap-5">
+      <Card
+        className="flex max-h-[800px] overflow-auto p-0 shadow-none ring-0"
+        ref={scrollElementRef}
+      >
+        <CategoryTable items={virtualItems} totalHeight={totalHeight} />
+      </Card>
+      <SalesChart />
+    </Flex>
   )
 }

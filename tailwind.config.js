@@ -15,6 +15,11 @@ module.exports = {
     extend: {
       colors: {
         blueMain: '#003D96',
+        'color-back-secondary': 'var(--back-secondary)',
+        'color-back-accent-for-table': 'var(--back-accent-for-table)',
+        'color-back-primary-on-blue': 'var(--back-primary-on-blue)',
+        'color-stroke-input-normal': 'var(--stroke-input-normal)',
+        'color-text-primary-on-dark': 'var(--text-primary-on-dark)',
         // light mode
         tremor: {
           brand: {

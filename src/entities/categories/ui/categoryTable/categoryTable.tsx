@@ -43,13 +43,13 @@ export const CategoryTable: FC<CategoryTableProps> = ({
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="z-10 h-[44px] bg-[#efefef]">
-          <TableHeaderCell>ТК</TableHeaderCell>
-          <TableHeaderCell>Группа</TableHeaderCell>
-          <TableHeaderCell>Категория</TableHeaderCell>
-          <TableHeaderCell>Подкатегория</TableHeaderCell>
-          <TableHeaderCell>ID и название</TableHeaderCell>
-          <TableHeaderCell className="w-[56px]">Ед.</TableHeaderCell>
+        <TableRow className="absolute bg-[#003d96] pl-5">
+          <TableHeaderCell className="w-[100px]">ТК</TableHeaderCell>
+          <TableHeaderCell className="w-[100px]">Группа</TableHeaderCell>
+          <TableHeaderCell className="w-[100px]">Категория</TableHeaderCell>
+          <TableHeaderCell className="w-[116px]">Подкатегория</TableHeaderCell>
+          <TableHeaderCell className="w-[100px]">Товар</TableHeaderCell>
+          <TableHeaderCell className="w-[48px]">Ед.</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -61,27 +61,27 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               key={item.id}
               className={
                 id === item.id
-                  ? 'absolute top-[44px] cursor-pointer bg-[#DDD]'
-                  : 'absolute top-[44px] cursor-pointer'
+                  ? 'absolute top-[34px] cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5'
+                  : 'absolute top-[34px] cursor-pointer pl-5'
               }
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
-              <TableCell>
+              <TableCell className="w-[100px]">
                 <Text>{item.id}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="w-[100px]">
                 <Text>{item.group}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="w-[100px]">
                 <Text>{item.category}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="w-[116px]">
                 <Text>{item.subcategory}</Text>
               </TableCell>
-              <TableCell>
+              <TableCell className="w-[100px]">
                 <Text>{item.sku}</Text>
               </TableCell>
-              <TableCell className="w-[56px]">
+              <TableCell className="w-[48px]">
                 <Text>{check ? '-' : item.uom}</Text>
               </TableCell>
             </TableRow>

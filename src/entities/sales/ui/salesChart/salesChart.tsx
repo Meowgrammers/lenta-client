@@ -8,7 +8,7 @@ const SalesChart = () => {
   const chartCategory = check ? 'sales_rub' : 'sales_units'
 
   return (
-    <Card className="w-6/12">
+    <Card className="min-w-[870px]">
       <Title>Прогнозируемое значение, {check ? 'руб.' : 'шт'}</Title>
       {data && (
         <BarChart
@@ -17,7 +17,7 @@ const SalesChart = () => {
           index="date"
           categories={[chartCategory]}
           colors={['blue']}
-          yAxisWidth={15}
+          yAxisWidth={35}
           showAnimation={true}
         />
       )}

@@ -9,5 +9,7 @@
   "jsxSingleQuote": false,
   "arrowParens": "always",
   "proseWrap": "never",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "embeddedLanguageFormatting": "auto",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

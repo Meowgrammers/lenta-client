@@ -28,21 +28,21 @@ export const SalesTable: FC<SalesTableProps> = ({ items, totalHeight }) => {
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="absolute h-[44.5px] bg-[#efefef] w-full overflow-hidden">
-          <TableHeaderCell className="w-[92px]">19.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">21.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">22.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">23.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">24.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">25.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">26.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">27.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">28.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">29.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">30.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">31.07.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">1.08.23</TableHeaderCell>
-          <TableHeaderCell className="w-[92px]">2.08.23</TableHeaderCell>
+        <TableRow className="absolute  overflow-hidden bg-[#003d96]">
+          <TableHeaderCell className="w-[80px]">19.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">21.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">22.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">23.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">24.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">25.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">26.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">27.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">28.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">29.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">30.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">31.07.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">1.08.23</TableHeaderCell>
+          <TableHeaderCell className="w-[80px]">2.08.23</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -52,12 +52,14 @@ export const SalesTable: FC<SalesTableProps> = ({ items, totalHeight }) => {
           return (
             <TableRow
               key={virtualItem.index}
-              className="absolute top-[44px] w-full"
+              className="absolute top-[34px] border-l border-solid border-l-[rgba(77,77,77,0.24)]"
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
               {fact.map((fact_item, index) => (
-                <TableCell className="w-[92px]" key={index}>
-                  <Text>{check ? fact_item.sales_rub : fact_item.sales_units}</Text>
+                <TableCell className="w-[80px]" key={index}>
+                  <Text>
+                    {check ? fact_item.sales_rub : fact_item.sales_units}
+                  </Text>
                 </TableCell>
               ))}
             </TableRow>
