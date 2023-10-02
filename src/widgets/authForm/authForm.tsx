@@ -14,7 +14,7 @@ export const AuthForm: FC = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen text-secondary bg-blueMain">
+    <div className="text-secondary flex h-screen w-full flex-col items-center justify-center bg-blueMain">
       <div className="flex flex-col items-center gap-[80px]">
         <Logo />
         <form
@@ -38,19 +38,19 @@ export const AuthForm: FC = () => {
             icon={ArrowIcon}
             iconPosition="right"
             type="submit"
-            className="!rounded-full p-[13px] bg-white mt-[28px] hover:bg-white mx-auto hover:px-[20px]"
+            className="mx-auto mt-[28px] !rounded-full bg-white p-[13px] hover:bg-white hover:px-[20px]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             {isHovered && (
-              <span className="flex mr-[6px] text-[#2c2a29] text-lg leading-6">
+              <span className="mr-[6px] flex text-lg leading-6 text-[#2c2a29]">
                 Войти
               </span>
             )}
           </Button>
           <Button
             variant="light"
-            className="mt-[40px] mx-auto text-white underline font-semibold text-sm/[16px] hover:text-[#d7dcf1] "
+            className="mx-auto mt-[40px] text-sm/[16px] font-semibold text-white underline hover:text-[#d7dcf1] "
           >
             Забыли пароль?
           </Button>

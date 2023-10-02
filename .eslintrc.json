@@ -12,9 +12,11 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:import/recommended",
+        "plugin:tailwindcss/recommended",
         "prettier"
       ],
       "rules": {
+        "prettier/prettier": "error",
         "react/prop-types": "warn",
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/no-explicit-any": "warn",

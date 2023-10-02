@@ -24,14 +24,14 @@ export const Input = forwardRef<
         type={isPasswordVisible ? 'text' : type}
         className={cn(
           className,
-          'w-[359px] h-10 rounded-lg border border-gray-200 bg-white input_text text-gray-500 text-sm leading-[1.125rem]'
+          'input_text h-10 w-[359px] rounded-lg border border-gray-200 bg-white text-sm leading-[1.125rem] text-gray-500'
         )}
         {...props}
       />
       {type === 'password' && (
         <button
           type="button"
-          className="absolute top-[36px] right-[9px] text-gray-400"
+          className="absolute right-[9px] top-[36px] text-gray-400"
           onClick={togglePasswordVisibility}
         >
           {isPasswordVisible ? (
