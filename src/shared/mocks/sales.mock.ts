@@ -1,5 +1,125 @@
 export const SalesMock = [
   {
+    unique_id: 1,
+    id: 'c81e728d9d4c2f636f067f89cc14862c',
+    sku: 'c7b711619071c92bef604c7ad68380dd',
+    fact: [
+      {
+        date: '2022-10-19',
+        sales_type: 1,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-20',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-21',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-22',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-23',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-24',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-25',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-26',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-27',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-28',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-29',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-30',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-10-31',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+      {
+        date: '2022-11-01',
+        sales_type: 1,
+        sales_units: 5.0,
+        sales_units_promo: 5.0,
+        sales_rub: 825.0,
+        sales_rub_promo: 825.0,
+      },
+    ],
+  },
+  {
+    unique_id: 2,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -118,6 +238,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 3,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -236,6 +357,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 4,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -354,6 +476,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 5,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -472,6 +595,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 6,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -590,6 +714,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 7,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -708,6 +833,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 8,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -826,6 +952,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 9,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -944,6 +1071,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 10,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1062,6 +1190,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 11,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1180,6 +1309,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 12,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1298,6 +1428,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 13,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1416,6 +1547,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 14,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1534,6 +1666,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 15,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1652,6 +1785,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 16,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1770,6 +1904,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 17,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -1888,6 +2023,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 18,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -2006,6 +2142,7 @@ export const SalesMock = [
     ],
   },
   {
+    unique_id: 19,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
@@ -2124,124 +2261,7 @@ export const SalesMock = [
     ],
   },
   {
-    id: 'c81e728d9d4c2f636f067f89cc14862c',
-    sku: 'c7b711619071c92bef604c7ad68380dd',
-    fact: [
-      {
-        date: '2022-10-19',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-20',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-21',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-22',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-23',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-24',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-25',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-26',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-27',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-28',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-29',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-30',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-10-31',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-      {
-        date: '2022-11-01',
-        sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
-        sales_rub_promo: 825.0,
-      },
-    ],
-  },
-  {
+    unique_id: 20,
     id: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [

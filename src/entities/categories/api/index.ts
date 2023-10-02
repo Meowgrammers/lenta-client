@@ -5,4 +5,5 @@ export {
   categoriesReducer,
   setSearch,
   setSort,
+  setSelectId,
 } from './categoriesSlice'

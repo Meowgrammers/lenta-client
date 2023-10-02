@@ -6,7 +6,7 @@ import { useCallback, useRef } from 'react'
 export const ForecastTable = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
   const { virtualItems, totalHeight } = useVirtualize({
-    itemHeight: 80,
+    itemHeight: 34,
     itemsCount: CategoryMock.length,
     overscan: 2,
     listHeight: 800,
@@ -15,7 +15,7 @@ export const ForecastTable = () => {
 
   return (
     <Card
-      className="mt-20 flex w-[1520px] p-0 ring-0 shadow-none max-h-[800px] overflow-auto"
+      className="flex max-h-[800px]  overflow-auto p-0 shadow-none ring-0"
       ref={scrollElementRef}
     >
       <CategoryTable items={virtualItems} totalHeight={totalHeight} />
