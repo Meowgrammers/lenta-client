@@ -82,7 +82,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
                 <Text>{item.sku}</Text>
               </TableCell>
               <TableCell className="w-[48px]">
-                <Text>{check ? '-' : item.uom}</Text>
+                <Text>{check ? 'руб' : item.uom}</Text>
               </TableCell>
             </TableRow>
           )

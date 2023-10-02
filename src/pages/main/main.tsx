@@ -1,6 +1,11 @@
 import { TableSearch, TableSort, ToggleUnit } from '@/features'
 import { Button } from '@/shared'
-import { ForecastChart, ForecastTable } from '@/widgets'
+import {
+  ForecastChart,
+  ForecastTable,
+  StatisticChart,
+  StatisticTable,
+} from '@/widgets'
 import {
   Flex,
   Tab,
@@ -12,8 +17,8 @@ import {
 
 export const MainPage = () => {
   return (
-    <TabGroup className="min-w-[1478px]">
-      <TabList className="mt-8 w-full" variant="line">
+    <TabGroup className="min-w-[1478px] ">
+      <TabList className="mt-8 w-full pl-[30px]" variant="line">
         <Tab className="border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] hover:border-b-[#003d96] hover:text-[#003d96] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
           Прогноз
         </Tab>
@@ -21,12 +26,16 @@ export const MainPage = () => {
           Статистика
         </Tab>
       </TabList>
-      <ToggleUnit />
       <TabPanels>
         <TabPanel>
-          <TabGroup>
+          <TabGroup className="flex flex-col gap-7 p-[30px]">
+            <ToggleUnit />
             <Flex alignItems="center" justifyContent="start" className="gap-5">
-              <Flex alignItems="center" justifyContent="start">
+              <Flex
+                alignItems="center"
+                justifyContent="start"
+                className="gap-5"
+              >
                 <TabList
                   variant="solid"
                   className="rounded-lg bg-[#EAEBED] p-1 "
@@ -54,6 +63,10 @@ export const MainPage = () => {
               </TabPanel>
             </TabPanels>
           </TabGroup>
+        </TabPanel>
+        <TabPanel>
+          <StatisticChart />
+          <StatisticTable />
         </TabPanel>
       </TabPanels>
     </TabGroup>

@@ -14,7 +14,7 @@ const TableSort = () => {
     <Select
       onValueChange={(value) => changeSort(value)}
       defaultValue={sort}
-      className="mx-3 w-[353px] py-2"
+      className="w-[353px]"
     >
       <SelectItem value="category" className="cursor-pointer hover:bg-gray-100">
         Сортировать по категории
