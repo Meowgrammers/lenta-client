@@ -11,7 +11,6 @@ export const SalesMock = [
         sales_units_promo: 1.0,
         sales_rub: 10000.0,
         sales_rub_promo: 825.0,
-        wape: 1.0,
       },
       {
         date: '2022-10-20',

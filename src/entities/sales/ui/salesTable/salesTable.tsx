@@ -56,7 +56,12 @@ export const SalesTable: FC<SalesTableProps> = ({ items, totalHeight }) => {
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
               {fact.map((fact_item, index) => (
-                <TableCell className="w-[80px]" key={index}>
+                <TableCell
+                  className={`w-[80px]  ${
+                    index % 2 === 1 && 'bg-[rgba(0,61,150,0.08)]'
+                  }`}
+                  key={index}
+                >
                   <Text>
                     {check ? fact_item.sales_rub : fact_item.sales_units}
                   </Text>

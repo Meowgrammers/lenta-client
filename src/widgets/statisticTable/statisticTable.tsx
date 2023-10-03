@@ -1,4 +1,5 @@
-import { CategoryTable, SalesTable } from '@/entities'
+import { CategoryTable } from '@/entities'
+import { QualityTable } from '@/entities/forecast/ui/qualityTable/qualityTable'
 import { TableSearch, TableSort } from '@/features'
 import { CategoryMock, useVirtualize } from '@/shared'
 import { Button, Card, Flex } from '@tremor/react'
@@ -24,11 +25,15 @@ export const StatisticTable = () => {
         </Flex>
       </Flex>
       <Card
-        className="flex max-h-[430px] overflow-auto rounded-none p-0 shadow-none ring-0"
+        className="flex max-h-[430px] w-full overflow-auto rounded-none p-0 pt-[34px] shadow-none ring-0"
         ref={scrollElementRef}
       >
-        <CategoryTable items={virtualItems} totalHeight={totalHeight} />
-        <SalesTable items={virtualItems} totalHeight={totalHeight} />
+        <CategoryTable
+          items={virtualItems}
+          totalHeight={totalHeight}
+          doubleTable={true}
+        />
+        <QualityTable items={virtualItems} totalHeight={totalHeight} />
       </Card>
     </Card>
   )

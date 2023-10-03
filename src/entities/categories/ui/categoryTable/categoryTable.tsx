@@ -23,15 +23,20 @@ type VirtualItem = {
 type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
+  doubleTable?: boolean
 }
 
 export const CategoryTable: FC<CategoryTableProps> = ({
   items,
   totalHeight,
+  doubleTable,
 }) => {
   const check = useAppSelector((state) => state.app.check)
   const sort = useAppSelector((state) => state.categories.sort)
   const id = useAppSelector((state) => state.categories.selectId)
+
+  const top = doubleTable ? 'top-[68px]' : 'top-[34px]'
+  const height = doubleTable && 'h-[68px]'
 
   const dispatch = useAppDispatch()
   const sortingMock = CategoryMock.sort(sortByField(sort))
@@ -43,7 +48,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
   return (
     <Table style={{ height: totalHeight }}>
       <TableHead>
-        <TableRow className="absolute bg-[#003d96] pl-5">
+        <TableRow className={`absolute ${height} top-0 bg-[#003d96] pl-5`}>
           <TableHeaderCell className="w-[100px]">ТК</TableHeaderCell>
           <TableHeaderCell className="w-[100px]">Группа</TableHeaderCell>
           <TableHeaderCell className="w-[100px]">Категория</TableHeaderCell>
@@ -61,8 +66,8 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               key={item.id}
               className={
                 id === item.id
-                  ? 'absolute top-[34px] cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5'
-                  : 'absolute top-[34px] cursor-pointer pl-5'
+                  ? `absolute ${top} cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5`
+                  : `absolute ${top} cursor-pointer pl-5`
               }
               style={{ transform: `translateY(${virtualItem.offsetTop}px)` }}
             >
