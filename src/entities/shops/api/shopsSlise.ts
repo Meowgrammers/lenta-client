@@ -25,11 +25,18 @@ const shopsSlice = createSlice({
         (item) => item !== action.payload
       )
     },
+    resetSelectedItems(state) {
+      state.selectedItems = []
+    },
   },
 })
 
 const shopsReducer = shopsSlice.reducer
 
-export const { setSearchTerm, addSelectedItem, removeSelectedItem } =
-  shopsSlice.actions
+export const {
+  setSearchTerm,
+  addSelectedItem,
+  removeSelectedItem,
+  resetSelectedItems,
+} = shopsSlice.actions
 export { type ShopsState, shopsSlice, shopsReducer }
