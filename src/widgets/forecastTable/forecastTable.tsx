@@ -15,7 +15,7 @@ export const ForecastTable = () => {
 
   return (
     <Card
-      className="flex max-h-[800px]  overflow-auto p-0 shadow-none ring-0"
+      className="flex max-h-[800px] overflow-auto rounded-none p-0 shadow-none ring-0 "
       ref={scrollElementRef}
     >
       <CategoryTable items={virtualItems} totalHeight={totalHeight} />
