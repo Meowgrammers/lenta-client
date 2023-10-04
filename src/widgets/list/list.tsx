@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 
-import { Category, Checkbox } from '@/features'
-
+import { Checkbox } from '@/features'
+import { Category } from '@/widgets'
 import { status, CollapseIcon } from '@/shared'
 
 interface ListProps {
@@ -28,7 +28,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
 
   return (
     <div className="flex flex-col pl-3">
-      <ul className="text-profile-title w-full font-semibold">
+      <ul className="w-full text-profile-title font-semibold">
         {items.map((item) => {
           let childList = null
           if (Array.isArray(item.items)) {
@@ -61,7 +61,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                     <CollapseIcon
                       className={`absolute right-0 h-5 w-5 ${
                         openItems[item.id] ? 'rotate-180' : ''
-                      } hover:`}
+                      }`}
                       fill="white"
                     />
                   </>
