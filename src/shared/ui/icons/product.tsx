@@ -1,6 +1,8 @@
 import { FC } from 'react'
 
-export const ProductIcon: FC = () => {
+import { IconType } from './type'
+
+export const ProductIcon: FC<IconType> = ({ className }) => {
   return (
     <svg
       width="24"
@@ -8,6 +10,7 @@ export const ProductIcon: FC = () => {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g id="list_alt">
         <path
