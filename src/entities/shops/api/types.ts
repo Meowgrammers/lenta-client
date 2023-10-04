@@ -1,5 +1,5 @@
 type ShopResponse = {
-  id: number
+  id: string
   store?: string
   city: string
   divizion: string

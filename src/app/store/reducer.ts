@@ -6,6 +6,7 @@ import {
   authApi,
   categoriesApi,
   categoriesReducer,
+  shopsReducer,
   forecastApi,
   forecastReducer,
   salesApi,
@@ -41,6 +42,7 @@ export const rootReducer = combineReducers({
   forecastApi: forecastApi.reducer,
   shopsApi: shopsApi.reducer,
   app: appReducer,
+  shops: shopsReducer,
   categories: categoriesReducer,
   forecast: forecastReducer,
 })
