@@ -61,7 +61,9 @@ export const initialCategories: Category[] = [
 ]
 
 export const ListMenu: FC = () => {
-  const [selectAllChecked, setSelectAllChecked] = useState(false)
+  const [selectAllChecked, setSelectAllChecked] = useState<boolean | null>(
+    false
+  )
   const [items, setItems] = useState<Category[]>(initialCategories)
 
   const calculateSelectAllState = () => {
@@ -132,6 +134,17 @@ export const ListMenu: FC = () => {
   const compute = (checkboxId: string, newStatus: number) => {
     traverse(items, checkboxId, newStatus)
     setItems([...items])
+
+    const allChecked = items.every((item) => item.status === status.checked)
+    const allUnchecked = items.every((item) => item.status === status.unchecked)
+
+    if (allChecked) {
+      setSelectAllChecked(true)
+    } else if (allUnchecked) {
+      setSelectAllChecked(false)
+    } else {
+      setSelectAllChecked(null)
+    }
   }
 
   const handleSelectAllChange = () => {
