@@ -1,8 +1,8 @@
 import { FC, useState } from 'react'
 
-import { status } from '@/shared'
-
-import { List, AllCheckbox } from '@/features'
+import { status, Button } from '@/shared'
+import { AllCheckbox } from '@/features'
+import { List } from '@/widgets'
 
 export interface Category {
   id: string
@@ -76,12 +76,12 @@ export const ListMenu: FC = () => {
       }
     })
 
-    if (indeterminateCount > 0) {
-      return null // Хотя бы один элемент имеет состояние indeterminate
+    if (checkedCount === 0 && indeterminateCount === 0) {
+      return false
     } else if (checkedCount === items.length) {
-      return true // Все элементы отмечены
+      return true
     } else {
-      return false // Ни один элемент не отмечен
+      return null
     }
   }
 
@@ -136,20 +136,28 @@ export const ListMenu: FC = () => {
 
   const handleSelectAllChange = () => {
     const newStatus = selectAllChecked ? status.unchecked : status.checked
-    setSelectAllChecked(!selectAllChecked) // Инверуем состояние "Выбрать все"
-    // Проходим по всем элементам и устанавливаем им новый статус
+    setSelectAllChecked(!selectAllChecked)
     items.forEach((item) => {
       traverse(item, item.id, newStatus)
     })
-    // Обновляем состояние списка элементов
     setItems([...items])
   }
 
   const selectAllState = calculateSelectAllState()
 
+  const handleResetChecked = () => {
+    items.forEach((item) => {
+      if (item.status === status.checked || status.indeterminate) {
+        traverse(item, item.id, status.unchecked)
+      }
+    })
+    setItems([...items])
+    setSelectAllChecked(false)
+  }
+
   return (
     <>
-      <div className=" mb-4 flex gap-1 text-profile-title font-semibold">
+      <div className="mb-4 flex items-center gap-1 text-profile-title font-semibold">
         <AllCheckbox
           checked={selectAllChecked}
           indeterminate={selectAllState === null}
@@ -158,6 +166,13 @@ export const ListMenu: FC = () => {
         Выбрать все
       </div>
       <List items={items} compute={compute} />
+      <Button
+        onClick={handleResetChecked}
+        className="mt-6 h-10 w-full border-white text-white hover:bg-white/[0.16] hover:text-white active:bg-color-back-primary-on-blue"
+        variant="secondary"
+      >
+        Сбросить
+      </Button>
     </>
   )
 }
