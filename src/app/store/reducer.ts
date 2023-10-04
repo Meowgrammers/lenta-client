@@ -2,11 +2,13 @@ import { combineReducers } from '@reduxjs/toolkit'
 import { CombinedState } from '@reduxjs/toolkit/dist/query/core/apiState'
 import {
   CategoriesState,
+  ForecastState,
   authApi,
   categoriesApi,
   categoriesReducer,
   shopsReducer,
   forecastApi,
+  forecastReducer,
   salesApi,
   shopsApi,
 } from '@/entities'
@@ -29,6 +31,7 @@ export interface IReducer {
   shopsApi: CombinedState<Record<never, never>, 'SHOPS_DATA', 'shopsApi'>
   app: AppState
   categories: CategoriesState
+  forecast: ForecastState
 }
 
 export const rootReducer = combineReducers({
@@ -41,4 +44,5 @@ export const rootReducer = combineReducers({
   app: appReducer,
   shops: shopsReducer,
   categories: categoriesReducer,
+  forecast: forecastReducer,
 })

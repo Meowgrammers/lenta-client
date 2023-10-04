@@ -2,6 +2,12 @@ import { TableSearch, TableSort, ToggleUnit } from '@/features'
 import { Button } from '@/shared'
 import { ForecastChart, ForecastTable, Menu } from '@/widgets'
 import {
+  ForecastChart,
+  ForecastTable,
+  StatisticChart,
+  StatisticTable,
+} from '@/widgets'
+import {
   Flex,
   Tab,
   TabGroup,
@@ -23,12 +29,16 @@ export const MainPage = () => {
           Статистика
         </Tab>
       </TabList>
-      <ToggleUnit />
       <TabPanels>
         <TabPanel>
-          <TabGroup>
+          <TabGroup className="flex flex-col gap-7 p-[30px]">
+            <ToggleUnit />
             <Flex alignItems="center" justifyContent="start" className="gap-5">
-              <Flex alignItems="center" justifyContent="start">
+              <Flex
+                alignItems="center"
+                justifyContent="start"
+                className="gap-5"
+              >
                 <TabList
                   variant="solid"
                   className="rounded-lg bg-[#EAEBED] p-1 "
@@ -56,6 +66,10 @@ export const MainPage = () => {
               </TabPanel>
             </TabPanels>
           </TabGroup>
+        </TabPanel>
+        <TabPanel>
+          <StatisticChart />
+          <StatisticTable />
         </TabPanel>
       </TabPanels>
     </TabGroup>

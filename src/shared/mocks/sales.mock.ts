@@ -9,7 +9,7 @@ export const SalesMock = [
         sales_type: 1,
         sales_units: 1.0,
         sales_units_promo: 1.0,
-        sales_rub: 825.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
       },
       {
@@ -17,7 +17,7 @@ export const SalesMock = [
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
       },
       {
