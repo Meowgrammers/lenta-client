@@ -18,10 +18,10 @@ import {
 
 export const MainPage = () => {
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       <Menu />
       <TabGroup className="min-w-[1478px]">
-        <TabList className="mt-8 w-full" variant="line">
+        <TabList className="mt-8 w-full pl-[30px]" variant="line">
           <Tab className="border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] hover:border-b-[#003d96] hover:text-[#003d96] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
             Прогноз
           </Tab>

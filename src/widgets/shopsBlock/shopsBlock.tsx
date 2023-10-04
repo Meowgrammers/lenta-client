@@ -13,7 +13,6 @@ import { addSelectedItem } from '@/entities'
 export const ShopsBlock: FC = () => {
   const selectedItems = useAppSelector((state) => state.shops.selectedItems)
   const dispatch = useAppDispatch()
-  console.log(selectedItems)
 
   const handleItemSelect = (id: string) => {
     if (!selectedItems.includes(id)) {

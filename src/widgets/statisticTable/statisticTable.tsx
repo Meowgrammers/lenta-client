@@ -1,15 +1,30 @@
 import { CategoryTable } from '@/entities'
 import { QualityTable } from '@/entities/forecast/ui/qualityTable/qualityTable'
 import { TableSearch, TableSort } from '@/features'
-import { CategoryMock, useVirtualize } from '@/shared'
+import {
+  CategoryMock,
+  sortByField,
+  useAppSelector,
+  useVirtualize,
+} from '@/shared'
 import { Button, Card, Flex } from '@tremor/react'
 import { useCallback, useRef } from 'react'
 
 export const StatisticTable = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
+  const shops = useAppSelector((state) => state.shops.selectedItems)
+  const sort = useAppSelector((state) => state.categories.sort)
+  const sortingCategoryMock = (
+    shops.length > 0
+      ? CategoryMock.filter((category) => {
+          return shops.includes(category.store)
+        })
+      : CategoryMock
+  ).sort(sortByField(sort))
+
   const { virtualItems, totalHeight } = useVirtualize({
     itemHeight: 34,
-    itemsCount: CategoryMock.length,
+    itemsCount: sortingCategoryMock.length,
     overscan: 2,
     listHeight: 800,
     getScrollElement: useCallback(() => scrollElementRef.current, []),
@@ -32,6 +47,7 @@ export const StatisticTable = () => {
           items={virtualItems}
           totalHeight={totalHeight}
           doubleTable={true}
+          sortingMock={sortingCategoryMock}
         />
         <QualityTable items={virtualItems} totalHeight={totalHeight} />
       </Card>

@@ -21,7 +21,7 @@ export const Menu: FC = () => {
           <ProductsBlock />
         </div>
       ) : (
-        <div className="flex w-[80px] flex-col items-center gap-10 bg-color-back-secondary px-4 py-6">
+        <div className="flex w-[80px] flex-col items-center gap-10 bg-color-back-secondary px-4 py-6 ">
           <div className="flex flex-col items-center gap-4">
             <LogoMini />
             <RollUpButton

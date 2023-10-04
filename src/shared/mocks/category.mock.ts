@@ -1,6 +1,7 @@
 export const CategoryMock = [
   {
     id: 1,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -9,6 +10,7 @@ export const CategoryMock = [
   },
   {
     id: 2,
+    store: '42a0e188f5033bc65bf8d78622277c4e',
     sku: '71c9661741caf40a92a32d1cc8206c04',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: 'c559da2ba967eb820766939a658022c8',
@@ -17,6 +19,7 @@ export const CategoryMock = [
   },
   {
     id: 3,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: '00b72c2f01a1512cbb1d3f33319bac93',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -25,6 +28,7 @@ export const CategoryMock = [
   },
   {
     id: 4,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -33,6 +37,7 @@ export const CategoryMock = [
   },
   {
     id: 5,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -41,6 +46,7 @@ export const CategoryMock = [
   },
   {
     id: 6,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -49,6 +55,7 @@ export const CategoryMock = [
   },
   {
     id: 7,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -57,6 +64,7 @@ export const CategoryMock = [
   },
   {
     id: 8,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -65,6 +73,7 @@ export const CategoryMock = [
   },
   {
     id: 9,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -73,6 +82,7 @@ export const CategoryMock = [
   },
   {
     id: 10,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -81,6 +91,7 @@ export const CategoryMock = [
   },
   {
     id: 11,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -89,6 +100,7 @@ export const CategoryMock = [
   },
   {
     id: 12,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -97,6 +109,7 @@ export const CategoryMock = [
   },
   {
     id: 13,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -105,6 +118,7 @@ export const CategoryMock = [
   },
   {
     id: 14,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -113,6 +127,7 @@ export const CategoryMock = [
   },
   {
     id: 15,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -121,6 +136,7 @@ export const CategoryMock = [
   },
   {
     id: 16,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -129,6 +145,7 @@ export const CategoryMock = [
   },
   {
     id: 17,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -137,6 +154,7 @@ export const CategoryMock = [
   },
   {
     id: 18,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -145,6 +163,7 @@ export const CategoryMock = [
   },
   {
     id: 19,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
@@ -153,6 +172,7 @@ export const CategoryMock = [
   },
   {
     id: 20,
+    store: 'c81e728d9d4c2f636f067f89cc14862c',
     sku: 'fd064933250b0bfe4f926b867b0a5ec8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
