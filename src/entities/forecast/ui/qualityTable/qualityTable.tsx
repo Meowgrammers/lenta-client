@@ -29,7 +29,7 @@ export const QualityTable: FC<QualityTableProps> = ({ items, totalHeight }) => {
     <div className="flex">
       {Array(week)
         .fill(0)
-        .map((i, index) => {
+        .map((index) => {
           return (
             <Table
               style={{ height: totalHeight }}
