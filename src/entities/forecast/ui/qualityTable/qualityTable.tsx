@@ -26,10 +26,10 @@ export const QualityTable: FC<QualityTableProps> = ({ items, totalHeight }) => {
   const week = useAppSelector((state) => state.forecast.week)
 
   return (
-    <div className="flex max-w-[500px]">
+    <div className="flex">
       {Array(week)
         .fill(0)
-        .map((i, index) => {
+        .map((_i, index) => {
           return (
             <Table
               style={{ height: totalHeight }}
@@ -37,10 +37,10 @@ export const QualityTable: FC<QualityTableProps> = ({ items, totalHeight }) => {
               className="min-w-[328px]"
             >
               <TableHead className="absolute top-0 min-h-[68px] ">
-                <TableRow className="flex w-full items-center justify-center overflow-hidden border-b border-l border-solid border-b-[rgba(255,255,255,0.24)] border-l-[rgba(255,255,255,0.24)] bg-[#003d96] text-center">
+                <TableRow className="flex w-full items-center justify-center overflow-hidden border-b border-l border-solid border-b-[rgba(255,255,255,0.24)] border-l-[rgba(255,255,255,0.24)] bg-[#002773] text-center">
                   <TableHeaderCell>1{index} неделя</TableHeaderCell>
                 </TableRow>
-                <TableRow className="overflow-hidden border-l border-solid  border-l-[rgba(255,255,255,0.24)] bg-[#003d96]">
+                <TableRow className="overflow-hidden border-l border-solid  border-l-[rgba(255,255,255,0.24)] bg-[#002773]">
                   <TableHeaderCell className="w-[82px]">
                     Продажи
                   </TableHeaderCell>

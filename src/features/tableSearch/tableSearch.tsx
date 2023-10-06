@@ -1,5 +1,5 @@
 import { setSearch } from '@/entities'
-import { useAppDispatch } from '@/shared'
+import { useAppDispatch, SearchIcon } from '@/shared'
 import { TextInput } from '@tremor/react'
 
 const TableSearch = () => {
@@ -12,9 +12,10 @@ const TableSearch = () => {
   return (
     <TextInput
       onChange={(e) => changeSearch(e.target.value)}
+      icon={SearchIcon}
       type="text"
-      placeholder="Поиск по названию…"
-      className="w-[359px]"
+      placeholder="Поиск по таблице…"
+      className="h-10 w-[288px] min-w-[288px]"
     />
   )
 }

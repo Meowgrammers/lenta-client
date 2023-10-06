@@ -4,12 +4,14 @@ type CategoriesState = {
   sort: string
   tableSearch: string
   selectId: number
+  group: string[]
 }
 
 const initialState: CategoriesState = {
   sort: 'category',
   tableSearch: '',
   selectId: 1,
+  group: [],
 }
 
 const categoriesSlice = createSlice({
@@ -24,6 +26,9 @@ const categoriesSlice = createSlice({
     },
     setSelectId(state, { payload }) {
       state.selectId = payload
+    },
+    setGroup(state, { payload }) {
+      state.group.push(payload)
     },
   },
 })

@@ -11,6 +11,8 @@ export const SalesMock = [
         sales_units_promo: 1.0,
         sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
@@ -19,6 +21,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -27,6 +31,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -35,6 +41,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -43,6 +51,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -51,6 +61,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -59,6 +71,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -67,6 +81,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -75,6 +91,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -83,6 +101,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -91,6 +111,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -99,6 +121,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -107,6 +131,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -115,29 +141,35 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
   {
     unique_id: 2,
-    id: 'c81e728d9d4c2f636f067f89cc14862c',
+    id: '42a0e188f5033bc65bf8d78622277c4e',
     sku: 'c7b711619071c92bef604c7ad68380dd',
     fact: [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -146,6 +178,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -154,6 +188,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -162,6 +198,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -170,6 +208,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -178,6 +218,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -186,6 +228,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -194,6 +238,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -202,6 +248,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -210,6 +258,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -218,6 +268,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -226,6 +278,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -234,6 +288,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -245,18 +301,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -265,6 +325,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -273,6 +335,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -281,6 +345,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -289,6 +355,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -297,6 +365,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -305,6 +375,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -313,6 +385,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -321,6 +395,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -329,6 +405,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -337,6 +415,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -345,6 +425,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -353,6 +435,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -364,18 +448,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -384,6 +472,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -392,6 +482,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -400,6 +492,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -408,6 +502,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -416,6 +512,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -424,6 +522,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -432,6 +532,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -440,6 +542,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -448,6 +552,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -456,6 +562,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -464,6 +572,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -472,6 +582,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -483,18 +595,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -503,6 +619,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -511,6 +629,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -519,6 +639,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -527,6 +649,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -535,6 +659,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -543,6 +669,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -551,6 +679,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -559,6 +689,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -567,6 +699,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -575,6 +709,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -583,6 +719,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -591,6 +729,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -602,18 +742,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -622,6 +766,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -630,6 +776,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -638,6 +786,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -646,6 +796,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -654,6 +806,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -662,6 +816,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -670,6 +826,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -678,6 +836,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -686,6 +846,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -694,6 +856,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -702,6 +866,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -710,6 +876,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -721,18 +889,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -741,6 +913,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -749,6 +923,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -757,6 +933,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -765,6 +943,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -773,6 +953,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -781,6 +963,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -789,6 +973,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -797,6 +983,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -805,6 +993,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -813,6 +1003,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -821,6 +1013,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -829,6 +1023,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -840,18 +1036,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -860,6 +1060,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -868,6 +1070,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -876,6 +1080,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -884,6 +1090,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -892,6 +1100,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -900,6 +1110,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -908,6 +1120,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -916,6 +1130,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -924,6 +1140,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -932,6 +1150,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -940,6 +1160,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -948,6 +1170,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -959,18 +1183,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -979,6 +1207,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -987,6 +1217,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -995,6 +1227,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1003,6 +1237,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1011,6 +1247,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1019,6 +1257,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1027,6 +1267,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1035,6 +1277,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1043,6 +1287,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1051,6 +1297,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1059,6 +1307,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1067,6 +1317,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1078,18 +1330,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1098,6 +1354,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1106,6 +1364,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1114,6 +1374,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1122,6 +1384,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1130,6 +1394,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1138,6 +1404,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1146,6 +1414,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1154,6 +1424,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1162,6 +1434,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1170,6 +1444,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1178,6 +1454,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1186,6 +1464,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1197,18 +1477,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1217,6 +1501,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1225,6 +1511,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1233,6 +1521,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1241,6 +1531,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1249,6 +1541,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1257,6 +1551,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1265,6 +1561,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1273,6 +1571,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1281,6 +1581,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1289,6 +1591,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1297,6 +1601,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1305,6 +1611,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1316,18 +1624,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1336,6 +1648,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1344,6 +1658,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1352,6 +1668,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1360,6 +1678,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1368,6 +1688,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1376,6 +1698,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1384,6 +1708,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1392,6 +1718,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1400,6 +1728,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1408,6 +1738,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1416,6 +1748,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1424,6 +1758,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1435,18 +1771,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1455,6 +1795,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1463,6 +1805,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1471,6 +1815,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1479,6 +1825,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1487,6 +1835,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1495,6 +1845,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1503,6 +1855,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1511,6 +1865,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1519,6 +1875,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1527,6 +1885,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1535,6 +1895,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1543,6 +1905,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1554,18 +1918,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1574,6 +1942,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1582,6 +1952,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1590,6 +1962,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1598,6 +1972,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1606,6 +1982,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1614,6 +1992,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1622,6 +2002,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1630,6 +2012,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1638,6 +2022,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1646,6 +2032,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1654,6 +2042,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1662,6 +2052,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1673,18 +2065,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1693,6 +2089,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1701,6 +2099,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1709,6 +2109,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1717,6 +2119,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1725,6 +2129,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1733,6 +2139,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1741,6 +2149,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1749,6 +2159,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1757,6 +2169,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1765,6 +2179,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1773,6 +2189,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1781,6 +2199,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1792,18 +2212,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1812,6 +2236,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1820,6 +2246,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1828,6 +2256,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1836,6 +2266,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1844,6 +2276,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1852,6 +2286,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1860,6 +2296,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1868,6 +2306,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1876,6 +2316,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -1884,6 +2326,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -1892,6 +2336,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -1900,6 +2346,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -1911,18 +2359,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -1931,6 +2383,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -1939,6 +2393,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -1947,6 +2403,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -1955,6 +2413,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -1963,6 +2423,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -1971,6 +2433,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -1979,6 +2443,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -1987,6 +2453,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -1995,6 +2463,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -2003,6 +2473,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -2011,6 +2483,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -2019,6 +2493,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -2030,18 +2506,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -2050,6 +2530,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -2058,6 +2540,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -2066,6 +2550,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -2074,6 +2560,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -2082,6 +2570,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -2090,6 +2580,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -2098,6 +2590,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -2106,6 +2600,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -2114,6 +2610,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -2122,6 +2620,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -2130,6 +2630,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -2138,6 +2640,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -2149,18 +2653,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -2169,6 +2677,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -2177,6 +2687,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -2185,6 +2697,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -2193,6 +2707,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -2201,6 +2717,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -2209,6 +2727,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -2217,6 +2737,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -2225,6 +2747,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -2233,6 +2757,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -2241,6 +2767,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -2249,6 +2777,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -2257,6 +2787,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
@@ -2268,18 +2800,22 @@ export const SalesMock = [
       {
         date: '2022-10-19',
         sales_type: 1,
-        sales_units: 5.0,
-        sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_units: 1.0,
+        sales_units_promo: 1.0,
+        sales_rub: 10000.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-20',
         sales_type: 1,
         sales_units: 5.0,
         sales_units_promo: 5.0,
-        sales_rub: 825.0,
+        sales_rub: 900.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-21',
@@ -2288,6 +2824,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-22',
@@ -2296,6 +2834,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-23',
@@ -2304,6 +2844,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-24',
@@ -2312,6 +2854,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-25',
@@ -2320,6 +2864,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-26',
@@ -2328,6 +2874,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-27',
@@ -2336,6 +2884,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-28',
@@ -2344,6 +2894,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-29',
@@ -2352,6 +2904,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-30',
@@ -2360,6 +2914,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-10-31',
@@ -2368,6 +2924,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
       {
         date: '2022-11-01',
@@ -2376,6 +2934,8 @@ export const SalesMock = [
         sales_units_promo: 5.0,
         sales_rub: 825.0,
         sales_rub_promo: 825.0,
+        forecast: 2,
+        wape: 0.1,
       },
     ],
   },
