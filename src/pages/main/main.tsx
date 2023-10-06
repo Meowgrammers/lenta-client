@@ -28,6 +28,9 @@ export const MainPage = () => {
           <Tab className="border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] hover:border-b-[#003d96] hover:text-[#003d96] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
             Статистика
           </Tab>
+          <div className="!ml-auto flex items-center pr-[30px] text-sm/[18px] text-[#4D4D4D8F]">
+            Последнее обновление данных 20.07.2023 00:23
+          </div>
         </TabList>
         <TabPanels>
           <TabPanel>
