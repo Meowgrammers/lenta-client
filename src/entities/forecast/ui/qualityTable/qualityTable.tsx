@@ -26,7 +26,7 @@ export const QualityTable: FC<QualityTableProps> = ({ items, totalHeight }) => {
   const week = useAppSelector((state) => state.forecast.week)
 
   return (
-    <div className="flex max-w-[500px]">
+    <div className="flex">
       {Array(week)
         .fill(0)
         .map((i, index) => {

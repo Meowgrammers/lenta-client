@@ -40,7 +40,7 @@ export const StatisticTable = () => {
         </Flex>
       </Flex>
       <Card
-        className="flex max-h-[430px] w-full overflow-auto rounded-none p-0 pt-[34px] shadow-none ring-0"
+        className="flex max-h-[430px] max-w-fit  overflow-auto rounded-none p-0 pt-[34px] shadow-none ring-0"
         ref={scrollElementRef}
       >
         <CategoryTable
