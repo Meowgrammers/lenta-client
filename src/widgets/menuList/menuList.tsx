@@ -1,6 +1,12 @@
 import { FC, useState } from 'react'
 
-import { status, Button } from '@/shared'
+import {
+  status,
+  Button,
+  useAppSelector,
+  CategoryMock,
+  sortByField,
+} from '@/shared'
 import { AllCheckbox } from '@/features'
 import { List } from '@/widgets'
 
@@ -60,12 +66,48 @@ export const initialCategories: Category[] = [
   },
 ]
 
+type TItems = {
+  name: string
+  id: string
+  items: TItems[]
+  status?: number
+}
+
 export const ListMenu: FC = () => {
   const [selectAllChecked, setSelectAllChecked] = useState<boolean | null>(
     false
   )
-  const [items, setItems] = useState<Category[]>(initialCategories)
+  const shops = useAppSelector((state) => state.shops.selectedItems)
+  const sort = useAppSelector((state) => state.categories.sort)
+  const sortingCategoryMock = (
+    shops.length > 0
+      ? CategoryMock.filter((category) => {
+          return shops.includes(category.store)
+        })
+      : CategoryMock
+  ).sort(sortByField(sort))
 
+  const allFilteredData = sortingCategoryMock.reduce(
+    (acc: TItems[], { category }, index) => {
+      acc[index] = {
+        name: category,
+        id: category,
+        items: sortingCategoryMock.reduce((acc: TItems[], { group }, i) => {
+          acc[i] = {
+            name: group,
+            id: group,
+            items: [],
+          }
+          return acc
+        }, []),
+      }
+      return acc
+    },
+    []
+  )
+
+  const [items, setItems] = useState<TItems[]>(allFilteredData)
+  console.log(items)
   const calculateSelectAllState = () => {
     let checkedCount = 0
     let indeterminateCount = 0
@@ -169,7 +211,7 @@ export const ListMenu: FC = () => {
   }
 
   return (
-    <>
+    <div className="overflow-y-auto">
       <div className="mb-4 flex items-center gap-1 text-profile-title font-semibold">
         <AllCheckbox
           checked={selectAllChecked}
@@ -186,6 +228,6 @@ export const ListMenu: FC = () => {
       >
         Сбросить
       </Button>
-    </>
+    </div>
   )
 }
