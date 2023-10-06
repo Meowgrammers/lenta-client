@@ -77,6 +77,10 @@ export const ListMenu: FC = () => {
   const [selectAllChecked, setSelectAllChecked] = useState<boolean | null>(
     false
   )
+  const groups = new Set()
+  const categories = new Set()
+  const subcategories = new Set()
+  const skus = new Set()
   const shops = useAppSelector((state) => state.shops.selectedItems)
   const sort = useAppSelector((state) => state.categories.sort)
   const sortingCategoryMock = (
@@ -88,26 +92,73 @@ export const ListMenu: FC = () => {
   ).sort(sortByField(sort))
 
   const allFilteredData = sortingCategoryMock.reduce(
-    (acc: TItems[], { category }, index) => {
-      acc[index] = {
-        name: category,
-        id: category,
-        items: sortingCategoryMock.reduce((acc: TItems[], { group }, i) => {
-          acc[i] = {
-            name: group,
-            id: group,
-            items: [],
-          }
-          return acc
-        }, []),
+    (acc: TItems[], { group }) => {
+      if (groups.has(group)) {
+        return acc
       }
+      acc.push({
+        name: group,
+        id: group,
+        items: sortingCategoryMock
+          .filter((item) => item.group === group)
+          .reduce((categoryAcc: TItems[], { category }) => {
+            if (categories.has(category)) {
+              return categoryAcc
+            }
+            categoryAcc.push({
+              name: category,
+              id: category,
+              items: sortingCategoryMock
+                .filter(
+                  (item) => item.category === category && item.group === group
+                )
+                .reduce((subcategoryAcc: TItems[], { subcategory }) => {
+                  if (subcategories.has(subcategory)) {
+                    return subcategoryAcc
+                  }
+                  subcategoryAcc.push({
+                    name: subcategory,
+                    id: subcategory,
+                    items: sortingCategoryMock
+                      .filter(
+                        (item) =>
+                          item.category === category &&
+                          item.group === group &&
+                          item.subcategory === subcategory
+                      )
+                      .reduce((accSku: TItems[], { sku }) => {
+                        if (skus.has(sku)) {
+                          return accSku
+                        }
+                        accSku.push({
+                          name: sku,
+                          id: sku,
+                          items: [],
+                        })
+                        skus.add(sku)
+                        return accSku
+                      }, []),
+                  })
+                  subcategories.add(subcategory)
+                  skus.clear()
+                  return subcategoryAcc
+                }, []),
+            })
+            categories.add(category)
+            subcategories.clear()
+            return categoryAcc
+          }, []),
+      })
+      categories.clear()
+      groups.add(group)
       return acc
     },
     []
   )
 
+  console.log(allFilteredData)
   const [items, setItems] = useState<TItems[]>(allFilteredData)
-  console.log(items)
+
   const calculateSelectAllState = () => {
     let checkedCount = 0
     let indeterminateCount = 0
