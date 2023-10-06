@@ -11,7 +11,7 @@ export const Menu: FC = () => {
   return (
     <>
       {isMenuExpanded ? (
-        <div className="flex flex-col bg-color-back-secondary px-8 py-6 text-white">
+        <div className="flex flex-col  bg-color-back-secondary px-8 py-6 text-white">
           <MenuTitle
             handleToggleMenu={handleToggleMenu}
             isMenuExpanded={isMenuExpanded}
