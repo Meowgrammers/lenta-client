@@ -50,11 +50,15 @@ export const MainPage = () => {
                     variant="solid"
                     className="h-10 rounded-lg bg-[#EAEBED] p-1"
                   >
-                    <Tab className="w-[110px] justify-center border-solid px-3 py-[6px] text-center text-base/[20px] font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]">
-                      Таблица
+                    <Tab className="w-[110px] justify-center border-solid px-3 py-[6px] text-center not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]">
+                      <span className="text-base/[20px] font-semibold">
+                        Таблица
+                      </span>
                     </Tab>
-                    <Tab className="w-[110px] justify-center rounded-md border-solid text-base/[20px] font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]">
-                      График
+                    <Tab className="w-[110px] justify-center rounded-md border-solid not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]">
+                      <span className="text-base/[20px] font-semibold">
+                        График
+                      </span>
                     </Tab>
                   </TabList>
                   <TableSort />

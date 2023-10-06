@@ -14,7 +14,7 @@ const WeekCount = () => {
   return (
     <Flex justifyContent="end" className="gap-4" alignItems="center">
       <TabGroup className="w-fit">
-        <TabList variant="solid" className="rounded-lg bg-[#EAEBED] p-1 ">
+        <TabList variant="solid" className="h-10 rounded-lg bg-[#EAEBED] p-1">
           <Tab
             onClick={() => changeWeek(2)}
             className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
@@ -48,7 +48,7 @@ const WeekCount = () => {
         </TabList>
       </TabGroup>
       <NumberInput
-        className="max-w-[158px]"
+        className="h-10 max-w-[158px]"
         placeholder="2 нед"
         min="2"
         max="52"

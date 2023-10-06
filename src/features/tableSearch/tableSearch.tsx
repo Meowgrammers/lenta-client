@@ -15,7 +15,7 @@ const TableSearch = () => {
       icon={SearchIcon}
       type="text"
       placeholder="Поиск по таблице…"
-      className="h-10 w-[439px]"
+      className="h-10 w-[288px] min-w-[288px]"
     />
   )
 }
