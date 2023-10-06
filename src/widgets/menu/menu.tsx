@@ -37,8 +37,8 @@ export const Menu: FC = () => {
             className="flex flex-col items-center gap-4"
             onClick={() => setIsMenuExpanded(true)}
           >
-            <LocationIcon className="cursor-pointer" />
-            <ProductIcon className="cursor-pointer" />
+            <LocationIcon className="cursor-pointer fill-white hover:fill-[#002773] " />
+            <ProductIcon className="cursor-pointer fill-white hover:fill-[#002773] " />
           </div>
         </div>
       )}
