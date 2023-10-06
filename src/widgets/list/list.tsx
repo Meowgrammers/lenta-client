@@ -26,6 +26,13 @@ export const List: FC<ListProps> = ({ items, compute }) => {
     return item && Array.isArray(item.items) && item.items.length > 0
   }
 
+  const countSelectedItems = (itemsArray: TItems[]) => {
+    const selectedItems = itemsArray.filter(
+      (item) => item.status === status.checked
+    )
+    return selectedItems.length
+  }
+
   return (
     <div className="flex flex-col pl-3">
       <ul className="w-full text-profile-title font-semibold">
@@ -49,14 +56,17 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                   indeterminate={item.status === status.indeterminate}
                   compute={compute}
                 />
-                <label className="" htmlFor={item.name}>
+                <label
+                  className="w-[190px] overflow-hidden text-ellipsis"
+                  htmlFor={item.name}
+                >
                   {item.name}
                 </label>
 
                 {hasNestedItems(item.id) && (
                   <>
                     <p className="ml-auto mr-[18px] text-sm text-white/[0.4]">
-                      7/10
+                      {countSelectedItems(item.items)}/{item.items.length}
                     </p>
                     <CollapseIcon
                       className={`absolute right-0 h-5 w-5 ${
