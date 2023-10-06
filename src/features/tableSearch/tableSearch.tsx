@@ -14,8 +14,8 @@ const TableSearch = () => {
       onChange={(e) => changeSearch(e.target.value)}
       icon={SearchIcon}
       type="text"
-      placeholder="Поиск по названию…"
-      className="w-[359px]"
+      placeholder="Поиск по таблице…"
+      className="h-10 w-[439px]"
     />
   )
 }

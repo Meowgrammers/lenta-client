@@ -38,7 +38,7 @@ export const AuthForm: FC = () => {
             icon={ArrowIcon}
             iconPosition="right"
             type="submit"
-            className="mx-auto mt-[28px] !rounded-full bg-white p-[13px] hover:bg-white hover:px-[20px]"
+            className="mx-auto mt-[28px] !rounded-full border-none bg-white p-[13px] hover:bg-white hover:px-[20px] active:bg-[#002773] active:text-white"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -50,7 +50,7 @@ export const AuthForm: FC = () => {
           </Button>
           <Button
             variant="light"
-            className="mx-auto mt-[40px] text-sm/[16px] font-semibold text-white underline hover:text-[#d7dcf1] "
+            className="mx-auto mt-[40px] border-none text-sm/[16px] font-semibold text-white underline hover:text-[#d7dcf1] "
           >
             Забыли пароль?
           </Button>
