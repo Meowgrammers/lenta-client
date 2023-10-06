@@ -1,11 +1,11 @@
 import { FC, useState } from 'react'
 
 import { Checkbox } from '@/features'
-import { Category } from '@/widgets'
+import { TItems } from '@/widgets'
 import { status, CollapseIcon } from '@/shared'
 
 interface ListProps {
-  items: Category[]
+  items: TItems[]
   compute: (checkboxId: string, status: number) => void
 }
 
@@ -37,7 +37,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
             ) : null
           }
           return (
-            <li key={item.id} className="w-full">
+            <li key={item.id} className="w-full" data-set={item.data}>
               <div
                 className="relative flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16]"
                 onClick={() => toggleItem(item.id)}
