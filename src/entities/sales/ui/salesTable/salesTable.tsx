@@ -35,7 +35,7 @@ export const SalesTable: FC<SalesTableProps> = ({
       {sortingMock.length > 0 && (
         <Table style={{ height: totalHeight + 34 }}>
           <TableHead>
-            <TableRow className="absolute overflow-hidden bg-[#003d96]">
+            <TableRow className="absolute overflow-hidden bg-[#002773]">
               {sortingMock[0].fact.map((fact_item, index) => {
                 return (
                   <TableHeaderCell key={index} className="w-[80px]">

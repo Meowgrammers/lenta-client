@@ -36,7 +36,7 @@ export const StatisticTable = () => {
         <TableSort />
         <Flex justifyContent="end" className="gap-4">
           <TableSearch />
-          <Button className="h-10 border-none bg-color-back-secondary hover:bg-[#002773] active:bg-[#294a89]">
+          <Button className="h-10 border-none bg-color-back-secondary font-semibold hover:bg-[#002773] active:bg-[#294a89]">
             Выгрузить в Excel
           </Button>
         </Flex>

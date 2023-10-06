@@ -50,7 +50,7 @@ export const CategoryTable: FC<CategoryTableProps> = ({
       {sortingMock.length > 0 && (
         <Table style={{ height: totalHeight + 34 }}>
           <TableHead>
-            <TableRow className={`absolute ${height} top-0 bg-[#003d96] pl-5`}>
+            <TableRow className={`absolute ${height} top-0 bg-[#002773] pl-5`}>
               <TableHeaderCell className="w-[100px]">ТК</TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Группа</TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Категория</TableHeaderCell>
