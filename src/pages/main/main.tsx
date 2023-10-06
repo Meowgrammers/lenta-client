@@ -31,7 +31,7 @@ export const MainPage = () => {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <TabGroup className="flex flex-col gap-7 p-[30px]">
+            <TabGroup className="flex flex-col gap-7 px-[30px] pt-[30px]">
               <ToggleUnit />
               <Flex
                 alignItems="center"
