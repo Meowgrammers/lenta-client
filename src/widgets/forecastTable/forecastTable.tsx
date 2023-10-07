@@ -7,28 +7,28 @@ import {
   useVirtualize,
 } from '@/shared'
 import { Card } from '@tremor/react'
-import { useCallback, useRef } from 'react'
+import { useCallback, useMemo, useRef } from 'react'
 
 export const ForecastTable = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
 
   const shops = useAppSelector((state) => state.shops.selectedItems)
   const sort = useAppSelector((state) => state.categories.sort)
-  const sortingCategoryMock = (
-    shops.length > 0
+  const sortingCategoryMock = useMemo(() => {
+    return shops.length > 0
       ? CategoryMock.filter((category) => {
           return shops.includes(category.store)
-        })
-      : CategoryMock
-  ).sort(sortByField(sort))
+        }).sort(sortByField(sort))
+      : CategoryMock.sort(sortByField(sort))
+  }, [sort, shops])
 
-  const sortingSalesMock = (
-    shops.length > 0
+  const sortingSalesMock = useMemo(() => {
+    return shops.length > 0
       ? SalesMock.filter((sale) => {
           return shops.includes(sale.id)
-        })
-      : SalesMock
-  ).sort(sortByField(sort))
+        }).sort(sortByField(sort))
+      : SalesMock.sort(sortByField(sort))
+  }, [sort, shops])
 
   const { virtualItems, totalHeight } = useVirtualize({
     itemHeight: 34,
