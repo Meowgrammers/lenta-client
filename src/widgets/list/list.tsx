@@ -45,10 +45,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
           }
           return (
             <li key={item.id} className="w-full" data-set={item.data}>
-              <div
-                className="relative mb-1 flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]"
-                onClick={() => toggleItem(item.id)}
-              >
+              <div className="relative mb-1 flex w-full cursor-default items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]">
                 <Checkbox
                   id={item.id}
                   name={item.name}
@@ -57,8 +54,9 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                   compute={compute}
                 />
                 <label
-                  className="w-[190px] overflow-hidden text-ellipsis"
+                  className="w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8"
                   htmlFor={item.name}
+                  onClick={() => toggleItem(item.id)}
                 >
                   {item.name}
                 </label>
@@ -68,11 +66,16 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                     <p className="ml-auto mr-[18px] text-sm text-white/[0.4]">
                       {countSelectedItems(item.items!)}/{item.items!.length}
                     </p>
-                    <CollapseIcon
-                      className={`absolute right-0 h-5 w-5 fill-white hover:fill-[#003D96] ${
-                        openItems[item.id] ? 'rotate-180' : ''
-                      }`}
-                    />
+                    <div
+                      className="flex cursor-pointer items-center"
+                      onClick={() => toggleItem(item.id)}
+                    >
+                      <CollapseIcon
+                        className={`absolute right-0 h-5 w-5 fill-white hover:fill-[#003D96] ${
+                          openItems[item.id] ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </div>
                   </>
                 )}
               </div>
