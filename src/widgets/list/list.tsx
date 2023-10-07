@@ -46,7 +46,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
           return (
             <li key={item.id} className="w-full" data-set={item.data}>
               <div
-                className="relative flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]"
+                className="relative mb-1 flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]"
                 onClick={() => toggleItem(item.id)}
               >
                 <Checkbox
