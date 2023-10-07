@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ProductIcon } from '@/shared'
+import { ProductIcon, Input, SearchIcon } from '@/shared'
 import { ListMenu } from '@/widgets'
 
 export const ProductsBlock: FC = () => {
@@ -9,6 +9,12 @@ export const ProductsBlock: FC = () => {
         <ProductIcon className="fill-white" />
         <p className=" text-xl/[24px] font-medium">Товары:</p>
       </div>
+      <Input
+        className="mb-2 !w-[318px]"
+        icon={SearchIcon}
+        type="text"
+        placeholder="Поиск"
+      />
       <ListMenu />
     </>
   )

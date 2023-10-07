@@ -46,7 +46,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
           return (
             <li key={item.id} className="w-full" data-set={item.data}>
               <div
-                className="relative flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]"
+                className="relative mb-1 flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]"
                 onClick={() => toggleItem(item.id)}
               >
                 <Checkbox
@@ -66,7 +66,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                 {hasNestedItems(item.id) && (
                   <>
                     <p className="ml-auto mr-[18px] text-sm text-white/[0.4]">
-                      {countSelectedItems(item.items)}/{item.items.length}
+                      {countSelectedItems(item.items!)}/{item.items!.length}
                     </p>
                     <CollapseIcon
                       className={`absolute right-0 h-5 w-5 fill-white hover:fill-[#003D96] ${
