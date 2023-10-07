@@ -247,14 +247,22 @@ export const ListMenu: FC = () => {
             indeterminate={selectAllState === null}
             onChange={handleSelectAllChange}
           />
-          Выбрать все
+          <label
+            onClick={toggleListVisibility}
+            className="w-[210px] cursor-pointer"
+          >
+            Выбрать все
+          </label>
         </div>
 
         <div className="flex gap-1">
-          <p className="ml-2 text-sm text-white/[0.4]">
+          <p className="ml-2 cursor-default text-sm text-white/[0.4]">
             {selectedItemsCount}/{totalItems}
           </p>
-          <div className="h-5 w-5" onClick={toggleListVisibility}>
+          <div
+            className="h-5 w-5 cursor-pointer"
+            onClick={toggleListVisibility}
+          >
             <CollapseIcon
               className={`h-5 w-5 fill-white hover:fill-[#003D96] ${
                 isListVisible ? 'rotate-180' : ''
