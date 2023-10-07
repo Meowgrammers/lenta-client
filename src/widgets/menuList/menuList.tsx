@@ -1,70 +1,20 @@
 import { FC, useEffect, useMemo, useState } from 'react'
 
-import { status, Button, useAppSelector, CategoryMock } from '@/shared'
+import {
+  status,
+  Button,
+  useAppSelector,
+  CategoryMock,
+  CollapseIcon,
+} from '@/shared'
 import { AllCheckbox } from '@/features'
 import { List } from '@/widgets'
 
-export interface Category {
+export interface TItems {
   id: string
   name: string
-  items?: Category[]
-  status?: number
-}
-
-export const initialCategories: Category[] = [
-  {
-    id: '1',
-    name: 'Группа 1',
-    items: [
-      {
-        id: '2',
-        name: 'Категория 1.1',
-        items: [
-          {
-            id: '4',
-            name: 'Подкатегория 1.1.1',
-          },
-        ],
-      },
-      {
-        id: '3',
-        name: 'Категория 1.2',
-        items: [
-          {
-            id: '4',
-            name: 'Подкатегория 1.2.1',
-            items: [
-              { id: '5', name: 'Товар 1.2.1.1' },
-              { id: '15', name: 'Товар 1.2.1.2' },
-              { id: '25', name: 'Товар 1.2.1.3' },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: '6',
-    name: 'Группа 2',
-    items: [
-      {
-        id: '7',
-        name: 'Категория 2.1',
-        items: [
-          { id: '8', name: 'Подкатегория 2.1.1' },
-          { id: '9', name: 'Подкатегория 2.1.1' },
-        ],
-      },
-      { id: '21', name: 'Категория 1.1' },
-    ],
-  },
-]
-
-export type TItems = {
-  name: string
-  id: string
   data: string
-  items: TItems[]
+  items?: TItems[]
   status?: number
 }
 
@@ -72,10 +22,7 @@ export const ListMenu: FC = () => {
   const [selectAllChecked, setSelectAllChecked] = useState<boolean | null>(
     false
   )
-  const groups = new Set()
-  const categories = new Set()
-  const subcategories = new Set()
-  const skus = new Set()
+
   const shops = useAppSelector((state) => state.shops.selectedItems)
 
   const sortingCategoryMock =
@@ -85,79 +32,74 @@ export const ListMenu: FC = () => {
         })
       : CategoryMock
 
-  const allFilteredData = useMemo(() => {
-    return sortingCategoryMock.reduce((acc: TItems[], { group }) => {
-      if (groups.has(group)) {
-        return acc
+  // Новая структура данных
+  const newCategories: TItems[] = useMemo(() => {
+    return sortingCategoryMock.reduce((acc, item) => {
+      const group = item.group
+      const category = item.category
+      const subcategory = item.subcategory
+      const sku = item.sku
+
+      // Поиск или создание группы
+      let existingGroup = acc.find((groupItem) => groupItem.id === group)
+      if (!existingGroup) {
+        existingGroup = {
+          id: group,
+          name: group,
+          data: 'group',
+          items: [],
+        }
+        acc.push(existingGroup)
       }
-      acc.push({
-        name: group,
-        id: group,
-        data: 'group',
-        items: sortingCategoryMock
-          .filter((item) => item.group === group)
-          .reduce((categoryAcc: TItems[], { category }) => {
-            if (categories.has(category)) {
-              return categoryAcc
-            }
-            categoryAcc.push({
-              name: category,
-              id: category,
-              data: 'category',
-              items: sortingCategoryMock
-                .filter(
-                  (item) => item.category === category && item.group === group
-                )
-                .reduce((subcategoryAcc: TItems[], { subcategory }) => {
-                  if (subcategories.has(subcategory)) {
-                    return subcategoryAcc
-                  }
-                  subcategoryAcc.push({
-                    name: subcategory,
-                    id: subcategory,
-                    data: 'subcategory',
-                    items: sortingCategoryMock
-                      .filter(
-                        (item) =>
-                          item.category === category &&
-                          item.group === group &&
-                          item.subcategory === subcategory
-                      )
-                      .reduce((accSku: TItems[], { sku }) => {
-                        if (skus.has(sku)) {
-                          return accSku
-                        }
-                        accSku.push({
-                          name: sku,
-                          id: sku,
-                          data: 'sku',
-                          items: [],
-                        })
-                        skus.add(sku)
-                        return accSku
-                      }, []),
-                  })
-                  subcategories.add(subcategory)
-                  skus.clear()
-                  return subcategoryAcc
-                }, []),
-            })
-            categories.add(category)
-            subcategories.clear()
-            return categoryAcc
-          }, []),
+
+      // Поиск или создание категории
+      let existingCategory = existingGroup.items?.find(
+        (categoryItem) => categoryItem.id === category
+      )
+      if (!existingCategory) {
+        existingCategory = {
+          id: category,
+          name: category,
+          data: 'category',
+          items: [],
+        }
+        existingGroup.items = existingGroup.items || []
+        existingGroup.items.push(existingCategory)
+      }
+
+      // Поиск или создание подкатегории
+      let existingSubcategory = existingCategory.items?.find(
+        (subcategoryItem) => subcategoryItem.id === subcategory
+      )
+      if (!existingSubcategory) {
+        existingSubcategory = {
+          id: subcategory,
+          name: subcategory,
+          data: 'subcategory',
+          items: [],
+        }
+        existingCategory.items = existingCategory.items || []
+        existingCategory.items.push(existingSubcategory)
+      }
+
+      // Добавление товара
+      existingSubcategory.items = existingSubcategory.items || []
+      existingSubcategory.items.push({
+        id: sku,
+        name: sku,
+        data: 'sku',
       })
-      categories.clear()
-      groups.add(group)
+
       return acc
-    }, [])
+    }, [] as TItems[])
   }, [shops])
 
-  const [items, setItems] = useState<TItems[]>(allFilteredData)
+  const [items, setItems] = useState<TItems[]>(newCategories)
 
   useEffect(() => {
-    setItems(allFilteredData)
-  }, [allFilteredData])
+    setItems(newCategories)
+    setSelectAllChecked(false)
+  }, [shops])
 
   const calculateSelectAllState = () => {
     let checkedCount = 0
@@ -180,16 +122,16 @@ export const ListMenu: FC = () => {
     }
   }
 
-  const setStatus = (root: Category, newStatus: number) => {
+  const setStatus = (root: TItems, newStatus: number) => {
     root.status = newStatus
     if (Array.isArray(root.items)) {
-      return root.items.forEach((item) => {
+      root.items.forEach((item) => {
         setStatus(item, newStatus)
       })
     }
   }
 
-  const computeStatus = (children: Category[]) => {
+  const computeStatus = (children: TItems[]) => {
     let checked = 0
     let indeterminate = 0
 
@@ -206,7 +148,7 @@ export const ListMenu: FC = () => {
   }
 
   const traverse = (
-    root: Category | Category[],
+    root: TItems | TItems[],
     needle: string,
     newStatus: number
   ) => {
@@ -261,17 +203,71 @@ export const ListMenu: FC = () => {
     setSelectAllChecked(false)
   }
 
+  const totalItems = useMemo(() => {
+    const countTotalItems = (itemsArray: TItems[]) => {
+      let count = itemsArray.length
+      itemsArray.forEach((item) => {
+        if (Array.isArray(item.items)) {
+          count += countTotalItems(item.items)
+        }
+      })
+      return count
+    }
+
+    return countTotalItems(newCategories)
+  }, [newCategories])
+
+  const selectedItemsCount = useMemo(() => {
+    const countSelectedItems = (itemsArray: TItems[]) => {
+      let count = 0
+      itemsArray.forEach((item) => {
+        if (item.status === status.checked) {
+          count += 1
+        }
+        if (Array.isArray(item.items)) {
+          count += countSelectedItems(item.items)
+        }
+      })
+      return count
+    }
+    return countSelectedItems(items)
+  }, [items])
+
+  const [isListVisible, setIsListVisible] = useState(true)
+  const toggleListVisibility = () => {
+    setIsListVisible((prevIsVisible) => !prevIsVisible)
+  }
+
   return (
     <div className="overflow-y-auto">
-      <div className="mb-4 flex items-center gap-1 text-profile-title font-semibold">
-        <AllCheckbox
-          checked={selectAllChecked}
-          indeterminate={selectAllState === null}
-          onChange={handleSelectAllChange}
-        />
-        Выбрать все
+      <div className="mb-4 flex items-center justify-between gap-1 py-1 pl-2 text-profile-title font-semibold hover:bg-white/[0.16] active:bg-[#002773]">
+        <div className="flex items-center gap-1">
+          <AllCheckbox
+            checked={selectAllChecked}
+            indeterminate={selectAllState === null}
+            onChange={handleSelectAllChange}
+          />
+          Выбрать все
+        </div>
+
+        <div className="flex gap-1">
+          <p className="ml-2 text-sm text-white/[0.4]">
+            {selectedItemsCount}/{totalItems}
+          </p>
+          <div className="h-5 w-5" onClick={toggleListVisibility}>
+            <CollapseIcon
+              className={`h-5 w-5 fill-white hover:fill-[#003D96] ${
+                isListVisible ? 'rotate-180' : ''
+              }`}
+            />
+          </div>
+        </div>
       </div>
-      <List items={items} compute={compute} />
+      {isListVisible && (
+        <div className="ml-[-12px]">
+          <List items={items} compute={compute} />
+        </div>
+      )}
       <Button
         onClick={handleResetChecked}
         className="mt-6 h-10 w-full border-white text-white hover:bg-white/[0.16] hover:text-white active:bg-color-back-primary-on-blue"
