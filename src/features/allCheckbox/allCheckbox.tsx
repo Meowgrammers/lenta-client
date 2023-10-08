@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef, useState } from 'react'
 
 interface AllCheckboxProps {
-  checked?: boolean | null
-  indeterminate?: boolean
-  onChange?: () => void
+  checked: boolean | null
+  indeterminate: boolean
+  onChange: () => void
 }
 
 export const AllCheckbox: FC<AllCheckboxProps> = ({
