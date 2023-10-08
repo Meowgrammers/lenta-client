@@ -111,6 +111,10 @@ input[type="checkbox"]:indeterminate::after {
   margin-top: 10px;
 }
 
+.tremor-Legend-legendItem {
+  display: none;
+}
+
 .category {
   font-size: 14px;
   line-height: 18px;
@@ -187,3 +191,4 @@ input[type="checkbox"]:indeterminate::after {
   width: 4.5px !important;
   height: 7.5px !important;
 }
+
