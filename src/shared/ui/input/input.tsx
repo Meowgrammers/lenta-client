@@ -5,7 +5,7 @@ import {
   useState,
 } from 'react'
 import { TextInput as TremorInput } from '@tremor/react'
-import { cn, EyeIcon } from '@/shared'
+import { cn, EyeIconOff, EyeIconOn } from '@/shared'
 
 export const Input = forwardRef<
   ElementRef<typeof TremorInput>,
@@ -35,9 +35,9 @@ export const Input = forwardRef<
           onClick={togglePasswordVisibility}
         >
           {isPasswordVisible ? (
-            <EyeIcon className="h-[24px] w-[24px]" fill="#003D96" />
+            <EyeIconOn className="h-[24px] w-[24px]" fill="#4D4D4D" />
           ) : (
-            <EyeIcon className="h-[24px] w-[24px]" fill="#4D4D4D" />
+            <EyeIconOff className="h-[24px] w-[24px]" fill="#4D4D4D" />
           )}
         </button>
       )}
