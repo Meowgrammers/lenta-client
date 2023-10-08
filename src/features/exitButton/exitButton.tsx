@@ -1,15 +1,26 @@
 import { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { ExitIcon } from '@/shared'
+import { ExitIcon, useAppSelector } from '@/shared'
+import { useLogoutMutation } from '@/entities/user/api/userApi'
 
 export const ExitButton: FC = () => {
   const [isHovered, setIsHovered] = useState(false)
+  const token = useAppSelector((state) => state.user.token)
+  const [logout] = useLogoutMutation()
   const navigate = useNavigate()
-  const handleExit = () => {
-    console.log('выйти')
-    navigate('/auth')
+
+  const handleExit = async () => {
+    const response = await logout({ auth_token: token })
+    const isError = 'error' in response
+
+    if (!isError) {
+      navigate('/auth')
+    } else {
+      console.log(isError)
+    }
   }
+
   return (
     <div
       onClick={handleExit}

@@ -12,6 +12,13 @@ export const MAIN_ROUTES: Routes = [
     path: PAGES.MAIN,
     main: () => <MainPage />,
   },
+]
+
+export const AUTH_ROUTES: Routes = [
+  {
+    path: PAGES.ALL,
+    main: () => <Navigate to="/auth" replace />,
+  },
   {
     path: PAGES.AUTH,
     main: () => <AuthPage />,

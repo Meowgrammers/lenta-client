@@ -12,11 +12,11 @@ export const authApi = baseApi.injectEndpoints({
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],
     }),
     logout: builder.mutation<void, LogoutRequest>({
-      query: (token) => ({
+      query: ({ auth_token }) => ({
         url: PATHS.LOGOUT,
         method: HTTP_METHOD.POST,
         headers: {
-          authorization: `token ${token}`,
+          Authorization: `${auth_token}`,
         },
       }),
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],

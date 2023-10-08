@@ -25,7 +25,6 @@ export const AuthForm: FC = () => {
 
   const onSubmit: SubmitHandler<LoginRequest> = async (data: FormData) => {
     const response = await login(data)
-    console.log(response)
     const isError = 'error' in response
 
     if (!isError) {

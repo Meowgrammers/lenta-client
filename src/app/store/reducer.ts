@@ -11,6 +11,8 @@ import {
   forecastReducer,
   salesApi,
   shopsApi,
+  UserState,
+  userReducer,
 } from '@/entities'
 import { AppState, appReducer, baseApi } from '@/shared'
 
@@ -32,6 +34,7 @@ export interface IReducer {
   app: AppState
   categories: CategoriesState
   forecast: ForecastState
+  user: UserState
 }
 
 export const rootReducer = combineReducers({
@@ -45,4 +48,5 @@ export const rootReducer = combineReducers({
   shops: shopsReducer,
   categories: categoriesReducer,
   forecast: forecastReducer,
+  user: userReducer,
 })

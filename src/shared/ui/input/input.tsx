@@ -26,7 +26,7 @@ export const Input = forwardRef<
 
   return (
     <div className="relative flex flex-col">
-      <input
+      <TremorInput
         ref={ref}
         type={isPasswordVisible ? 'text' : type}
         className={cn(
