@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ShopsSearch, ResetTKButton } from '@/features'
+import { ShopsSearch, ResetTKButton, AllCheckbox } from '@/features'
 import {
   LocationIcon,
   ShopsMock,
@@ -27,7 +27,15 @@ export const ShopsBlock: FC = () => {
         <p className="text-xl/[24px] font-medium">Торговые комплексы:</p>
       </div>
       <ShopsSearch shops={ShopsMock} onItemSelect={handleItemSelect} />
-      <div className="mt-3 flex flex-wrap gap-1">
+      <div className="flex items-center gap-1 pl-2 pt-1">
+        <AllCheckbox />
+        <label>Выбрать все</label>
+      </div>
+      <div
+        className={`mt-3 flex flex-wrap gap-1 ${
+          selectedItems.length ? 'flex' : 'hidden'
+        }`}
+      >
         {selectedItems.map((item) => (
           <SelectedItem item={item} key={item} />
         ))}
