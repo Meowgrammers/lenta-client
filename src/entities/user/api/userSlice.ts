@@ -7,14 +7,19 @@ type UserState = {
 }
 
 const initialState = {
-  isAuth: false,
-  token: '',
+  isAuth: JSON.parse(sessionStorage.getItem('auth') || 'false'),
+  token: JSON.parse(sessionStorage.getItem('token') || '""'),
 }
 
 const userSlice = createSlice({
   name: 'user',
   initialState,
-  reducers: {},
+  reducers: {
+    logout: (state) => {
+      state.isAuth = false
+      state.token = ''
+    },
+  },
   extraReducers: (builder) => {
     builder.addMatcher(
       authApi.endpoints.login.matchFulfilled,
@@ -30,6 +35,8 @@ const userSlice = createSlice({
   },
 })
 
+const { logout } = userSlice.actions
+
 const userReducer = userSlice.reducer
 
-export { type UserState, userSlice, userReducer }
+export { type UserState, userSlice, userReducer, logout }
