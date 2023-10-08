@@ -104,6 +104,10 @@ input[type="checkbox"]:indeterminate::after {
   background: #fff;
 }
 
+.peer.sr-only {
+  display: none;
+}
+
 .tremor-TextInput-errorMessage {
   color: white;
   font-size: 12px;

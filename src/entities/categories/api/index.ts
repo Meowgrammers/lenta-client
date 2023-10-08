@@ -6,4 +6,12 @@ export {
   setSearch,
   setSort,
   setSelectId,
+  setCategory,
+  setGroup,
+  setSkus,
+  setSubcategory,
+  resetGroup,
+  resetCategory,
+  resetSubcategory,
+  resetSkus,
 } from './categoriesSlice'
