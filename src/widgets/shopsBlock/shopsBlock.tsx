@@ -1,22 +1,27 @@
 import { FC } from 'react'
 import { ShopsSearch, ResetTKButton, AllCheckbox } from '@/features'
-import {
-  LocationIcon,
-  ShopsMock,
-  useAppDispatch,
-  useAppSelector,
-} from '@/shared'
+import { LocationIcon, useAppDispatch, useAppSelector } from '@/shared'
 import { SelectedItem } from '@/widgets'
 
-import { addSelectedItem } from '@/entities'
+import { addAllItems, addSelectedItem } from '@/entities'
+import { useFetchShopsQuery } from '@/entities/shops/api/shopsApi'
 
 export const ShopsBlock: FC = () => {
+  useFetchShopsQuery({ page: 1, limit: 12 })
+  const shops = useAppSelector((state) => state.shops.allItems)
   const selectedItems = useAppSelector((state) => state.shops.selectedItems)
   const dispatch = useAppDispatch()
 
   const handleItemSelect = (id: string) => {
     if (!selectedItems.includes(id)) {
       dispatch(addSelectedItem(id))
+    }
+  }
+  const handleAllSelect = () => {
+    if (selectedItems.length) {
+      dispatch(addAllItems([]))
+    } else {
+      dispatch(addAllItems(shops))
     }
   }
 
@@ -26,12 +31,14 @@ export const ShopsBlock: FC = () => {
         <LocationIcon className="fill-white" />
         <p className="text-xl/[24px] font-medium">Торговые комплексы:</p>
       </div>
-      <ShopsSearch shops={ShopsMock} onItemSelect={handleItemSelect} />
+      <ShopsSearch onItemSelect={handleItemSelect} />
       <div className="flex items-center gap-1 pl-2 pt-1">
         <AllCheckbox
-          checked={false}
-          indeterminate={false}
-          onChange={() => console.log('Выбрать все')}
+          checked={selectedItems === shops}
+          indeterminate={
+            selectedItems.length < shops.length && selectedItems.length !== 0
+          }
+          onChange={handleAllSelect}
         />
         <label>Выбрать все</label>
       </div>

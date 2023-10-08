@@ -1,5 +1,5 @@
 export const enum PATHS {
-  BASE = 'https://jsonplaceholder.typicode.com/',
+  BASE = 'http://localhost:8000/api/',
   LOGIN = 'auth/token/login/',
   LOGOUT = 'auth/token/logout/',
   CATEGORIES = 'categories/',
