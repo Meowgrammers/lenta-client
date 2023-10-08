@@ -280,7 +280,7 @@ export const ListMenu: FC = () => {
         onClick={handleResetChecked}
         className={`mt-6 h-10 w-full shadow-sm ${
           selectedItemsCount === 0
-            ? 'cursor-default border-white/[.24] text-white/[.40]'
+            ? 'cursor-default border-white/[.40] text-white/[.40]'
             : 'border-white text-white hover:bg-white/[0.16] hover:text-white active:bg-color-back-primary-on-blue'
         } `}
         variant="secondary"

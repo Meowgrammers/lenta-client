@@ -17,7 +17,7 @@ export const ResetTKButton: FC = () => {
       onClick={handleResetItems}
       className={`mt-6 h-10 shadow-sm ${
         selectedItems.length === 0
-          ? 'cursor-default border-white/[.24] text-white/[.40] shadow-sm'
+          ? 'cursor-default border-white/[.40] text-white/[.40] shadow-sm'
           : ' border-white text-white hover:bg-white/[0.16] hover:text-white active:bg-color-back-primary-on-blue'
       }`}
       variant="secondary"
