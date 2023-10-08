@@ -22,10 +22,10 @@ export const MainPage = () => {
       <Menu />
       <TabGroup className="min-w-[1478px]">
         <TabList className="mt-8 w-full pl-[30px]" variant="line">
-          <Tab className="h-10 border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] text-[#4D4D4D8F] hover:border-b-[#003d96] hover:text-[#003d96] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
+          <Tab className="h-10 border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] text-[#4D4D4D8F] hover:border-b-transparent hover:text-[#4D4D4D] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
             <span className="text-xl font-medium">Прогноз</span>
           </Tab>
-          <Tab className="!m-0 h-10 border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] text-[#4D4D4D8F] hover:border-b-[#003d96] hover:text-[#003d96] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
+          <Tab className="!m-0 h-10 border-b-2 border-solid text-2xl font-medium not-italic leading-[130%] text-[#4D4D4D8F] hover:border-b-transparent hover:text-[#4D4D4D] aria-selected:border-b-[#003d96] aria-selected:text-[#003d96]">
             <span className="text-xl font-medium">Статистика</span>
           </Tab>
           <div className="!ml-auto flex items-center pr-[30px] text-sm/[18px] text-[#4D4D4D8F]">
