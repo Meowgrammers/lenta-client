@@ -28,7 +28,11 @@ export const ShopsBlock: FC = () => {
       </div>
       <ShopsSearch shops={ShopsMock} onItemSelect={handleItemSelect} />
       <div className="flex items-center gap-1 pl-2 pt-1">
-        <AllCheckbox />
+        <AllCheckbox
+          checked={false}
+          indeterminate={false}
+          onChange={() => console.log('Выбрать все')}
+        />
         <label>Выбрать все</label>
       </div>
       <div
