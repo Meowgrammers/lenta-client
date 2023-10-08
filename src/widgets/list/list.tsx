@@ -1,11 +1,11 @@
 import { FC, useState } from 'react'
 
 import { Checkbox } from '@/features'
-import { Category } from '@/widgets'
+import { TItems } from '@/widgets'
 import { status, CollapseIcon } from '@/shared'
 
 interface ListProps {
-  items: Category[]
+  items: TItems[]
   compute: (checkboxId: string, status: number) => void
 }
 
@@ -26,6 +26,13 @@ export const List: FC<ListProps> = ({ items, compute }) => {
     return item && Array.isArray(item.items) && item.items.length > 0
   }
 
+  const countSelectedItems = (itemsArray: TItems[]) => {
+    const selectedItems = itemsArray.filter(
+      (item) => item.status === status.checked
+    )
+    return selectedItems.length
+  }
+
   return (
     <div className="flex flex-col pl-3">
       <ul className="w-full text-profile-title font-semibold">
@@ -37,11 +44,8 @@ export const List: FC<ListProps> = ({ items, compute }) => {
             ) : null
           }
           return (
-            <li key={item.id} className="w-full">
-              <div
-                className="relative flex w-full cursor-pointer items-center gap-1 px-2 py-1 hover:bg-white/[0.16]"
-                onClick={() => toggleItem(item.id)}
-              >
+            <li key={item.id} className="w-full" data-set={item.data}>
+              <div className="relative mb-1 flex w-full cursor-default items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]">
                 <Checkbox
                   id={item.id}
                   name={item.name}
@@ -49,21 +53,29 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                   indeterminate={item.status === status.indeterminate}
                   compute={compute}
                 />
-                <label className="" htmlFor={item.name}>
+                <label
+                  className="w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8"
+                  htmlFor={item.name}
+                  onClick={() => toggleItem(item.id)}
+                >
                   {item.name}
                 </label>
 
                 {hasNestedItems(item.id) && (
                   <>
                     <p className="ml-auto mr-[18px] text-sm text-white/[0.4]">
-                      7/10
+                      {countSelectedItems(item.items!)}/{item.items!.length}
                     </p>
-                    <CollapseIcon
-                      className={`absolute right-0 h-5 w-5 ${
-                        openItems[item.id] ? 'rotate-180' : ''
-                      }`}
-                      fill="white"
-                    />
+                    <div
+                      className="flex cursor-pointer items-center"
+                      onClick={() => toggleItem(item.id)}
+                    >
+                      <CollapseIcon
+                        className={`absolute right-0 h-5 w-5 fill-white hover:fill-[#003D96] ${
+                          openItems[item.id] ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </div>
                   </>
                 )}
               </div>

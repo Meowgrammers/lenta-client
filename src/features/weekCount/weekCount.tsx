@@ -14,41 +14,41 @@ const WeekCount = () => {
   return (
     <Flex justifyContent="end" className="gap-4" alignItems="center">
       <TabGroup className="w-fit">
-        <TabList variant="solid" className="rounded-lg bg-[#EAEBED] p-1 ">
+        <TabList variant="solid" className="h-10 rounded-lg bg-[#EAEBED] p-1">
           <Tab
             onClick={() => changeWeek(2)}
-            className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
+            className="rounded-md border-solid !text-base/[20px] !font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]"
           >
             14 дней
           </Tab>
           <Tab
             onClick={() => changeWeek(4)}
-            className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
+            className="rounded-md border-solid !text-base/[20px] !font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]"
           >
             Месяц
           </Tab>
           <Tab
             onClick={() => changeWeek(13)}
-            className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
+            className="rounded-md border-solid !text-base/[20px] !font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]"
           >
             Квартал
           </Tab>
           <Tab
             onClick={() => changeWeek(26)}
-            className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
+            className="rounded-md border-solid !text-base/[20px] !font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]"
           >
             6 месяцев
           </Tab>
           <Tab
             onClick={() => changeWeek(52)}
-            className="rounded-md border-solid text-base font-medium not-italic leading-5 text-gray-500 aria-selected:bg-white aria-selected:text-[#003d96]"
+            className="rounded-md border-solid !text-base/[20px] !font-semibold not-italic leading-5 text-[#4D4D4D8F] aria-selected:bg-white aria-selected:text-[#003d96]"
           >
             Год
           </Tab>
         </TabList>
       </TabGroup>
       <NumberInput
-        className="max-w-[158px]"
+        className="h-10 max-w-[158px]"
         placeholder="2 нед"
         min="2"
         max="52"

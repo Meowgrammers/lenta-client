@@ -9,11 +9,14 @@ const ToggleUnit = () => {
   }
 
   return (
-    <Switcher
-      handleCheck={changeCheckbox}
-      checked={check}
-      text={check ? 'выручка, руб' : 'количество, шт/кг'}
-    />
+    <div className="w-max">
+      <Switcher
+        handleCheck={changeCheckbox}
+        checked={check}
+        textOn={'количество'}
+        textOff={'выручка'}
+      />
+    </div>
   )
 }
 

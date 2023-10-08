@@ -25,8 +25,8 @@ const data = [
 
 const QualityUnitChart = () => {
   return (
-    <Card className="w-full">
-      <Title>Качество прогноза WAPE / товар</Title>
+    <Card className="w-6/12">
+      <Title className="text-[#2C2C2C]">Качество прогноза WAPE / товар</Title>
       <Subtitle>Изменение WAPE для выбранного товара за период</Subtitle>
       <LineChart
         className="mt-6"

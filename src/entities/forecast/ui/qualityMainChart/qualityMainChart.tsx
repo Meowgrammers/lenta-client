@@ -35,9 +35,9 @@ const data = [
 
 const QualityMainChart = () => {
   return (
-    <Card className="w-full">
-      <Title>Качество прогноза WAPE</Title>
-      <Subtitle>
+    <Card className="w-6/12">
+      <Title className="text-[#2C2C2C]">Качество прогноза WAPE</Title>
+      <Subtitle className="text-[#4D4D4D8F]">
         Среднее значения по всем выбранным товарам ТК за период
       </Subtitle>
       <LineChart

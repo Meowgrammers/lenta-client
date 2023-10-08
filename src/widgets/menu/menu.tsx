@@ -11,7 +11,7 @@ export const Menu: FC = () => {
   return (
     <>
       {isMenuExpanded ? (
-        <div className="flex flex-col bg-color-back-secondary px-8 py-6 text-white">
+        <div className="flex flex-col  bg-color-back-secondary px-8 py-6 text-white">
           <MenuTitle
             handleToggleMenu={handleToggleMenu}
             isMenuExpanded={isMenuExpanded}
@@ -21,7 +21,7 @@ export const Menu: FC = () => {
           <ProductsBlock />
         </div>
       ) : (
-        <div className="flex w-[80px] flex-col items-center gap-10 bg-color-back-secondary px-4 py-6">
+        <div className="flex w-[80px] flex-col items-center gap-10 bg-color-back-secondary px-4 py-6 ">
           <div className="flex flex-col items-center gap-4">
             <LogoMini />
             <RollUpButton
@@ -37,8 +37,8 @@ export const Menu: FC = () => {
             className="flex flex-col items-center gap-4"
             onClick={() => setIsMenuExpanded(true)}
           >
-            <LocationIcon className="cursor-pointer" />
-            <ProductIcon className="cursor-pointer" />
+            <LocationIcon className="cursor-pointer fill-white hover:fill-[#002773] " />
+            <ProductIcon className="cursor-pointer fill-white hover:fill-[#002773] " />
           </div>
         </div>
       )}
