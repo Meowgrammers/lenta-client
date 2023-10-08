@@ -14,4 +14,5 @@ export {
   resetCategory,
   resetSubcategory,
   resetSkus,
+  resetAll,
 } from './categoriesSlice'
