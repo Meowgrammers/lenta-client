@@ -52,9 +52,10 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                   checked={item.status === status.checked}
                   indeterminate={item.status === status.indeterminate}
                   compute={compute}
+                  className={`checkbox-${item.data}`}
                 />
                 <label
-                  className="w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8"
+                  className={`w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8 ${item.data}`}
                   htmlFor={item.name}
                   onClick={() => toggleItem(item.id)}
                 >
