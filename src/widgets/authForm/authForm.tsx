@@ -24,13 +24,13 @@ export const AuthForm: FC = () => {
         >
           <Input
             type="email"
-            placeholder="введите почту"
+            placeholder="Введите почту"
             errorMessage="Некорректный email"
             error={true}
           />
           <Input
             type="password"
-            placeholder="введите пароль"
+            placeholder="Введите пароль"
             className="mt-[28px]"
           />
 
