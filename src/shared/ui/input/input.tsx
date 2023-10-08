@@ -7,10 +7,17 @@ import {
 import { TextInput as TremorInput } from '@tremor/react'
 import { cn, EyeIconOff, EyeIconOn } from '@/shared'
 
+type InputProps = {
+  required: boolean
+  placeholder?: string
+  isError?: boolean
+  errorMessage?: string
+}
+
 export const Input = forwardRef<
   ElementRef<typeof TremorInput>,
-  ComponentPropsWithoutRef<typeof TremorInput>
->(({ className, type, ...props }, ref) => {
+  ComponentPropsWithoutRef<typeof TremorInput> & InputProps
+>(({ className, type, errorMessage, isError, ...props }, ref) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false)
 
   const togglePasswordVisibility = () => {
@@ -18,8 +25,8 @@ export const Input = forwardRef<
   }
 
   return (
-    <div className="relative">
-      <TremorInput
+    <div className="relative flex flex-col">
+      <input
         ref={ref}
         type={isPasswordVisible ? 'text' : type}
         className={cn(
@@ -41,6 +48,7 @@ export const Input = forwardRef<
           )}
         </button>
       )}
+      {isError && <span>{errorMessage}</span>}
     </div>
   )
 })

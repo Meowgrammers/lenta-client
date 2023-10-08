@@ -1,16 +1,38 @@
 import { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import { type SubmitHandler, useForm } from 'react-hook-form'
+import * as yup from 'yup'
 import { Logo, Input, Button, ArrowIcon } from '@/shared'
+import { useLoginMutation } from '@/entities/user/api/userApi'
+import { yupSchemaAuthForm } from './lib/validation'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { LoginRequest } from '@/entities/user/api/types'
 
 export const AuthForm: FC = () => {
   const [isHovered, setIsHovered] = useState(false)
+  type FormData = yup.InferType<typeof yupSchemaAuthForm>
+  const [login] = useLoginMutation()
   const navigate = useNavigate()
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault()
-    navigate('/')
-    console.log('Form submitted')
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginRequest>({
+    mode: 'onChange',
+    resolver: yupResolver(yupSchemaAuthForm),
+  })
+
+  const onSubmit: SubmitHandler<LoginRequest> = async (data: FormData) => {
+    const response = await login(data)
+    console.log(response)
+    const isError = 'error' in response
+
+    if (!isError) {
+      navigate('/')
+    } else {
+      console.log(isError)
+    }
   }
 
   return (
@@ -20,18 +42,24 @@ export const AuthForm: FC = () => {
         <form
           className="flex flex-col items-start"
           name="auth"
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
         >
           <Input
-            type="email"
-            placeholder="введите почту"
-            errorMessage="Некорректный email"
-            error={true}
+            type="text"
+            placeholder="введите username"
+            errorMessage={errors.username?.message}
+            {...register('username')}
+            isError={!!errors.username?.message}
+            required
           />
           <Input
             type="password"
             placeholder="введите пароль"
             className="mt-[28px]"
+            {...register('password')}
+            isError={!!errors.password?.message}
+            errorMessage={errors.password?.message}
+            required
           />
 
           <Button

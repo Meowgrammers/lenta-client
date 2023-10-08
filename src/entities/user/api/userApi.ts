@@ -8,9 +8,6 @@ export const authApi = baseApi.injectEndpoints({
         url: PATHS.LOGIN,
         method: HTTP_METHOD.POST,
         body: credentials,
-        transformResponse: (response: { data: { auth_token: string } }) => {
-          return response.data.auth_token
-        },
       }),
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],
     }),

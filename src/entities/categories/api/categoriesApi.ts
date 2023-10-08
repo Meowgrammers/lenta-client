@@ -9,7 +9,8 @@ export const categoriesApi = baseApi
     endpoints: (builder) => ({
       fetchCategories: builder.query<CategoriesResponse, CategoriesRequest>({
         query: ({ sku, group, category, subcategory, page, limit }) => ({
-          url: `${PATHS.CATEGORIES}?sku=${sku}&group=${group}&category=${category}&subcategory=${subcategory}&page=${page}&limit=${limit}`,
+          url: `${PATHS.CATEGORIES}`,
+          params: { sku, group, category, subcategory, page, limit },
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'CATEGORIES_DATA', id: 'INFO' }],
         }),
