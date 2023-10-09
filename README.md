@@ -86,7 +86,7 @@ media queries: 1920px
 ## Дизайн
 
 - Макеты: [figma](https://www.figma.com/file/VyRPWoY3pyHrlUODlwK3VV/%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-%E2%84%964-QuadroTech_%D0%A5%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD-%D0%9B%D0%B5%D0%BD%D1%82%D0%B0-(%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F)?node-id=195%3A2044&mode=dev)  
-- Интерфейс: [архив]()
+- Интерфейс: [архив](INTERFACE.md)
 
 <style>
   .badge {
