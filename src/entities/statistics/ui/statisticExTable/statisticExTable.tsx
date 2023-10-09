@@ -1,4 +1,4 @@
-import { setExItem, setSelectId } from '@/entities'
+import { setExItem, setSelectId, setSelectStore } from '@/entities'
 import {
   Table,
   TableHeaderCell,
@@ -42,6 +42,7 @@ export const StatisticExTable: FC<CategoryTableProps> = ({
       setSelectId(`${sortingMock[index].store}${sortingMock[index].sku}`)
     )
     dispatch(setExItem(sortingMock[index]))
+    dispatch(setSelectStore(sortingMock[index].store))
   }
 
   return (

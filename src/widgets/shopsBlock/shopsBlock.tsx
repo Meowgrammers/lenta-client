@@ -1,14 +1,19 @@
 import { FC } from 'react'
 import { ShopsSearch, ResetTKButton, AllCheckbox } from '@/features'
-import { LocationIcon, useAppDispatch, useAppSelector } from '@/shared'
+import {
+  LocationIcon,
+  ShopsMock,
+  useAppDispatch,
+  useAppSelector,
+} from '@/shared'
 import { SelectedItem } from '@/widgets'
 
 import { addAllItems, addSelectedItem } from '@/entities'
-import { useFetchShopsQuery } from '@/entities/shops/api/shopsApi'
 
 export const ShopsBlock: FC = () => {
-  useFetchShopsQuery({ page: 1, limit: 12 })
-  const shops = useAppSelector((state) => state.shops.allItems)
+  // useFetchShopsQuery({ page: 1, limit: 12 })
+  // const shops = useAppSelector((state) => state.shops.allItems)
+  const shops = ShopsMock.map((item) => item.id)
   const selectedItems = useAppSelector((state) => state.shops.selectedItems)
   const dispatch = useAppDispatch()
 
@@ -43,7 +48,7 @@ export const ShopsBlock: FC = () => {
         <label>Выбрать все</label>
       </div>
       <div
-        className={`mt-3 flex flex-wrap gap-1 ${
+        className={`mt-3 flex max-w-[318px] flex-wrap gap-1 ${
           selectedItems.length ? 'flex' : 'hidden'
         }`}
       >

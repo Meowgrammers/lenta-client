@@ -3,6 +3,7 @@ export {
   setSelectId,
   setSelectItem,
   setExItem,
+  setSelectStore,
   type StatisticState,
   statisticSlice,
   statisticReducer,

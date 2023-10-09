@@ -1,4 +1,9 @@
-import { setSelectId, setSelectItem, useFetchStatisticsQuery } from '@/entities'
+import {
+  setSelectId,
+  setSelectItem,
+  setSelectStore,
+  useFetchStatisticsQuery,
+} from '@/entities'
 import {
   Table,
   TableHeaderCell,
@@ -22,7 +27,6 @@ type VirtualItem = {
 type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
-  doubleTable?: boolean
   chartTable?: boolean
   sortingMock: typeof StatisticsMock
 }
@@ -30,7 +34,6 @@ type CategoryTableProps = {
 export const StatisticTable: FC<CategoryTableProps> = ({
   items,
   totalHeight,
-  doubleTable,
   sortingMock,
   chartTable,
 }) => {
@@ -57,9 +60,6 @@ export const StatisticTable: FC<CategoryTableProps> = ({
 
   console.log(data)
 
-  const top = doubleTable ? 'top-[68px]' : 'top-[34px]'
-  const height = doubleTable && 'h-[68px]'
-
   const dispatch = useAppDispatch()
 
   const handleSelect = (index: number) => {
@@ -67,6 +67,7 @@ export const StatisticTable: FC<CategoryTableProps> = ({
       setSelectId(`${sortingMock[index].store}${sortingMock[index].sku}`)
     )
     dispatch(setSelectItem(sortingMock[index]))
+    dispatch(setSelectStore(sortingMock[index].store))
   }
 
   return (
@@ -74,7 +75,7 @@ export const StatisticTable: FC<CategoryTableProps> = ({
       {sortingMock.length > 0 && (
         <Table style={{ height: totalHeight + 34 }}>
           <TableHead>
-            <TableRow className={`absolute ${height} top-0 bg-[#002773] pl-5`}>
+            <TableRow className={`absolute top-0 h-[34px] bg-[#002773] pl-5`}>
               <TableHeaderCell className="w-[100px]">ТК</TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Группа</TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Категория</TableHeaderCell>
@@ -107,8 +108,8 @@ export const StatisticTable: FC<CategoryTableProps> = ({
                   key={item.sku + Math.random()}
                   className={
                     id === `${item.store}${item.sku}`
-                      ? `absolute ${top} cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5`
-                      : `absolute ${top} cursor-pointer pl-5`
+                      ? `absolute top-[34px] cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5`
+                      : `absolute top-[34px] cursor-pointer pl-5`
                   }
                   style={{
                     transform: `translateY(${virtualItem.offsetTop}px)`,

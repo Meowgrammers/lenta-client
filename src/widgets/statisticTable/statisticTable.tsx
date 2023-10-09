@@ -23,7 +23,7 @@ export const StatisticTable = () => {
 
   const { virtualItems, totalHeight } = useVirtualize({
     itemHeight: 34,
-    itemsCount: StatisticExtendedMock.length,
+    itemsCount: sortingStatisticMock.length,
     overscan: 3,
     listHeight: 430,
     getScrollElement: useCallback(() => scrollElementRef.current, []),
