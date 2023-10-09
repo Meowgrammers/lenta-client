@@ -1,9 +1,4 @@
-import {
-  setSelectId,
-  setSelectItem,
-  setSelectStore,
-  useFetchStatisticsQuery,
-} from '@/entities'
+import { setSelectId, setSelectItem, setSelectStore } from '@/entities'
 import {
   Table,
   TableHeaderCell,
@@ -14,10 +9,10 @@ import {
   TableBody,
   useAppSelector,
   useAppDispatch,
-  StatisticsMock,
 } from '@/shared'
 
 import { FC } from 'react'
+import { StatisticsResponse } from '../../api/types'
 
 type VirtualItem = {
   index: number
@@ -28,7 +23,7 @@ type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
   chartTable?: boolean
-  sortingMock: typeof StatisticsMock
+  sortingMock: StatisticsResponse[]
 }
 
 export const StatisticTable: FC<CategoryTableProps> = ({
@@ -40,25 +35,22 @@ export const StatisticTable: FC<CategoryTableProps> = ({
   const check = useAppSelector((state) => state.app.check)
 
   const id = useAppSelector((state) => state.statistics.selectId)
+  // //TODO: связь с бэком
+  // const sku = useAppSelector((state) => state.categories.skus)
+  // const group = useAppSelector((state) => state.categories.group)
+  // const categories = useAppSelector((state) => state.categories.categories)
+  // const subcategories = useAppSelector(
+  //   (state) => state.categories.subcategories
+  // )
 
-  const sku = useAppSelector((state) => state.categories.skus)
-  const group = useAppSelector((state) => state.categories.group)
-  const categories = useAppSelector((state) => state.categories.categories)
-  const subcategories = useAppSelector(
-    (state) => state.categories.subcategories
-  )
-
-  //TODO: связь с бэком
-  const { data } = useFetchStatisticsQuery({
-    sku: sku.length > 0 ? sku.join(',') : undefined,
-    group: group.length > 0 ? group.join(',') : undefined,
-    category: categories.length > 0 ? categories.join(',') : undefined,
-    subcategory: subcategories.length > 0 ? subcategories.join(',') : undefined,
-    page: 1,
-    limit: 20,
-  })
-
-  console.log(data)
+  // const { data } = useFetchStatisticsQuery({
+  //   sku: sku.length > 0 ? sku.join(',') : undefined,
+  //   group: group.length > 0 ? group.join(',') : undefined,
+  //   category: categories.length > 0 ? categories.join(',') : undefined,
+  //   subcategory: subcategories.length > 0 ? subcategories.join(',') : undefined,
+  //   page: 1,
+  //   limit: 20,
+  // })
 
   const dispatch = useAppDispatch()
 
@@ -143,7 +135,11 @@ export const StatisticTable: FC<CategoryTableProps> = ({
                         }`}
                         key={index}
                       >
-                        <Text>{fact_item.sales_units}</Text>
+                        <Text>
+                          {check
+                            ? fact_item.sales_in_rub
+                            : fact_item.sales_units}
+                        </Text>
                       </TableCell>
                     ))}
                 </TableRow>

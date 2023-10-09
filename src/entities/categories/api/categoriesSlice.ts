@@ -29,16 +29,17 @@ const categoriesSlice = createSlice({
       state.tableSearch = payload
     },
     setGroup(state, { payload }) {
-      state.group.push(payload)
+      if (!state.group.includes(payload)) state.group.push(payload)
     },
     setCategory(state, { payload }) {
-      state.categories.push(payload)
+      if (!state.categories.includes(payload)) state.categories.push(payload)
     },
     setSubcategory(state, { payload }) {
-      state.subcategories.push(payload)
+      if (!state.subcategories.includes(payload))
+        state.subcategories.push(payload)
     },
     setSkus(state, { payload }) {
-      state.skus.push(payload)
+      if (!state.skus.includes(payload)) state.skus.push(payload)
     },
     resetGroup(state, { payload }) {
       state.group = state.group.filter((item) => item !== payload)

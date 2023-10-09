@@ -22,7 +22,7 @@ const StatisticExAllChart = () => {
 
   const currentData =
     filterData.length > 0
-      ? filterData[0].statistic.slice(-week).map((item) => {
+      ? filterData[0].statistic.slice(0, week).map((item) => {
           return { week: item.week, ...handle(item.week) }
         })
       : null
