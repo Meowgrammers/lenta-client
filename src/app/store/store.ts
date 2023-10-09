@@ -19,15 +19,6 @@ const saveToSessionStorage = (state: RootState) => {
   }
 }
 
-const saveToSessionStorage = (state: RootState) => {
-  try {
-    sessionStorage.setItem('auth', JSON.stringify(state.user.isAuth))
-    sessionStorage.setItem('token', JSON.stringify(state.user.token))
-  } catch (e) {
-    console.error(e)
-  }
-}
-
 export const setupStore = () => {
   return configureStore({
     reducer: rootReducer,
