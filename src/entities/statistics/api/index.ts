@@ -1,4 +1,4 @@
-export { statisticApi } from './statisticApi'
+export { statisticApi, useFetchStatisticsQuery } from './statisticApi'
 export {
   setSelectId,
   setSelectItem,

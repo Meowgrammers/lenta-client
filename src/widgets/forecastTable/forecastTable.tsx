@@ -1,4 +1,4 @@
-import { StatisticTable } from '@/entities/statistics'
+import { StatisticTable, useFetchStatisticsQuery } from '@/entities'
 import {
   StatisticsMock,
   sortByField,
@@ -13,6 +13,25 @@ export const ForecastTable = () => {
 
   const shops = useAppSelector((state) => state.shops.selectedItems)
   const sort = useAppSelector((state) => state.categories.sort)
+
+  const sku = useAppSelector((state) => state.categories.skus)
+  const group = useAppSelector((state) => state.categories.group)
+  const categories = useAppSelector((state) => state.categories.categories)
+  const subcategories = useAppSelector(
+    (state) => state.categories.subcategories
+  )
+
+  //TODO: связь с бэком
+  const { data } = useFetchStatisticsQuery({
+    sku: sku.length > 0 ? sku.join(',') : undefined,
+    group: group.length > 0 ? group.join(',') : undefined,
+    category: categories.length > 0 ? categories.join(',') : undefined,
+    subcategory: subcategories.length > 0 ? subcategories.join(',') : undefined,
+    page: 1,
+    limit: 20,
+  })
+
+  console.log(data)
 
   const sortingStatisticMock = useMemo(() => {
     return shops.length > 0
