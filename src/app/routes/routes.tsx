@@ -12,6 +12,14 @@ export const MAIN_ROUTES: Routes = [
     path: PAGES.MAIN,
     main: () => <MainPage />,
   },
+  {
+    path: PAGES.NOTFOUND,
+    main: () => <ErrorPage code={404} />,
+  },
+  {
+    path: PAGES.SERVER_ERROR,
+    main: () => <ErrorPage code={500} />,
+  },
 ]
 
 export const AUTH_ROUTES: Routes = [
@@ -22,5 +30,20 @@ export const AUTH_ROUTES: Routes = [
   {
     path: PAGES.AUTH,
     main: () => <AuthPage />,
+  },
+]
+
+export const ERROR_ROUTES: Routes = [
+  {
+    path: PAGES.ALL,
+    main: () => <Navigate to="/404" replace />,
+  },
+  {
+    path: PAGES.NOTFOUND,
+    main: () => <ErrorPage code={404} />,
+  },
+  {
+    path: PAGES.SERVER_ERROR,
+    main: () => <ErrorPage code={500} />,
   },
 ]
