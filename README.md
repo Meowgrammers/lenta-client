@@ -59,7 +59,7 @@ npm run docker-start
 
 media queries: 1920px
 
-<div>
+<div align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
@@ -88,9 +88,3 @@ media queries: 1920px
 - Макеты: [figma](https://www.figma.com/file/VyRPWoY3pyHrlUODlwK3VV/%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-%E2%84%964-QuadroTech_%D0%A5%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD-%D0%9B%D0%B5%D0%BD%D1%82%D0%B0-(%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F)?node-id=195%3A2044&mode=dev)  
 - Интерфейс: [архив](INTERFACE.md)
 
-<style>
-  .badge {
-    padding-left: 5px;
-    height: 18px;
-  }
-</style>
