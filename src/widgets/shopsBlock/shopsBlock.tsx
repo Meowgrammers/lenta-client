@@ -43,7 +43,7 @@ export const ShopsBlock: FC = () => {
         <label>Выбрать все</label>
       </div>
       <div
-        className={`mt-3 flex flex-wrap gap-1 ${
+        className={`mt-3 flex w-[318px] flex-wrap gap-1${
           selectedItems.length ? 'flex' : 'hidden'
         }`}
       >
