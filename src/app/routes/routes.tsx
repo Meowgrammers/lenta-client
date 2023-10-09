@@ -20,6 +20,10 @@ export const MAIN_ROUTES: Routes = [
     path: PAGES.SERVER_ERROR,
     main: () => <ErrorPage code={500} />,
   },
+  {
+    path: PAGES.AUTH,
+    main: () => <AuthPage />,
+  },
 ]
 
 export const AUTH_ROUTES: Routes = [

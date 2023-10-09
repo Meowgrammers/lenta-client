@@ -321,7 +321,7 @@ export const ListMenu: FC = () => {
         </div>
       </div>
       {isListVisible && (
-        <div className="ml-[-12px]">
+        <div className="ml-[-12px] max-h-[400px] overflow-auto">
           <List items={items} compute={compute} />
         </div>
       )}
