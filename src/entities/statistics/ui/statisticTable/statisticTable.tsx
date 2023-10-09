@@ -23,6 +23,7 @@ type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
   doubleTable?: boolean
+  chartTable?: boolean
   sortingMock: typeof StatisticsMock
 }
 
@@ -31,6 +32,7 @@ export const StatisticTable: FC<CategoryTableProps> = ({
   totalHeight,
   doubleTable,
   sortingMock,
+  chartTable,
 }) => {
   const check = useAppSelector((state) => state.app.check)
 
@@ -62,17 +64,18 @@ export const StatisticTable: FC<CategoryTableProps> = ({
               </TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Товар</TableHeaderCell>
               <TableHeaderCell className="w-[48px]">Ед.</TableHeaderCell>
-              {sortingMock[0].forecast.map((fact_item, index) => {
-                return (
-                  <TableHeaderCell key={index} className="w-[80px]">
-                    {fact_item.date
-                      .split('-')
-                      .reverse()
-                      .join('.')
-                      .replace('.20', '.')}
-                  </TableHeaderCell>
-                )
-              })}
+              {!chartTable &&
+                sortingMock[0].forecast.map((fact_item, index) => {
+                  return (
+                    <TableHeaderCell key={index} className="w-[80px]">
+                      {fact_item.date
+                        .split('-')
+                        .reverse()
+                        .join('.')
+                        .replace('.20', '.')}
+                    </TableHeaderCell>
+                  )
+                })}
             </TableRow>
           </TableHead>
           <TableBody>
@@ -110,16 +113,17 @@ export const StatisticTable: FC<CategoryTableProps> = ({
                   <TableCell className="w-[48px]">
                     <Text>{check ? 'руб' : item.uom}</Text>
                   </TableCell>
-                  {forecast.map((fact_item, index) => (
-                    <TableCell
-                      className={`w-[80px]  ${
-                        index % 2 === 1 && 'bg-[rgba(0,61,150,0.08)]'
-                      }`}
-                      key={index}
-                    >
-                      <Text>{fact_item.sales_units}</Text>
-                    </TableCell>
-                  ))}
+                  {!chartTable &&
+                    forecast.map((fact_item, index) => (
+                      <TableCell
+                        className={`w-[80px]  ${
+                          index % 2 === 1 && 'bg-[rgba(0,61,150,0.08)]'
+                        }`}
+                        key={index}
+                      >
+                        <Text>{fact_item.sales_units}</Text>
+                      </TableCell>
+                    ))}
                 </TableRow>
               )
             })}
