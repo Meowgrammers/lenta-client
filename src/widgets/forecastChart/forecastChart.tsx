@@ -1,6 +1,6 @@
-import { CategoryTable, StatisticChart } from '@/entities'
+import { StatisticChart, StatisticTable } from '@/entities'
 import {
-  CategoryMock,
+  StatisticsMock,
   sortByField,
   useAppSelector,
   useVirtualize,
@@ -14,10 +14,10 @@ export const ForecastChart = () => {
   const sort = useAppSelector((state) => state.categories.sort)
   const sortingCategoryMock = (
     shops.length > 0
-      ? CategoryMock.filter((category) => {
+      ? StatisticsMock.filter((category) => {
           return shops.includes(category.store)
         })
-      : CategoryMock
+      : StatisticsMock
   ).sort(sortByField(sort))
 
   const { virtualItems, totalHeight } = useVirtualize({
@@ -31,13 +31,14 @@ export const ForecastChart = () => {
   return (
     <Flex className="w-full items-start gap-5">
       <Card
-        className="flex max-h-[800px] overflow-auto rounded-none p-0 shadow-none ring-0"
+        className="flex max-h-[800px] w-max min-w-fit overflow-y-auto rounded-none p-0 shadow-none ring-0"
         ref={scrollElementRef}
       >
-        <CategoryTable
+        <StatisticTable
           items={virtualItems}
           totalHeight={totalHeight}
           sortingMock={sortingCategoryMock}
+          chartTable={true}
         />
       </Card>
       <StatisticChart />

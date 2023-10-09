@@ -7,7 +7,6 @@ const StatisticChart = () => {
 
   // const chartCategory = check ? 'sales_rub' : 'sales_units'
 
-  console.log(data?.forecast)
   return (
     <Card className="min-w-[870px]">
       <Title>Прогнозируемое значение, {check ? 'руб.' : 'шт'}</Title>
