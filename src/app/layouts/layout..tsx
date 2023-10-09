@@ -1,9 +1,8 @@
-import { useAppSelector } from '@/shared'
 import { Route, Routes } from 'react-router-dom'
-import { AUTH_ROUTES, MAIN_ROUTES } from '../routes/routes'
+import { MAIN_ROUTES } from '../routes/routes'
 
 export const Layout = () => {
-  const isAuth = useAppSelector((state) => state.user.isAuth)
+  // const isAuth = useAppSelector((state) => state.user.isAuth)
   return (
     <Routes>
       {/* {isAuth

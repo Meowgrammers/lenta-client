@@ -10,7 +10,7 @@ const StatisticExAllChart = () => {
   const sku = filterData.map((item) => item.sku)
 
   const handle = (WeekCount: number) => {
-    return filterData.reduce((obj, currObj) => {
+    return filterData.reduce((obj: { [key: string]: number }, currObj) => {
       obj[currObj.sku] = currObj.statistic
         .filter((el) => el.week === WeekCount)
         .reduce((acc, curr) => {
