@@ -57,7 +57,6 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                 />
                 <label
                   className={`w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8 ${item.data}`}
-                  htmlFor={item.name}
                   onClick={() => toggleItem(item.id)}
                 >
                   {item.name}

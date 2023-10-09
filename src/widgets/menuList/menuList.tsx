@@ -20,6 +20,7 @@ import {
   resetCategory,
   resetSubcategory,
   resetSkus,
+  resetAll,
 } from '@/entities'
 
 export interface TItems {
@@ -248,6 +249,7 @@ export const ListMenu: FC = () => {
     })
     setItems([...items])
     setSelectAllChecked(false)
+    dispatch(resetAll())
   }
 
   const totalItems = useMemo(() => {

@@ -59,6 +59,12 @@ const categoriesSlice = createSlice({
     resetSkus(state, { payload }) {
       state.skus = state.skus.filter((item) => item !== payload)
     },
+    resetAll(state) {
+      state.group = []
+      state.categories = []
+      state.subcategories = []
+      state.skus = []
+    },
   },
 })
 
@@ -76,6 +82,7 @@ export const {
   resetCategory,
   resetSubcategory,
   resetSkus,
+  resetAll,
 } = categoriesSlice.actions
 
 export { type CategoriesState, categoriesSlice, categoriesReducer }
