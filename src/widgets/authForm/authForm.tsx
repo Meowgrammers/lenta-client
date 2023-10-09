@@ -35,7 +35,7 @@ export const AuthForm: FC = () => {
   }
 
   return (
-    <div className="text-secondary flex h-screen w-full flex-col items-center justify-center bg-blueMain">
+    <div className="flex h-screen w-full flex-col items-center justify-center bg-blueMain">
       <div className="flex flex-col items-center gap-[80px]">
         <Logo />
         <form
@@ -45,21 +45,30 @@ export const AuthForm: FC = () => {
         >
           <Input
             type="text"
-            placeholder="введите username"
+            placeholder="Введите почту"
             errorMessage={errors.username?.message}
             {...register('username')}
+            error={!!errors.username?.message}
             isError={!!errors.username?.message}
             required
           />
           <Input
             type="password"
-            placeholder="введите пароль"
+            placeholder="Введите пароль"
             className="mt-[28px]"
             {...register('password')}
+            error={!!errors.password?.message}
             isError={!!errors.password?.message}
             errorMessage={errors.password?.message}
             required
           />
+          <div className="mb-3 mt-5 text-xs/[12px] text-white">
+            {Object.values(errors).map((error, index) => (
+              <div className="mb-1" key={index}>
+                {error.message}
+              </div>
+            ))}
+          </div>
 
           <Button
             icon={ArrowIcon}

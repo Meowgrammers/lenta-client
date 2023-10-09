@@ -8,7 +8,7 @@ import { TextInput as TremorInput } from '@tremor/react'
 import { cn, EyeIconOff, EyeIconOn } from '@/shared'
 
 type InputProps = {
-  required: boolean
+  required?: boolean
   placeholder?: string
   isError?: boolean
   errorMessage?: string
@@ -31,7 +31,7 @@ export const Input = forwardRef<
         type={isPasswordVisible ? 'text' : type}
         className={cn(
           className,
-          'input_text h-10 w-[359px] rounded-lg border border-gray-200 bg-white text-sm leading-[1.125rem] text-[#4D4D4D8F] focus:border focus:!border-[#002773] focus:outline-none'
+          'input_text h-10 w-[359px] rounded-lg border bg-white text-sm leading-[1.125rem] text-[#4D4D4D8F] focus:border focus:!border-[#002773] focus:outline-none'
         )}
         {...props}
       />
@@ -42,13 +42,18 @@ export const Input = forwardRef<
           onClick={togglePasswordVisibility}
         >
           {isPasswordVisible ? (
-            <EyeIconOn className="h-[24px] w-[24px]" fill="#4D4D4D" />
+            <EyeIconOn
+              className={`h-[24px] w-[24px] ${isError ? 'mr-7' : ''}`}
+              fill="#4D4D4D"
+            />
           ) : (
-            <EyeIconOff className="h-[24px] w-[24px]" fill="#4D4D4D" />
+            <EyeIconOff
+              className={`h-[24px] w-[24px] ${isError ? 'mr-7' : ''}`}
+              fill="#4D4D4D"
+            />
           )}
         </button>
       )}
-      {isError && <span>{errorMessage}</span>}
     </div>
   )
 })
