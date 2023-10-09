@@ -7,8 +7,9 @@ interface CheckboxProps {
   name: string
   checked: boolean
   id: string
+  data: string
   className: string
-  compute: (checkboxId: string, status: number) => void
+  compute: (checkboxId: string, status: number, data: string) => void
 }
 
 export const Checkbox: FC<CheckboxProps> = ({
@@ -17,6 +18,7 @@ export const Checkbox: FC<CheckboxProps> = ({
   id,
   compute,
   className,
+  data,
 }) => {
   const inputRef = useRef<HTMLInputElement | null>(null)
 
@@ -29,13 +31,14 @@ export const Checkbox: FC<CheckboxProps> = ({
 
   return (
     <input
+      id={id}
       type="checkbox"
       ref={inputRef}
       onChange={() => {
         const newStatus = inputRef.current?.checked
           ? status.checked
           : status.unchecked
-        compute(id, newStatus)
+        compute(id, newStatus, data)
       }}
       className={className}
     />

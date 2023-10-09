@@ -6,7 +6,7 @@ import { status, CollapseIcon } from '@/shared'
 
 interface ListProps {
   items: TItems[]
-  compute: (checkboxId: string, status: number) => void
+  compute: (checkboxId: string, status: number, data: string) => void
 }
 
 export const List: FC<ListProps> = ({ items, compute }) => {
@@ -48,6 +48,7 @@ export const List: FC<ListProps> = ({ items, compute }) => {
               <div className="relative mb-1 flex w-full cursor-default items-center gap-1 px-2 py-1 hover:bg-white/[0.16] active:bg-[#002773]">
                 <Checkbox
                   id={item.id}
+                  data={item.data}
                   name={item.name}
                   checked={item.status === status.checked}
                   indeterminate={item.status === status.indeterminate}
@@ -56,7 +57,6 @@ export const List: FC<ListProps> = ({ items, compute }) => {
                 />
                 <label
                   className={`w-[210px] cursor-pointer overflow-hidden text-ellipsis pr-8 ${item.data}`}
-                  htmlFor={item.name}
                   onClick={() => toggleItem(item.id)}
                 >
                   {item.name}

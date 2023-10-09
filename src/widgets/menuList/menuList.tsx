@@ -6,9 +6,22 @@ import {
   useAppSelector,
   CategoryMock,
   CollapseIcon,
+  useAppDispatch,
 } from '@/shared'
 import { AllCheckbox } from '@/features'
 import { List } from '@/widgets'
+
+import {
+  setCategory,
+  setGroup,
+  setSkus,
+  setSubcategory,
+  resetGroup,
+  resetCategory,
+  resetSubcategory,
+  resetSkus,
+  resetAll,
+} from '@/entities'
 
 export interface TItems {
   id: string
@@ -24,6 +37,7 @@ export const ListMenu: FC = () => {
   )
 
   const shops = useAppSelector((state) => state.shops.selectedItems)
+  const dispatch = useAppDispatch()
 
   const sortingCategoryMock =
     shops.length > 0
@@ -166,7 +180,7 @@ export const ListMenu: FC = () => {
     }
   }
 
-  const compute = (checkboxId: string, newStatus: number) => {
+  const compute = (checkboxId: string, newStatus: number, data: string) => {
     traverse(items, checkboxId, newStatus)
     setItems([...items])
 
@@ -179,6 +193,40 @@ export const ListMenu: FC = () => {
       setSelectAllChecked(false)
     } else {
       setSelectAllChecked(null)
+    }
+
+    console.log(data)
+    switch (data) {
+      case 'group':
+        if (newStatus === status.checked) {
+          dispatch(setGroup(checkboxId))
+        } else if (newStatus === status.unchecked) {
+          dispatch(resetGroup(checkboxId))
+        }
+        break
+      case 'category':
+        if (newStatus === status.checked) {
+          dispatch(setCategory(checkboxId))
+        } else if (newStatus === status.unchecked) {
+          dispatch(resetCategory(checkboxId))
+        }
+        break
+      case 'subcategory':
+        if (newStatus === status.checked) {
+          dispatch(setSubcategory(checkboxId))
+        } else if (newStatus === status.unchecked) {
+          dispatch(resetSubcategory(checkboxId))
+        }
+        break
+      case 'sku':
+        if (newStatus === status.checked) {
+          dispatch(setSkus(checkboxId))
+        } else if (newStatus === status.unchecked) {
+          dispatch(resetSkus(checkboxId))
+        }
+        break
+      default:
+        break
     }
   }
 
@@ -201,6 +249,7 @@ export const ListMenu: FC = () => {
     })
     setItems([...items])
     setSelectAllChecked(false)
+    dispatch(resetAll())
   }
 
   const totalItems = useMemo(() => {
