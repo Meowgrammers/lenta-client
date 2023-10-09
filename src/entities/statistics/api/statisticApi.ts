@@ -34,5 +34,5 @@ export const statisticApi = baseApi
     }),
   })
 
-export const { useLazyFetchStatisticsQuery, useFetchStatisticsExtendedQuery } =
+export const { useFetchStatisticsQuery, useFetchStatisticsExtendedQuery } =
   statisticApi
