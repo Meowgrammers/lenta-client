@@ -1,6 +1,11 @@
 import { FC } from 'react'
 import { ShopsSearch, ResetTKButton, AllCheckbox } from '@/features'
-import { LocationIcon, useAppDispatch, useAppSelector } from '@/shared'
+import {
+  LocationIcon,
+  ShopsMock,
+  useAppDispatch,
+  useAppSelector,
+} from '@/shared'
 import { SelectedItem } from '@/widgets'
 
 import { addAllItems, addSelectedItem } from '@/entities'
