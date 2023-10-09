@@ -31,7 +31,7 @@ export const Menu: FC = () => {
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-[#c4c4c4]">
-              <span className=" text-[10px]/[12px] font-bold text-[#4D4D4D]">
+              <span className=" cursor-default text-[10px]/[12px] font-bold text-[#4D4D4D]">
                 СП
               </span>
             </div>
