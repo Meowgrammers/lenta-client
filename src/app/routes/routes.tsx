@@ -1,7 +1,7 @@
 import { PAGES } from '@/shared'
 import { Routes } from './routes.types'
 import { Navigate } from 'react-router-dom'
-import { MainPage, AuthPage } from '@/pages'
+import { MainPage, AuthPage, ErrorPage } from '@/pages'
 
 export const MAIN_ROUTES: Routes = [
   {
