@@ -1,4 +1,4 @@
-import { CategoryTable, SalesChart } from '@/entities'
+import { CategoryTable, StatisticChart } from '@/entities'
 import {
   CategoryMock,
   sortByField,
@@ -40,7 +40,7 @@ export const ForecastChart = () => {
           sortingMock={sortingCategoryMock}
         />
       </Card>
-      <SalesChart />
+      <StatisticChart />
     </Flex>
   )
 }

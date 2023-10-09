@@ -8,6 +8,7 @@ import {
   salesApi,
   shopsApi,
 } from '@/entities'
+import { statisticApi } from '@/entities/statistics'
 
 const saveToSessionStorage = (state: RootState) => {
   try {
@@ -28,7 +29,8 @@ export const setupStore = () => {
         categoriesApi.middleware,
         forecastApi.middleware,
         salesApi.middleware,
-        shopsApi.middleware
+        shopsApi.middleware,
+        statisticApi.middleware
       ),
   })
 }

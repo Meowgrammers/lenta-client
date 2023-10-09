@@ -13,6 +13,9 @@ import {
   shopsApi,
   UserState,
   userReducer,
+  StatisticState,
+  statisticApi,
+  statisticReducer,
 } from '@/entities'
 import { AppState, appReducer, baseApi } from '@/shared'
 
@@ -31,10 +34,16 @@ export interface IReducer {
     'forecastApi'
   >
   shopsApi: CombinedState<Record<never, never>, 'SHOPS_DATA', 'shopsApi'>
+  statisticApi: CombinedState<
+    Record<never, never>,
+    'STATISTICS_DATA' | 'STATISTICS_EXTEND_DATA',
+    'shopsApi'
+  >
   app: AppState
   categories: CategoriesState
   forecast: ForecastState
   user: UserState
+  statistics: StatisticState
 }
 
 export const rootReducer = combineReducers({
@@ -44,9 +53,11 @@ export const rootReducer = combineReducers({
   salesApi: salesApi.reducer,
   forecastApi: forecastApi.reducer,
   shopsApi: shopsApi.reducer,
+  statisticApi: statisticApi.reducer,
   app: appReducer,
   shops: shopsReducer,
   categories: categoriesReducer,
   forecast: forecastReducer,
   user: userReducer,
+  statistics: statisticReducer,
 })

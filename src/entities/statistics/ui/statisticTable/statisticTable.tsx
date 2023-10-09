@@ -1,5 +1,5 @@
+import { setSelectId, setSelectItem } from '@/entities'
 import {
-  CategoryMock,
   Table,
   TableHeaderCell,
   TableRow,
@@ -9,6 +9,7 @@ import {
   TableBody,
   useAppSelector,
   useAppDispatch,
+  StatisticsMock,
 } from '@/shared'
 
 import { FC } from 'react'
@@ -22,10 +23,10 @@ type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
   doubleTable?: boolean
-  sortingMock: typeof CategoryMock
+  sortingMock: typeof StatisticsMock
 }
 
-export const CategoryTable: FC<CategoryTableProps> = ({
+export const StatisticTable: FC<CategoryTableProps> = ({
   items,
   totalHeight,
   doubleTable,
@@ -33,13 +34,18 @@ export const CategoryTable: FC<CategoryTableProps> = ({
 }) => {
   const check = useAppSelector((state) => state.app.check)
 
+  const id = useAppSelector((state) => state.statistics.selectId)
+
   const top = doubleTable ? 'top-[68px]' : 'top-[34px]'
   const height = doubleTable && 'h-[68px]'
 
   const dispatch = useAppDispatch()
 
   const handleSelect = (index: number) => {
-    dispatch(setSelectId(sortingMock[index].id))
+    dispatch(
+      setSelectId(`${sortingMock[index].store}${sortingMock[index].sku}`)
+    )
+    dispatch(setSelectItem(sortingMock[index]))
   }
 
   return (
@@ -56,21 +62,38 @@ export const CategoryTable: FC<CategoryTableProps> = ({
               </TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Товар</TableHeaderCell>
               <TableHeaderCell className="w-[48px]">Ед.</TableHeaderCell>
+              {sortingMock[0].forecast.map((fact_item, index) => {
+                return (
+                  <TableHeaderCell key={index} className="w-[80px]">
+                    {fact_item.date
+                      .split('-')
+                      .reverse()
+                      .join('.')
+                      .replace('.20', '.')}
+                  </TableHeaderCell>
+                )
+              })}
             </TableRow>
           </TableHead>
           <TableBody>
             {items.map((virtualItem) => {
               const item = sortingMock[virtualItem.index]!
+              const { forecast } = item
               return (
                 <TableRow
                   onClick={() => handleSelect(virtualItem.index)}
-                  key={item.id}
+                  key={item.sku + Math.random()}
+                  className={
+                    id === `${item.store}${item.sku}`
+                      ? `absolute ${top} cursor-pointer bg-[rgba(0,61,150,0.08)] pl-5`
+                      : `absolute ${top} cursor-pointer pl-5`
+                  }
                   style={{
                     transform: `translateY(${virtualItem.offsetTop}px)`,
                   }}
                 >
                   <TableCell className="w-[100px]">
-                    <Text>{item.id}</Text>
+                    <Text>{item.store}</Text>
                   </TableCell>
                   <TableCell className="w-[100px]">
                     <Text>{item.group}</Text>
@@ -87,6 +110,16 @@ export const CategoryTable: FC<CategoryTableProps> = ({
                   <TableCell className="w-[48px]">
                     <Text>{check ? 'руб' : item.uom}</Text>
                   </TableCell>
+                  {forecast.map((fact_item, index) => (
+                    <TableCell
+                      className={`w-[80px]  ${
+                        index % 2 === 1 && 'bg-[rgba(0,61,150,0.08)]'
+                      }`}
+                      key={index}
+                    >
+                      <Text>{fact_item.sales_units}</Text>
+                    </TableCell>
+                  ))}
                 </TableRow>
               )
             })}

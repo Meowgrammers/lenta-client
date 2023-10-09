@@ -6,4 +6,6 @@ export const enum PATHS {
   FORECAST = 'forecast/',
   SALES = 'sales/',
   SHOPS = 'shops/',
+  STATISTICS = 'statistics/',
+  STATISTICS_EXTENDED = 'statistics_extended/',
 }
