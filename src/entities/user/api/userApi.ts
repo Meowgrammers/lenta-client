@@ -16,7 +16,7 @@ export const authApi = baseApi.injectEndpoints({
         url: PATHS.LOGOUT,
         method: HTTP_METHOD.POST,
         headers: {
-          Authorization: `${auth_token}`,
+          Authorization: `Bearer ${auth_token}`,
         },
       }),
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],
