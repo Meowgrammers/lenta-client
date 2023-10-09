@@ -1,1 +1,0 @@
-export { QualityMainChart } from './qualityMainChart'

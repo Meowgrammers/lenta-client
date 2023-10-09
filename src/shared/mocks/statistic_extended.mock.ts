@@ -508,7 +508,7 @@ export const StatisticExtendedMock = [
     store: '42a0e188f5033bc65bf8d78622277c4e',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '7454973f4428e8a3426bb3c01e007104',
     uom: '17',
     statistic: [
       {
@@ -1011,7 +1011,7 @@ export const StatisticExtendedMock = [
   },
   {
     store: 'c81e728d9d4c2f636f067f89cc14862c',
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '9fa87786d9a881173e75bb0327383ff1',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
@@ -1314,7 +1314,7 @@ export const StatisticExtendedMock = [
   },
   {
     store: 'c81e728d9d4c2f636f067f89cc14862c',
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '3affcbb957032e3cd1c0c3f8526e5de8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
@@ -1617,7 +1617,7 @@ export const StatisticExtendedMock = [
   },
   {
     store: 'c81e728d9d4c2f636f067f89cc14862c',
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: 'b7e2077a3d7fa0d30e0eb5ec7fa349e8',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
@@ -1819,7 +1819,7 @@ export const StatisticExtendedMock = [
   },
   {
     store: 'c81e728d9d4c2f636f067f89cc14862c',
-    sku: 'fd064933250b0bfe4f926b867b0a5ec8',
+    sku: '5e513d8830b4e93051b81843e48098c5',
     group: 'c74d97b01eae257e44aa9d5bade97baf',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
