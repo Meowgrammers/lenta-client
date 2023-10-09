@@ -1,0 +1,1 @@
+export { StatisticExAllChart } from './statisticExAllChart'

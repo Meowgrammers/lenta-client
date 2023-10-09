@@ -3,7 +3,6 @@ import { createSlice } from '@reduxjs/toolkit'
 type CategoriesState = {
   sort: string
   tableSearch: string
-  selectId: number
   group: string[]
   categories: string[]
   subcategories: string[]
@@ -13,7 +12,6 @@ type CategoriesState = {
 const initialState: CategoriesState = {
   sort: 'category',
   tableSearch: '',
-  selectId: 1,
   group: [],
   categories: [],
   subcategories: [],
@@ -29,9 +27,6 @@ const categoriesSlice = createSlice({
     },
     setSearch(state, { payload }) {
       state.tableSearch = payload
-    },
-    setSelectId(state, { payload }) {
-      state.selectId = payload
     },
     setGroup(state, { payload }) {
       state.group.push(payload)
@@ -73,7 +68,6 @@ const categoriesReducer = categoriesSlice.reducer
 export const {
   setSearch,
   setSort,
-  setSelectId,
   setGroup,
   setCategory,
   setSubcategory,

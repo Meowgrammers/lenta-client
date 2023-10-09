@@ -1,13 +1,14 @@
 import { FC, useState } from 'react'
 
-import { SearchIcon, Input, useAppSelector } from '@/shared'
+import { SearchIcon, Input, ShopsMock } from '@/shared'
 
 interface ShopsSearchProps {
   onItemSelect: (id: string) => void
 }
 
 export const ShopsSearch: FC<ShopsSearchProps> = ({ onItemSelect }) => {
-  const shops = useAppSelector((state) => state.shops.allItems)
+  // const shops = useAppSelector((state) => state.shops.allItems)
+  const shops = ShopsMock.map((item) => item.id)
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState<string[]>([])
 
