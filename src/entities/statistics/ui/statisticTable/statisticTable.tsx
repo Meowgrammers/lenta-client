@@ -131,7 +131,9 @@ export const StatisticTable: FC<CategoryTableProps> = ({
                     <Text>{item.sku}</Text>
                   </TableCell>
                   <TableCell className="w-[48px]">
-                    <Text>{check ? 'руб' : item.uom}</Text>
+                    <Text>
+                      {check ? 'руб' : item.uom === '17' ? 'кг' : 'шт'}
+                    </Text>
                   </TableCell>
                   {!chartTable &&
                     forecast.map((fact_item, index) => (

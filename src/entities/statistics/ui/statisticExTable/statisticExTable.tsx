@@ -116,7 +116,9 @@ export const StatisticExTable: FC<CategoryTableProps> = ({
                     <Text>{item.sku}</Text>
                   </TableCell>
                   <TableCell className="w-[48px]">
-                    <Text>{check ? 'руб' : item.uom}</Text>
+                    <Text>
+                      {check ? 'руб' : item.uom === '17' ? 'кг' : 'шт'}
+                    </Text>
                   </TableCell>
                   {item.statistic.slice(-week).map((el) => {
                     return (
