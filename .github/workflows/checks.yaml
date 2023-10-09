@@ -1,0 +1,21 @@
+name: Start all checks
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install main deps
+        run: npm install
+      - name: Lint
+        run: npm run lint
+      - name: Prettier
+        run: npm run prettier

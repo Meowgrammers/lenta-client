@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  min-width: 20rem;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+#root {
+  width: 100%;
+  min-width: 20rem;
+  min-height: 100vh;
+}
+
+:root {
+  --back-secondary: #003d96;
+  --back-primary-on-blue: #002773;
+  --back-accent-for-table: rgba(0, 61, 150, 0.08);
+  --stroke-input-normal: rgba(77, 77, 77, 0.24);
+  --text-primary-on-dark: #fff;
+}
+
+::-webkit-scrollbar {
+  width: .3125rem;
+  height: .625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #878787;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  top: 3px;
+  left: 5.5px;
+  width: 4.5px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+input[type="checkbox"]:indeterminate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 8px;
+  height: 2px;
+  background: #fff;
+}
+
+.peer.sr-only {
+  display: none;
+}
+
+.tremor-TextInput-errorMessage {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-top: 10px;
+}
+
+.tremor-Legend-legendItem {
+  display: none;
+}
+
+.tremor-Card-root {
+  border-radius: 0px;
+}
+
+.category {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subcategory {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sku {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.checkbox-category {
+  margin-left: 3px;
+}
+
+.checkbox-category::before {
+  margin-top: 1px;
+  margin-left: 1px;
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.checkbox-category::after {
+  top: 3px !important;
+  left: 5.5px !important;
+  width: 4.5px !important;
+  height: 7.5px !important;
+}
+
+.checkbox-category:indeterminate::after {
+  top: 7px !important;
+  left: 5px !important;
+  width: 6px !important;
+  height: 2px !important;
+}
+
+.checkbox-subcategory::before {
+  margin-top: 1px;
+  margin-left: 1px;
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.checkbox-subcategory::after {
+  top: 3px !important;
+  left: 5.5px !important;
+  width: 4.5px !important;
+  height: 7.5px !important;
+}
+
+.checkbox-subcategory:indeterminate::after {
+  top: 7px !important;
+  left: 5px !important;
+  width: 6px !important;
+  height: 2px !important;
+}
+
+.checkbox-sku::before {
+  margin-top: 1px;
+  margin-left: 1px;
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.checkbox-sku::after {
+  top: 3px !important;
+  left: 5.5px !important;
+  width: 4.5px !important;
+  height: 7.5px !important;
+}
