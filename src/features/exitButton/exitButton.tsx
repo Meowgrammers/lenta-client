@@ -1,15 +1,20 @@
 import { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { ExitIcon } from '@/shared'
+import { ExitIcon, useAppDispatch } from '@/shared'
+import { logout } from '@/entities'
 
 export const ExitButton: FC = () => {
   const [isHovered, setIsHovered] = useState(false)
   const navigate = useNavigate()
+  const dispatch = useAppDispatch()
+
   const handleExit = () => {
-    console.log('выйти')
+    dispatch(logout())
+
     navigate('/auth')
   }
+
   return (
     <div
       onClick={handleExit}

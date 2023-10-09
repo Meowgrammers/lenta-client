@@ -9,7 +9,8 @@ export const salesApi = baseApi
     endpoints: (builder) => ({
       fetchSales: builder.query<SalesResponse, SalesRequest>({
         query: ({ sku, store, page, limit }) => ({
-          url: `${PATHS.SALES}?sku=${sku}&store=${store}&page=${page}&limit=${limit}`,
+          url: `${PATHS.SALES}`,
+          params: { sku, store, page, limit },
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'SALES_DATA', id: 'INFO' }],
         }),

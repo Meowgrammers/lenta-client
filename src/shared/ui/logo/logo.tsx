@@ -1,10 +1,9 @@
-import logo from '@/assets/icons/logo.svg'
+import { LogoIcon } from '@/shared'
 
 export const Logo = () => {
   return (
-    <div
-      className="h-52 w-60 bg-cover"
-      style={{ backgroundImage: `url(${logo})` }}
-    />
+    <div className="h-52 w-60">
+      <LogoIcon />
+    </div>
   )
 }

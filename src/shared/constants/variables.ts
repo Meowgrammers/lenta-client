@@ -12,4 +12,6 @@ export const enum PAGES {
   ALL = '*',
   MAIN = '/',
   AUTH = '/auth',
+  NOTFOUND = '404',
+  SERVER_ERROR = '500',
 }

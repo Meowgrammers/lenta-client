@@ -7,10 +7,17 @@ import {
 import { TextInput as TremorInput } from '@tremor/react'
 import { cn, EyeIconOff, EyeIconOn } from '@/shared'
 
+type InputProps = {
+  required?: boolean
+  placeholder?: string
+  isError?: boolean
+  errorMessage?: string
+}
+
 export const Input = forwardRef<
   ElementRef<typeof TremorInput>,
-  ComponentPropsWithoutRef<typeof TremorInput>
->(({ className, type, ...props }, ref) => {
+  ComponentPropsWithoutRef<typeof TremorInput> & InputProps
+>(({ className, type, errorMessage, isError, ...props }, ref) => {
   const [isPasswordVisible, setPasswordVisible] = useState(false)
 
   const togglePasswordVisibility = () => {
@@ -18,13 +25,13 @@ export const Input = forwardRef<
   }
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col">
       <TremorInput
         ref={ref}
         type={isPasswordVisible ? 'text' : type}
         className={cn(
           className,
-          'input_text h-10 w-[359px] rounded-lg border border-gray-200 bg-white text-sm leading-[1.125rem] text-[#4D4D4D8F] focus:border focus:!border-[#002773] focus:outline-none'
+          'input_text h-10 w-[359px] rounded-lg border bg-white text-sm leading-[1.125rem] text-[#4D4D4D8F] focus:border focus:!border-[#002773] focus:outline-none'
         )}
         {...props}
       />
@@ -35,9 +42,15 @@ export const Input = forwardRef<
           onClick={togglePasswordVisibility}
         >
           {isPasswordVisible ? (
-            <EyeIconOn className="h-[24px] w-[24px]" fill="#4D4D4D" />
+            <EyeIconOn
+              className={`h-[24px] w-[24px] ${isError ? 'mr-7' : ''}`}
+              fill="#4D4D4D"
+            />
           ) : (
-            <EyeIconOff className="h-[24px] w-[24px]" fill="#4D4D4D" />
+            <EyeIconOff
+              className={`h-[24px] w-[24px] ${isError ? 'mr-7' : ''}`}
+              fill="#4D4D4D"
+            />
           )}
         </button>
       )}

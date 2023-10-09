@@ -14,7 +14,8 @@ export const forecastApi = baseApi
     endpoints: (builder) => ({
       fetchForecast: builder.query<ForecastResponse, ForecastRequest>({
         query: ({ page, limit }) => ({
-          url: `${PATHS.FORECAST}?page=${page}&limit=${limit}`,
+          url: `${PATHS.FORECAST}`,
+          params: { page, limit },
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'FORECAST_DATA', id: 'INFO' }],
         }),

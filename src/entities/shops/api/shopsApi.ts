@@ -9,7 +9,8 @@ export const shopsApi = baseApi
     endpoints: (builder) => ({
       fetchShops: builder.query<ShopResponse, ShopRequest>({
         query: ({ page, limit }) => ({
-          url: `${PATHS.SHOPS}?page=${page}&limit=${limit}`,
+          url: `${PATHS.SHOPS}`,
+          params: { page, limit },
           method: HTTP_METHOD.GET,
           providesTags: [{ type: 'SHOPS_DATA', id: 'INFO' }],
         }),

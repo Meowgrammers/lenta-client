@@ -5,7 +5,6 @@ export {
   categoriesReducer,
   setSearch,
   setSort,
-  setSelectId,
   setCategory,
   setGroup,
   setSkus,

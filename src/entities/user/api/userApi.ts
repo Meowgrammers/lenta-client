@@ -8,18 +8,15 @@ export const authApi = baseApi.injectEndpoints({
         url: PATHS.LOGIN,
         method: HTTP_METHOD.POST,
         body: credentials,
-        transformResponse: (response: { data: { auth_token: string } }) => {
-          return response.data.auth_token
-        },
       }),
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],
     }),
     logout: builder.mutation<void, LogoutRequest>({
-      query: (token) => ({
+      query: ({ auth_token }) => ({
         url: PATHS.LOGOUT,
         method: HTTP_METHOD.POST,
         headers: {
-          authorization: `token ${token}`,
+          Authorization: `Bearer ${auth_token}`,
         },
       }),
       invalidatesTags: [{ type: 'USER_INFO', id: 'INFO' }],

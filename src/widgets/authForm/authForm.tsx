@@ -1,38 +1,74 @@
 import { FC, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import { type SubmitHandler, useForm } from 'react-hook-form'
+import * as yup from 'yup'
 import { Logo, Input, Button, ArrowIcon } from '@/shared'
+import { useLoginMutation } from '@/entities/user/api/userApi'
+import { yupSchemaAuthForm } from './lib/validation'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { LoginRequest } from '@/entities/user/api/types'
 
 export const AuthForm: FC = () => {
   const [isHovered, setIsHovered] = useState(false)
+  type FormData = yup.InferType<typeof yupSchemaAuthForm>
+  const [login] = useLoginMutation()
   const navigate = useNavigate()
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault()
-    navigate('/')
-    console.log('Form submitted')
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginRequest>({
+    mode: 'onChange',
+    resolver: yupResolver(yupSchemaAuthForm),
+  })
+
+  const onSubmit: SubmitHandler<LoginRequest> = async (data: FormData) => {
+    const response = await login(data)
+    const isError = 'error' in response
+
+    if (!isError) {
+      navigate('/')
+    } else {
+      console.log(isError)
+    }
   }
 
   return (
-    <div className="text-secondary flex h-screen w-full flex-col items-center justify-center bg-blueMain">
+    <div className="flex h-screen w-full flex-col items-center justify-center bg-blueMain">
       <div className="flex flex-col items-center gap-[80px]">
         <Logo />
         <form
           className="flex flex-col items-start"
           name="auth"
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
         >
           <Input
-            type="email"
+            type="text"
             placeholder="Введите почту"
-            errorMessage="Некорректный email"
-            error={true}
+            errorMessage={errors.username?.message}
+            {...register('username')}
+            error={!!errors.username?.message}
+            isError={!!errors.username?.message}
+            required
           />
           <Input
             type="password"
             placeholder="Введите пароль"
             className="mt-[28px]"
+            {...register('password')}
+            error={!!errors.password?.message}
+            isError={!!errors.password?.message}
+            errorMessage={errors.password?.message}
+            required
           />
+          <div className="mb-3 mt-5 text-xs/[12px] text-white">
+            {Object.values(errors).map((error, index) => (
+              <div className="mb-1" key={index}>
+                {error.message}
+              </div>
+            ))}
+          </div>
 
           <Button
             icon={ArrowIcon}
