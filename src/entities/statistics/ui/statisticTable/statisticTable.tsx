@@ -1,4 +1,4 @@
-import { setSelectId, setSelectItem } from '@/entities'
+import { setSelectId, setSelectItem, useFetchStatisticsQuery } from '@/entities'
 import {
   Table,
   TableHeaderCell,
@@ -37,6 +37,25 @@ export const StatisticTable: FC<CategoryTableProps> = ({
   const check = useAppSelector((state) => state.app.check)
 
   const id = useAppSelector((state) => state.statistics.selectId)
+
+  const sku = useAppSelector((state) => state.categories.skus)
+  const group = useAppSelector((state) => state.categories.group)
+  const categories = useAppSelector((state) => state.categories.categories)
+  const subcategories = useAppSelector(
+    (state) => state.categories.subcategories
+  )
+
+  //TODO: связь с бэком
+  const { data } = useFetchStatisticsQuery({
+    sku: sku.length > 0 ? sku.join(',') : undefined,
+    group: group.length > 0 ? group.join(',') : undefined,
+    category: categories.length > 0 ? categories.join(',') : undefined,
+    subcategory: subcategories.length > 0 ? subcategories.join(',') : undefined,
+    page: 1,
+    limit: 20,
+  })
+
+  console.log(data)
 
   const top = doubleTable ? 'top-[68px]' : 'top-[34px]'
   const height = doubleTable && 'h-[68px]'
