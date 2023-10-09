@@ -7,20 +7,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -31,20 +73,62 @@ export const StatisticsMock = [
     subcategory: 'e06f5ed77191826c212c30722f2cc5a2',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -55,20 +139,62 @@ export const StatisticsMock = [
     subcategory: 'd407a3ebb4ab9b0d68b224486f8b8dad',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -79,20 +205,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -103,20 +271,62 @@ export const StatisticsMock = [
     subcategory: 'e06f5ed77191826c212c30722f2cc5a2',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -127,20 +337,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -151,20 +403,62 @@ export const StatisticsMock = [
     subcategory: '7a8aebb07d6e8ba9da453ec0f3f359a4',
     uom: '1',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -175,20 +469,62 @@ export const StatisticsMock = [
     subcategory: '8654269aab578fbbd83a0e5ef04532b4',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -199,20 +535,62 @@ export const StatisticsMock = [
     subcategory: '5fd72b9fc7118bd36a137d7cea8c588a',
     uom: '1',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -223,20 +601,62 @@ export const StatisticsMock = [
     subcategory: '9c95fafecc492115959c5a2dc0143020',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -247,20 +667,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -271,20 +733,62 @@ export const StatisticsMock = [
     subcategory: 'c0a667df8f0d6ee98dda972b0870fabf',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -295,20 +799,62 @@ export const StatisticsMock = [
     subcategory: '3055a089cffae7c29c8942e5eb534a2a',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -319,20 +865,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -343,20 +931,62 @@ export const StatisticsMock = [
     subcategory: 'a09fe216278f103e70a7a179e173831c',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -367,20 +997,62 @@ export const StatisticsMock = [
     subcategory: 'c93c26cd49ea08e6b8984351d4164575',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -391,20 +1063,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -415,20 +1129,62 @@ export const StatisticsMock = [
     subcategory: '7a8aebb07d6e8ba9da453ec0f3f359a4',
     uom: '1',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -439,20 +1195,62 @@ export const StatisticsMock = [
     subcategory: 'ca34f669ae367c87f0e75dcae0f61ee5',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
   {
@@ -463,20 +1261,62 @@ export const StatisticsMock = [
     subcategory: 'd407a3ebb4ab9b0d68b224486f8b8dad',
     uom: '17',
     forecast: [
-      { date: '19.10.2022', sales_units: 1 },
-      { date: '20.10.2022', sales_units: 2 },
-      { date: '21.10.2022', sales_units: 3 },
-      { date: '22.10.2022', sales_units: 4 },
-      { date: '22.10.2022', sales_units: 5 },
-      { date: '23.10.2022', sales_units: 4 },
-      { date: '24.10.2022', sales_units: 3 },
-      { date: '25.10.2022', sales_units: 2 },
-      { date: '26.10.2022', sales_units: 1 },
-      { date: '27.10.2022', sales_units: 2 },
-      { date: '28.10.2022', sales_units: 3 },
-      { date: '29.10.2022', sales_units: 4 },
-      { date: '30.10.2022', sales_units: 5 },
-      { date: '31.10.2022', sales_units: 6 },
+      {
+        date: '19.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '20.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '21.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '22.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '23.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '24.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '25.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '26.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '27.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '28.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '29.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '30.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
+      {
+        date: '31.10.2022',
+        sales_units: Math.floor(Math.random() * (20 - 0) + 0),
+      },
     ],
   },
 ]

@@ -1,4 +1,4 @@
-import { QualityMainChart, QualityUnitChart } from '@/entities'
+import { QualityMainChart, StatisticExChart } from '@/entities'
 import { ToggleUnit, WeekCount } from '@/features'
 import { Card, Flex } from '@tremor/react'
 
@@ -11,7 +11,7 @@ export const StatisticChart = () => {
       </Card>
       <Flex className="w-full items-start gap-5">
         <QualityMainChart />
-        <QualityUnitChart />
+        <StatisticExChart />
       </Flex>
     </Card>
   )

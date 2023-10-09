@@ -1,8 +1,7 @@
-import { CategoryTable } from '@/entities'
-import { QualityTable } from '@/entities/forecast/ui/qualityTable/qualityTable'
+import { StatisticExTable } from '@/entities'
 import { TableSearch, TableSort } from '@/features'
 import {
-  CategoryMock,
+  StatisticExtendedMock,
   sortByField,
   useAppSelector,
   useVirtualize,
@@ -14,17 +13,17 @@ export const StatisticTable = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
   const shops = useAppSelector((state) => state.shops.selectedItems)
   const sort = useAppSelector((state) => state.categories.sort)
-  const sortingCategoryMock = useMemo(() => {
+  const sortingStatisticMock = useMemo(() => {
     return shops.length > 0
-      ? CategoryMock.filter((category) => {
+      ? StatisticExtendedMock.filter((category) => {
           return shops.includes(category.store)
         }).sort(sortByField(sort))
-      : CategoryMock.sort(sortByField(sort))
+      : StatisticExtendedMock.sort(sortByField(sort))
   }, [sort, shops])
 
   const { virtualItems, totalHeight } = useVirtualize({
     itemHeight: 34,
-    itemsCount: sortingCategoryMock.length,
+    itemsCount: StatisticExtendedMock.length,
     overscan: 3,
     listHeight: 430,
     getScrollElement: useCallback(() => scrollElementRef.current, []),
@@ -42,16 +41,14 @@ export const StatisticTable = () => {
         </Flex>
       </Flex>
       <Card
-        className="flex h-[430px] max-w-fit overflow-auto rounded-none p-0 pt-[34px] shadow-none ring-0"
+        className="flex h-[430px] max-w-full overflow-auto rounded-none p-0 pt-[34px] shadow-none ring-0"
         ref={scrollElementRef}
       >
-        <CategoryTable
+        <StatisticExTable
           items={virtualItems}
           totalHeight={totalHeight}
-          doubleTable={true}
-          sortingMock={sortingCategoryMock}
+          sortingMock={sortingStatisticMock}
         />
-        <QualityTable items={virtualItems} totalHeight={totalHeight} />
       </Card>
     </Card>
   )

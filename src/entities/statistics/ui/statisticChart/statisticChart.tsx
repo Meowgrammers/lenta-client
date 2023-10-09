@@ -10,17 +10,16 @@ const StatisticChart = () => {
   return (
     <Card className="min-w-[870px]">
       <Title>Прогнозируемое значение, {check ? 'руб.' : 'шт'}</Title>
-      {data && (
-        <BarChart
-          className="mt-6"
-          data={data.forecast}
-          index="date"
-          categories={['sales_units']}
-          colors={['blue']}
-          yAxisWidth={35}
-          showAnimation={true}
-        />
-      )}
+      <BarChart
+        className="mt-6"
+        data={data ? data.forecast : []}
+        index="date"
+        noDataText="Выберите товар"
+        categories={['sales_units']}
+        colors={['blue']}
+        yAxisWidth={35}
+        showAnimation={true}
+      />
     </Card>
   )
 }

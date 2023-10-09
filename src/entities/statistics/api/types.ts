@@ -21,17 +21,21 @@ type StatisticsRequest = {
   limit?: number
 }
 
+type StatisticUnit = {
+  week: number
+  target: number
+  difference: number
+  wape: number
+  sales_units: number
+}
+
 type StatisticsExtendedResponse = {
   sku: string
   group: string
   category: string
   subcategory: string
   uom: string
-  week: number
-  target: number
-  difference: number
-  wape: number
-  sales_units: number
+  statistic: StatisticUnit[]
 }
 
 type StatisticsExtendedRequest = {
