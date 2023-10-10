@@ -819,7 +819,7 @@ export const StatisticExtendedMock = [
     //id = 9
     store: '42a0e188f5033bc65bf8d78622277c4e',
     sku: 'd185c5ed37536ac0063f735f7a15dd24',
-    group: 'c20ad4d76fe97759aa27a0c99bff6710',
+    group: '6512bd43d9caa6e02c990b0a82652dca',
     category: '1bc0249a6412ef49b07fe6f62e6dc8de',
     subcategory: '68f204f3838bfee4ada868b66e6a0814',
     uom: '1',
