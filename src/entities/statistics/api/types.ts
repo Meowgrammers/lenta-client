@@ -1,9 +1,11 @@
 type ForecastUnit = {
   date: string
   sales_units: number
+  sales_in_rub: number
 }
 
 type StatisticsResponse = {
+  store: string
   sku: string
   group: string
   category: string
@@ -30,6 +32,7 @@ type StatisticUnit = {
 }
 
 type StatisticsExtendedResponse = {
+  store: string
   sku: string
   group: string
   category: string

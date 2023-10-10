@@ -1,22 +1,24 @@
 import { StatisticExTable } from '@/entities'
 import { TableSearch, TableSort } from '@/features'
+import { ExportExtendButton } from '@/features/exportButton/exportButton'
 import {
   StatisticExtendedMock,
   sortByField,
   useAppSelector,
   useVirtualize,
 } from '@/shared'
-import { Button, Card, Flex } from '@tremor/react'
+import { Card, Flex } from '@tremor/react'
 import { useCallback, useMemo, useRef } from 'react'
 
 export const StatisticTable = () => {
   const scrollElementRef = useRef<HTMLDivElement>(null)
   const shops = useAppSelector((state) => state.shops.selectedItems)
   const sort = useAppSelector((state) => state.categories.sort)
+
   const sortingStatisticMock = useMemo(() => {
     return shops.length > 0
-      ? StatisticExtendedMock.filter((category) => {
-          return shops.includes(category.store)
+      ? StatisticExtendedMock.filter((item) => {
+          return shops.includes(item.store)
         }).sort(sortByField(sort))
       : StatisticExtendedMock.sort(sortByField(sort))
   }, [sort, shops])
@@ -35,9 +37,7 @@ export const StatisticTable = () => {
         <TableSort />
         <Flex justifyContent="end" className="gap-4">
           <TableSearch />
-          <Button className="h-10 border-none bg-color-back-secondary font-semibold hover:bg-[#002773] active:bg-[#294a89]">
-            Выгрузить в Excel
-          </Button>
+          <ExportExtendButton />
         </Flex>
       </Flex>
       <Card
