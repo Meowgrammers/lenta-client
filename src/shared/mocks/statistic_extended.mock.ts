@@ -2,10 +2,10 @@ export const StatisticExtendedMock = [
   {
     //id=1
     store: '16a5cdae362b8d27a1d8f8c7b78b4330',
-    category: '1bc0249a6412ef49b07fe6f62e6dc8de',
-    subcategory: '68f204f3838bfee4ada868b66e6a0814',
     sku: '00661699f543753ec7e911a64b9fd2f6',
     group: 'aab3238922bcc25a6f606eb525ffdc56',
+    category: '1bc0249a6412ef49b07fe6f62e6dc8de',
+    subcategory: '68f204f3838bfee4ada868b66e6a0814',
     uom: '1',
     statistic: [
       {
