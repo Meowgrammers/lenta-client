@@ -10,7 +10,7 @@ const StatisticExChart = () => {
       <Subtitle>Изменение WAPE для выбранного товара за период</Subtitle>
       <LineChart
         className="mt-6"
-        data={data ? data.statistic.slice(-week) : []}
+        data={data ? data.statistic.slice(0, week) : []}
         index="week"
         noDataText="Выберите товар"
         categories={['wape']}

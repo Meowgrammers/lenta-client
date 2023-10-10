@@ -5,8 +5,6 @@ const StatisticChart = () => {
   const check = useAppSelector((state) => state.app.check)
   const data = useAppSelector((state) => state.statistics.selectItem)
 
-  // const chartCategory = check ? 'sales_rub' : 'sales_units'
-
   return (
     <Card className="min-w-[870px]">
       <Title>Прогнозируемое значение, {check ? 'руб.' : 'шт'}</Title>
@@ -15,7 +13,7 @@ const StatisticChart = () => {
         data={data ? data.forecast : []}
         index="date"
         noDataText="Выберите товар"
-        categories={['sales_units']}
+        categories={[check ? 'sales_in_rub' : 'sales_units']}
         colors={['blue']}
         yAxisWidth={35}
         showAnimation={true}

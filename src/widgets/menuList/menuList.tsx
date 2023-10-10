@@ -135,9 +135,56 @@ export const ListMenu: FC = () => {
       return null
     }
   }
+  const setStoreStatus = (root: TItems, newStatus: number | undefined) => {
+    switch (root.data) {
+      case 'group':
+        if (
+          newStatus === status.checked ||
+          newStatus === status.indeterminate
+        ) {
+          dispatch(setGroup(root.id))
+        } else if (newStatus === status.unchecked || newStatus === undefined) {
+          dispatch(resetGroup(root.id))
+        }
+        break
+      case 'category':
+        if (
+          newStatus === status.checked ||
+          newStatus === status.indeterminate
+        ) {
+          dispatch(setCategory(root.id))
+        } else if (newStatus === status.unchecked || newStatus === undefined) {
+          dispatch(resetCategory(root.id))
+        }
+        break
+      case 'subcategory':
+        if (
+          newStatus === status.checked ||
+          newStatus === status.indeterminate
+        ) {
+          dispatch(setSubcategory(root.id))
+        } else if (newStatus === status.unchecked || newStatus === undefined) {
+          dispatch(resetSubcategory(root.id))
+        }
+        break
+      case 'sku':
+        if (
+          newStatus === status.checked ||
+          newStatus === status.indeterminate
+        ) {
+          dispatch(setSkus(root.id))
+        } else if (newStatus === status.unchecked || newStatus === undefined) {
+          dispatch(resetSkus(root.id))
+        }
+        break
+      default:
+        break
+    }
+  }
 
   const setStatus = (root: TItems, newStatus: number) => {
     root.status = newStatus
+    setStoreStatus(root, newStatus)
     if (Array.isArray(root.items)) {
       root.items.forEach((item) => {
         setStatus(item, newStatus)
@@ -176,11 +223,12 @@ export const ListMenu: FC = () => {
       if (root.items) {
         root.items.forEach((item) => traverse(item, needle, newStatus))
         root.status = computeStatus(root.items)
+        setStoreStatus(root, root.status)
       }
     }
   }
 
-  const compute = (checkboxId: string, newStatus: number, data: string) => {
+  const compute = (checkboxId: string, newStatus: number) => {
     traverse(items, checkboxId, newStatus)
     setItems([...items])
 
@@ -193,40 +241,6 @@ export const ListMenu: FC = () => {
       setSelectAllChecked(false)
     } else {
       setSelectAllChecked(null)
-    }
-
-    console.log(data)
-    switch (data) {
-      case 'group':
-        if (newStatus === status.checked) {
-          dispatch(setGroup(checkboxId))
-        } else if (newStatus === status.unchecked) {
-          dispatch(resetGroup(checkboxId))
-        }
-        break
-      case 'category':
-        if (newStatus === status.checked) {
-          dispatch(setCategory(checkboxId))
-        } else if (newStatus === status.unchecked) {
-          dispatch(resetCategory(checkboxId))
-        }
-        break
-      case 'subcategory':
-        if (newStatus === status.checked) {
-          dispatch(setSubcategory(checkboxId))
-        } else if (newStatus === status.unchecked) {
-          dispatch(resetSubcategory(checkboxId))
-        }
-        break
-      case 'sku':
-        if (newStatus === status.checked) {
-          dispatch(setSkus(checkboxId))
-        } else if (newStatus === status.unchecked) {
-          dispatch(resetSkus(checkboxId))
-        }
-        break
-      default:
-        break
     }
   }
 

@@ -13,6 +13,7 @@ import {
 } from '@/shared'
 
 import { FC } from 'react'
+import { StatisticsExtendedResponse } from '../../api/types'
 
 type VirtualItem = {
   index: number
@@ -22,7 +23,7 @@ type VirtualItem = {
 type CategoryTableProps = {
   items: VirtualItem[]
   totalHeight: number
-  sortingMock: typeof StatisticExtendedMock
+  sortingMock: StatisticsExtendedResponse[]
 }
 
 export const StatisticExTable: FC<CategoryTableProps> = ({
@@ -59,7 +60,7 @@ export const StatisticExTable: FC<CategoryTableProps> = ({
               </TableHeaderCell>
               <TableHeaderCell className="w-[100px]">Товар</TableHeaderCell>
               <TableHeaderCell className="w-[48px]">Ед.</TableHeaderCell>
-              {sortingMock[0].statistic.slice(-week).map((i, index) => {
+              {sortingMock[0].statistic.slice(0, week).map((i, index) => {
                 return (
                   <div key={index}>
                     <TableRow className="flex w-full items-center justify-center overflow-hidden border-b border-l border-solid border-b-[rgba(255,255,255,0.24)] border-l-[rgba(255,255,255,0.24)] bg-[#002773] text-center">
@@ -120,7 +121,7 @@ export const StatisticExTable: FC<CategoryTableProps> = ({
                       {check ? 'руб' : item.uom === '17' ? 'кг' : 'шт'}
                     </Text>
                   </TableCell>
-                  {item.statistic.slice(-week).map((el) => {
+                  {item.statistic.slice(0, week).map((el) => {
                     return (
                       <>
                         <TableCell className="w-[82px]">

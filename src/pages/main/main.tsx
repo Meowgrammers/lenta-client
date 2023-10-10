@@ -1,5 +1,4 @@
-import { TableSearch, TableSort, ToggleUnit } from '@/features'
-import { Button } from '@/shared'
+import { ExportButton, TableSearch, TableSort, ToggleUnit } from '@/features'
 import {
   Menu,
   ForecastChart,
@@ -60,9 +59,7 @@ export const MainPage = () => {
                   <TableSort />
                 </Flex>
                 <TableSearch />
-                <Button className="h-10 border-none bg-color-back-secondary font-semibold hover:bg-[#002773] active:bg-[#294a89]">
-                  Выгрузить в Excel
-                </Button>
+                <ExportButton />
               </Flex>
               <TabPanels>
                 <TabPanel>
