@@ -47,7 +47,7 @@ export const ExportButton = () => {
   const newData: ExportStatisticDataType[] = []
   sortingStatisticMock.forEach((item) => {
     const { forecast, ...all } = item
-    const a = forecast.map((el) => Object.assign(el, all))
+    const a = forecast.map((el) => Object.assign({}, el, all))
     newData.push(...a)
   })
 
@@ -74,13 +74,13 @@ export const ExportExtendButton = ({}) => {
   const newData: ExportExtendedDataType[] = []
   sortingStatisticMock.forEach((item) => {
     const { statistic, ...all } = item
-    const a = statistic.map((el) => Object.assign(el, all))
+    const a = statistic.map((el) => Object.assign({}, el, all))
     newData.push(...a)
   })
 
   return (
     <Button className="h-10 border-none bg-color-back-secondary font-semibold hover:bg-[#002773] active:bg-[#294a89]">
-      <CSVLink data={sortingStatisticMock} filename="statistic">
+      <CSVLink data={newData} filename="statistic">
         Выгрузить в Excel
       </CSVLink>
     </Button>
